@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="announcement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="metadata" />
+        <xs:element ref="items" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="metadata">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="version" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="version">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="items">
+    <xs:complexType>
+      <xs:choice>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="group" />
+          <xs:element ref="evidence" />
+        </xs:choice>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="group-name" />
+        <xs:element ref="group-desc" />
+        <xs:element minOccurs="0" ref="add" />
+        <xs:element minOccurs="0" ref="remove" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group-name">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="group-desc">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="add">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element maxOccurs="unbounded" ref="company" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="remove">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element maxOccurs="unbounded" ref="company" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="evidence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title" />
+        <xs:element ref="description" />
+        <xs:element ref="categories" />
+        <xs:element ref="source" />
+        <xs:element ref="links" />
+        <xs:element ref="companies" />
+        <xs:element ref="reviews" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="description">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="categories">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="category" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="category">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="category-name" />
+        <xs:element minOccurs="0" ref="category-rating" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="category-name">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="category-rating">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="source">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="link" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="link">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="link-text" />
+        <xs:element ref="url" />
+        <xs:element ref="date" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="link-text">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="url">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="date">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="links">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="link" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="companies">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element maxOccurs="unbounded" ref="company" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="normalized" />
+        <xs:element ref="tagged" />
+        <xs:element ref="address" />
+        <xs:element ref="GCPs" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="normalized">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="tagged">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="address">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="GCPs">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="GCP" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GCP">
+    <xs:complexType mixed="true" />
+  </xs:element>
+  <xs:element name="reviews">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element maxOccurs="unbounded" ref="review" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="review">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="reviewer" />
+        <xs:element ref="date" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="reviewer">
+    <xs:complexType mixed="true" />
+  </xs:element>
+</xs:schema>

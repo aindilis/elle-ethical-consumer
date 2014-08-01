@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>From the Web Standards Project (WaSP) at http://webstandards.org/about/mission/
+
+"The World Wide Web Consortium (W3C), along with other groups and standards bodies, has established technologies for creating and interpreting web-based content. These technologies, which we call 'web standards,' are carefully designed to deliver the greatest benefits to the greatest number of web users while ensuring the long-term viability of any document published on the Web."
+
+Some browsers, most popularly Internet Explorer, do not properly support established web standards such as XHTML and CSS. As many web designers are painfully aware, these browsers inappropriately render content such that "hacks" are required to maintain a consistent look-and-feel across browsers and platforms.
+
+Until these web browsers handle documents in a way consistent with established standards and guiding principles, the Semantic Web cannot progress.  Following the recent explosion of XML-based technologies including XHTML, it is becoming increasingly important that browsers support these standards appropriately.
+
+From the Semantic Web project at http://w3.org/2001/sw/
+
+"The Semantic Web is a web of data. There is lots of data we all use every day, and its not part of the web. I can see my bank statements on the web, and my photographs, and I can see my appointments in a calendar. But can I see my photos in a calendar to see what I was doing when I took them? Can I see bank statement lines in a calendar?"
+
+Interchangeable data formats will produce a World Wide Web full of information that humans and computers can read and process. It has astonishing implications since it links all data together, ultimately resulting in convenient access to relevant information for everyone.
+
+Image copyright: W3C&#174; is a trademark (registered in numerous countries) of the World Wide Web Consortium; marks of W3C are registered and held by its host institutions MIT, ERCIM, and Keio.
+
+1. Many web sites only support a single User Agent or computing platform.
+
+2. Some browsers, such as Internet Explorer, do not fully support standards and require "hacks" to render content appropriately.
+
+3. Many developers cannot afford to implement multiple versions of document in order to accommodate incompatibilities between browsers.
+
+4. In order to reach the widest audience, web sites must be accessible and usable by everyone, including persons who are disabled.
+
+5. Accessibility requires a separation of logic from presentation.
+
+6. The Semantic Web is built on this same principle of separation.</description>
+  <mission>To eliminate browsers that refuse to observe web standards and work against the expansion of the Semantic Web</mission>
+  <name>Promote Web Standards</name>
+  <canonical-url>http://www.causes.com/causes/2742</canonical-url>
+  <member-count type="integer">589</member-count>
+  <total-raised type="decimal">0.02</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/f0/TS/T1/4h/Pr/w6/BV5S.jpg</photo-url>
+</cause>

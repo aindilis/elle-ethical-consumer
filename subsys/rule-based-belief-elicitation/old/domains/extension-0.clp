@@ -1,0 +1,289 @@
+(deffacts tags
+ (tag automotive)
+ (tag character)
+ (tag chores)
+ (tag employment)
+ (tag family)
+ (tag finances)
+ (tag health)
+ (tag home)
+ (tag information-technology)
+ (tag insurance)
+ (tag mail)
+ (tag nutrition)
+ (tag personal)
+ (tag skill-building)
+ )
+
+(deftemplate address
+ (slot name)
+ (slot firstname)
+ (slot middle_initial)
+ (slot lastname)
+ (slot address1)
+ (slot address2)
+ (slot city)
+ (slot county)
+ (slot state)
+ (slot zipcode (type INTEGER))
+ (slot country)
+ )
+
+(deftemplate debt
+ (slot debtor (type SYMBOL))
+ (slot creditor (type SYMBOL))
+ (slot amount (type INTEGER))
+ (slot type (allowed-values Student-Loan Normal Medical))
+ )
+
+(defrule is-alive
+ "A person who is not dead is alive"
+ (person ?person)
+ (not (is-dead ?person))
+ =>
+ (tag health)
+ (assert (is-alive ?person)))
+
+(defrule consider-foodstamps 
+ "An Illinois resident without a job who is not disqualified from
+receiving foodstamps should attempt to receive them."
+ (address (name ?person) (state Illinois))
+ (not (has-job ?person ?job))
+ (not (disqualified-from-receiving-foodstamps ?person))
+ =>
+ (tag finances)
+ (tag nutrition)
+ (assert (should-have-goal ?person (str-cat "(is-receiving-foodstamps " ?person ")"))))
+
+(defrule consider-unemployment
+ "A US citizen without a job should attempt to get federal
+unemployment benefits."
+ (citizen-of ?person USA)
+ (address (name ?person) (country USA))
+ (not (has-job ?person ?job))
+ =>
+ (tag employment)
+ (tag finances)
+ (assert (should-have-goal ?person (str-cat "(is-receiving-unemployment " ?person ")"))))
+
+(defrule consider-emergency-health-insurance 
+ ""
+ (not (has-health-insurance ?person ?insurance))
+ (address (name ?person) (country USA))
+ =>
+ (tag health)
+ (tag insurance)
+ (assert (should-have-goal ?person (str-cat "(has-disaster-health-insurance " ?person ")"))))
+
+(defrule is-related-to
+ "Should be able to determine when someone is related to someone else"
+ (or
+  (father-of ?person1 ?person2)
+  (mother-of ?person1 ?person2)
+  (brother-of ?person1 ?person2)
+  (sister-of ?person1 ?person2)
+  )
+ =>
+ (tag family)
+ (assert (is-related-to ?person1 ?person2))
+ (assert (is-related-to ?person2 ?person1))
+ )
+
+(defrule has-personal-relationship
+ ""
+ (is-alive ?person1)
+ (is-alive ?person2)
+ (or
+  (is-related-to ?person1 ?person2)
+  (has-friend ?person1 ?person2)
+  (has-friend ?person2 ?person1)
+  )
+ =>
+ (tag personal)
+ (assert (has-personal-relationship ?person1 ?person2))
+ (assert (has-personal-relationship ?person2 ?person1))
+ )
+
+(defrule has-support-network
+ "Has at least say three not bad personal relationship"
+ ;; quantify the strength of the network eventually
+ (has-personal-relationship ?person1 ?person2)
+ (has-personal-relationship ?person1 ?person3&~?person2)
+ (has-personal-relationship ?person1 ?person4&~?person2|~?person3)
+ (relationship-strength ?person1 ?person2 ~bad)
+ (relationship-strength ?person1 ?person3 ~bad)
+ (relationship-strength ?person1 ?person4 ~bad)
+ =>
+ (tag personal)
+ (assert (has-support-network ?person1)))
+
+;; deal with threat of repossession
+
+(defrule has-access-to-shelter-auto 
+ "An automobile can be used as a shelter"
+ ;; add climate exceptions
+ (has-automobile ?person ?auto)
+ (runs ?auto)
+ (is-street-legal ?auto)
+ =>
+ (tag automotive)
+ (tag home)
+ (assert (has-shelter ?person ?auto)))
+
+(defrule has-access-to-shelter-normal
+ "A residence can be used as a shelter"
+ (or
+  (has-house ?person ?building)
+  (has-apartment ?person ?building)
+  )
+ =>
+ (tag home)
+ (assert (has-shelter ?person ?building)))
+
+(defrule has-access-to-shelter-friend
+ "A strong friend with a shelter can provide a shelter"
+ ;; add exceptions for shelter maximum capacity
+ (has-personal-relationship ?person1 ?person2)
+ (relationship-strength ?person1 ?person2 good)
+ (has-shelter ?person2 ?shelter)
+ =>
+ (tag home)
+ (assert (has-shelter ?person1 ?shelter)))
+
+(defrule has-transportation
+ (or
+  (and
+   (has-automobile ?person ?auto)
+   (has-cash-on-hand ?person)   
+   )
+  (has-bicycle ?person ?bicycle)
+  )
+ =>
+ (tag automotive)
+ (assert (has-transportation ?person)))
+
+(defrule has-access-to-computer-laptop
+ (has-laptop ?person ?laptop)
+ =>
+ (tag information-technology)
+ (assert (has-access-to-computer ?person ?laptop)))
+
+(defrule has-access-to-computer-normal
+ (has-computer ?person ?computer)
+ =>
+ (tag information-technology)
+ (assert (has-access-to-computer ?person ?computer)))
+
+(defrule has-access-to-computer-library
+ (has-library-card ?person ?library)
+ (has-transportation ?person)
+ (has-computer ?library ?computer)
+ ;; add something about a library being within range
+ =>
+ (tag information-technology)
+ (assert (has-access-to-computer ?person ?computer)))
+
+(defrule has-access-to-a-bank-account
+ (or
+  (has-bank-account ?person1 ?account1)
+  (and
+   (relationship-strength ?person1 ?person2 good)
+   (has-bank-account ?person2 ?account2)
+   )
+  )
+ =>
+ (tag finances)
+ (assert (has-access-to-a-bank-account ?person1)))
+
+(defrule internet-based-ordering
+ (and
+  (has-access-to-computer ?person ?computer)
+  (has-access-to-bank-account ?person ?account)
+  )
+ =>
+ (tag finances)
+ (assert (can-order-from-the-internet ?person)))
+
+(defrule can-run-action-planner-locally 
+ (has-access-to-computer ?person ?computer)
+ =>
+ (tag information-technology)
+ (assert (can-run-action-planner ?person ?computer)))
+
+(defrule has-job
+ (or
+  (has-parttime-job ?person ?job)
+  (has-fulltime-job ?person ?job))
+ =>
+ (tag employment)
+ (assert (has-job ?person ?job)))
+
+(defrule find-inexpensive-healthcare
+ (not (has-job ?person ?job))
+ (has-medical-condition ?person ?condition)
+ =>
+ (tag health)
+ (tag insurance)
+ (assert (should-have-goal ?person (str-cat "(has-inexpensive-healthcare " ?person ")"))))
+
+(defrule use-illinois-dhs-job-placement-service
+ (has-medical-condition ?person ?condition)
+ (condition-type ?condition mental-illness)
+ (has-shelter ?person ?shelter)
+ (address (name ?person) (state Illinois))
+ (not (has-job ?person ?job))
+ =>
+ (tag employment)
+ (assert (should-have-goal ?person (str-cat "(has-used-illinois-dhs-job-placement-service " ?person ")"))))
+
+(defrule has-student-loan-debt
+ (person ?person)
+ (debt (debtor ?person) (type Student-Loan))
+ =>
+ (tag finances)
+ (assert (has-student-loan-debt ?person)))
+
+(defrule should-track-finances
+ (has-goal ?person fulfill-all-responsibilities)
+ (not (has-financial-records ?person ?records))
+ =>
+ (tag finances)
+ (assert (should-have-goal ?person (str-cat "(is-tracking-finances " ?person ")"))))
+
+(defrule take-care-of-dependants
+ (has-dependant ?person1 ?person2)
+ =>
+ (tag family)
+ (tag finances)
+ (assert (must-ensure-well-being-of ?person1 ?person2)))
+
+(defrule pay-taxes
+ (address (name ?person) (country USA))
+ (not (is-minor ?person))
+ =>
+ (tag finances)
+ (assert (must-pay-taxes ?person)))
+
+(defrule usability-encumbrance
+ (has-medical-condition ?person blindness)
+ =>
+ (tag health)
+ (assert (has-usability-encumbrance ?person)))
+
+(defrule have-a-financial-plan
+ (person ?person)
+ (not (has-financial-plan ?person ?plan))
+ =>
+ (tag finances)
+ (assert (should-have-goal ?person (str-cat "(has-financial-plan " ?person ")"))))
+
+(defrule the-vna-may-help
+ (is-being-treated-by-the-VNA ?person)
+ =>
+ (assert (has-inexpensive-healthcare ?person)))
+
+; (defrule listing-beneficiaries-on-bank-accounts 
+;  "If you have a considerable savings in a bank account, you should
+; consider naming a beneficiary to receive that savings in the event
+; that you die"
+;  )

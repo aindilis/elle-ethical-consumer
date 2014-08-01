@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>Here is a proof that one equals two.
+
+consider
+x = y -&gt; start with this assertion
+
+x*x = x* y -&gt; now multiply both sides by x
+
+x^2 = xy -&gt; x^2 is x squared
+
+x^2 - y^2 = xy - y^2 -&gt; subtract y^2 from both sides
+
+(x - y)(x + y) = y(x - y) -&gt; factor both sides
+
+notice that (x - y) occurs on both sides so we
+can cancel or divide both sides by (x - y)
+
+thus we have
+
+x + y = y -&gt; after canceling the (x - y)
+
+but our original assertion we have x = y
+thus substituting we have
+
+y + y = y
+or
+2y = 1y
+
+cancel the y on both sides
+
+2 = 1 
+
+1. The Count from Sesame Street represents the pinnacle of amorality in deception
+
+2. Finger counting is fundamentally flawed.
+
+3. Unfortunately, women have 2 mouths, which explain why they talk too much.
+
+4. "One-potato-two" is completely pointless.
+
+5. When I order a new tire for my unicycle, I get 2.
+
+6. People only have 1 eye, 2 belly buttons, 1 arm and 1 leg.
+
+7. "2 for 1" sales are the ultimate in deceptive marketing strategies, since you're paying the same price either way. It can be "2 for 2", "1 for 1", or "1 for 2". Or something like that.
+
+8. 1+1 is 2. But 1=2. 1+1 is 4. So 2=4. 1=2=4.
+
+9. When there is one Earth, there must also be another. Thus true with the universe as a whole. This concludes that you have a clone existing somewhere in the other universe...
+
+10. You actually huffed 2 kittens not 1. (Even though you didn't inhale)</description>
+  <mission>Inform the general public that 1=2!</mission>
+  <name>1=2 Proof</name>
+  <canonical-url>http://www.causes.com/causes/9436</canonical-url>
+  <member-count type="integer">14</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/Wf/l4/YV/iX/hS/Pm/0pdS.jpg</photo-url>
+</cause>

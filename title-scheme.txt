@@ -1,0 +1,71 @@
+each portion of the title can be determined individually.
+
+SUBJECT:
+if(single company)
+subject = company name
+if(multiple companies && same rating)
+subject = group name *
+if(multiple companies && different ratings)
+subject = source name
+
+VERB:
+if(single company)
+verb = promotes, impedes, on
+if(multiple companies && same rating)
+verb = promote, impede, on
+if(multiple companies && different ratings)
+verb = reviews
+
+OBJECT:
+if(subcategory exists)
+object = subcategory
+else
+object = ??? **
+
+*: group name will most likely have to be filled in by the reviewer.  If the companies are related, their relation will be expressed here (food producers, cell phone companies, retailers, etc)
+
+**: for the object, either the reviewer should always assign a subcategory for each point, or will have to enter the object in a field when there is no subcategory.
+
+
+We found an additional issue with this schema however.  Subcategories sometimes imply a positive issue and sometimes a negative issue.  For example:
+google promotes workers rights
+google promotes pollution
+So we will need either an assignment on subcategories for when the verbs need to be reversed, or supply custom verbs for each subcategory.  The former obviously being the simpler solution.
+workers rights: FlipVerbs = false
+pollution: FlipVerbs = true
+
+
+for the GUI, each segment could be its own editable text field to reduce the work on the reviewer.  in addition to this, a total override title field could be added for when the schema completely breaks down.
+
+example GUI
++--------------------------------------------------------+
+|                                                          |
+|    O |_subject_| |_verb_| |_object_|        |
+|                                                          |
+|    O |____title_override__________|      |
++--------------------------------------------------------+
+
+Examples:
+
+Cat- workers rights
+Companies-
+motorola +1
+
+title: motorola promotes workers rights
+
+
+cat- fair trade
+companies-
+purdue  -1
+tyson  -1
+
+title: chicken producers impede fair trade
+
+
+cat- animal rights
+companies-
+apple -1
+walmart 0
+toyota +1
+
+title: Green America reviews animal rights

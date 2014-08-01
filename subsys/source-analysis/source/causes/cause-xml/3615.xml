@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>Jordan is constantly out of beer, so let's get him some and make him happy.
+
+1. Beer is good
+
+2. Jordan needs more beer</description>
+  <mission>get Jordan some beer</mission>
+  <name>The Beer Cause</name>
+  <canonical-url>http://www.causes.com/causes/3615</canonical-url>
+  <member-count type="integer">30</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/RZ/z8/J0/kb/1p/QI/WjiS.jpg</photo-url>
+</cause>

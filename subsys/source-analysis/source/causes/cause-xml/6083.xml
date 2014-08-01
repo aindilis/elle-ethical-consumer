@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>Bryce is poor and needs money to spend on beer.  It would be great for you to make a donation to my beer drinking campeign.  
+
+1. Bryce MUST drink beer
+
+2. He must be drunk 4/7 days of the week</description>
+  <mission>Get beer money!</mission>
+  <name>Bryce Beer Fund</name>
+  <canonical-url>http://www.causes.com/causes/6083</canonical-url>
+  <member-count type="integer">11</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/pv/74/07/YL/Bh/aC/OioS.jpg</photo-url>
+</cause>

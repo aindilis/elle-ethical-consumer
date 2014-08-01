@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>This is a not a real event. 
+
+1. test
+
+2. test
+
+3. test</description>
+  <mission>test test test test test</mission>
+  <name>Test Event</name>
+  <canonical-url>http://www.causes.com/causes/5712</canonical-url>
+  <member-count type="integer">1</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/zP/ed/lH/wi/Dp/Je/UWQS.jpg</photo-url>
+</cause>

@@ -1,0 +1,20 @@
+#!/usr/bin/perl -w
+
+use Com::elle::BLeaf::Creator;
+use UniLang::Agent::Agent;
+use UniLang::Util::Message;
+
+$UNIVERSAL::agent = UniLang::Agent::Agent->new
+  (
+   Name => "BLeaf-Creator",
+   ReceiveHandler => \&Receive,
+  );
+$UNIVERSAL::bleafcreator = Com::elle::BLeaf::Creator->new();
+
+sub Receive {
+  my %args = @_;
+  $command = $args{Message}->Contents;
+  $UNIVERSAL::bleafcreator->ProcessCommand($command);
+}
+
+$UNIVERSAL::bleafcreator->Execute;

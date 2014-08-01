@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>Ilia has an old computer. Ilia has no money. Ilia needs a new computer. Help Ilia buy a new computer.
+
+1. Ilia must have a new computer.
+
+2. The computer must be new
+
+3. Ilia must not spend any of his own money
+
+4. The computer must not be a Dell</description>
+  <mission>buy Ilia a new computer</mission>
+  <name>A New Computer for Ilia</name>
+  <canonical-url>http://www.causes.com/causes/912</canonical-url>
+  <member-count type="integer">2</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/H4e/zdwS.jpg</photo-url>
+</cause>

@@ -1,0 +1,30 @@
+<proclamation>
+  <source>Greenpeace</source>
+  <public-key></public-key>
+  <items>
+    <item>
+      <title>Do not buy PNY products</title>
+      <logic>
+	<assert>
+	  (implies 
+	   (Likes ?agent1
+	    (Facebook-Cause-fn "http://api.causes.com/causes/72910.xml")) 
+	   (Obligatory
+	    (Boycott ?agent1
+	     (Company-fn "PNY"))))
+  	</assert>
+	 <!-- replace with SWRL, OWL or similar -->
+      </logic>
+      <reason-given>
+	<reason>
+	  This cause says that X should be the case and action Y would
+	  be a good way to achieve X, but this company is against
+	  action Y.
+	</reason>
+	<source>
+	  http://www.greenpeace.com
+	</source>
+      </reason-given>
+    </item>
+  </items>
+</proclamation>

@@ -1,0 +1,26 @@
+To use the application you must first start the UniLang system.  You
+can do this by starting a terminal and running:
+
+/var/lib/myfrdcsa/codebases/internal/unilang/start -s -u localhost 9000 -c
+
+Or you can start Emacs and run "C-c r u".  Only start Emacs if you
+know how to use it.
+
+
+
+Basically first off check if it's reviewed or not, if not reviewed,
+find next unreviewed.  Shows you it's reviewed.  Show companies
+
+What if the US is a country, not a company.
+
+If it's a company named entity which isn't selected, select the text
+and then middle mouse button click to launch the add menu and go to ->
+Add -> Company to add a company named entity.
+
+Normalize companies
+
+If you know what the company is, and you know what the right name is.
+
+If it is a company, but none of them, select none of the above.
+
+Then Write to DB

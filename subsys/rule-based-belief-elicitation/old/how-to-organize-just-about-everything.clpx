@@ -1,0 +1,478 @@
+(ruleset "GET ORGANIZED")
+(rule 1 "Get Organized")
+
+(has-skill ?person set-priorities)
+(has-skill ?person write-effective-to-do-list)
+(has-skill ?person run-errands-efficiently)
+(has-skill ?person meet-deadlines)
+
+(has-reminder-system ?person ?system)
+
+(contacts-are-organized ?person)
+
+(has-skill ?person say-no)
+
+(has-skill ?person set-goal)
+
+(home-and-work-are-balanced ?person)
+
+(has-weight-loss-plan ?person)
+
+(defrule is-overweight
+ ""
+ (is-overweight ?person)
+ =>
+ (should-have-goal ?person (not (is-overweight ?person)))
+ (should-have-goal ?person (has-weight-loss-plan ?person))
+ )
+
+(morning-routine-is-streamlined ?person)
+
+(defrule chore-schedule
+ "if you live with your children, and they are of the correct age,
+develop a chore schedule for them"
+ (lives-with ?person1 ?person2)
+ (is-child-of ?person1 ?person2)
+ =>
+ (assert (should-have-goal ?person2 (has-chore-schedule ?person2)))
+ )
+
+(chores-are-organized ?person)
+(has-skill ?person avoid-being-late)
+
+(has-healthy-lifestyle ?person)
+(has-plan-to-avoid-junk-food ?person)
+
+(has-workout-schedule ?person)
+
+(has-doctor-visit-schedule ?person)
+
+(has-prepared-for-cold-and-flu-season ?person)
+
+(defrule cold-and-flu-season
+ "make preparations for the cold and flu season"
+ =>
+ )
+
+(has-planned-social-calendar ?person)
+
+(has-place-for-keys ?person)
+
+(defrule household-clutter
+ ""
+ (has-semipermanent-residence ?person)
+ =>
+ (assert (should-have-goal ?person (is-on-top-of-household-clutter ?person)))
+ )
+
+(sock-drawer-is-organized ?person)
+
+(junk-drawer-is-organized ?person)
+
+(medicine-cabinet-is-organized ?person)
+
+(has-car-maintenance-schedule ?person)
+
+(garbage-and-recyclables-are-organized ?person)
+
+(has-rechargeable-batteries ?person)
+
+(car-is-clean-and-orderly ?person)
+
+(defrule keeping-car-clean
+ (has-vehicle ?person ?vehicle)
+ =>
+ (assert (should-have-goal ?person (car-is-clean-and-orderly ?person)))
+ )
+
+(has-online-sales-procedures ?person)
+
+(bookshelves-are-organized ?person)
+
+(photos-are-organized ?person)
+(closets-are-clean ?person)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(organizable contacts)
+(organizable chores)
+(organizable sock-drawer)
+(organizable junk-drawer)
+(organizable medicine-cabinet)
+(organizable garbage-and-recyclables)
+(organizable bookshelves)
+(organizable photos)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(ruleset "GET ORGANIZED")
+(rule 1 "Get Organized")
+(rule 2 "Set Priorities")
+(rule 3 "Write an Effective To-Do List")
+(rule 4 "Run Errands Efficiently")
+(rule 5 "Hire a Professional Organizer")
+(rule 6 "Meet Deadlines")
+(rule 7 "Deal With a Flood of Mail")
+(rule 8 "Overcome Chronic Disorganization")
+(rule 9 "Organize Your Thoughts")
+(rule 10 "Set Up a Reminder System")
+(rule 11 "Organize Your Contacts")
+(rule 12 "Get Rid of What You Don't Want")
+(rule 13 "Say No Without Feeling Guilty")
+(rule 14 "Balance Home and Work")
+(rule 15 "Live With Less")
+(rule 16 "Set Goals")
+(ruleset "LIFE'S NITTY GRITTY")
+(rule 17 "Streamline Your Morning Routine")
+(rule 18 "Organize a Chore Schedule for Kids")
+(rule 19 "Organize Your Chores")
+(rule 20 "Never Be Late Again")
+(rule 21 "Schedule Television Watching")
+(rule 22 "Design a Healthy Lifestyle")
+(rule 23 "Plan to Avoid Junk Food")
+(rule 24 "Choose a Weight Loss Plan")
+(rule 25 "Design Your Workout Schedule")
+(rule 26 "Schedule Doctor Visits")
+(rule 27 "Prepare for Cold and Flu Season")
+(rule 28 "Get a Drastic Makeover")
+(rule 29 "Arrange to Meet an Online Date")
+(rule 30 "Plan the Perfect Date")
+(rule 31 "Mastermind a Breakup")
+(rule 32 "Plan Your Social Calendar")
+(rule 33 "Meet Mr. or Ms. Right")
+(rule 34 "Marry Up")
+(ruleset "DAILY DEBRIS")
+(rule 35 "Find Your Keys")
+(rule 36 "Tidy Up in 15 Minutes")
+(rule 37 "Conquer Cluttter")
+(rule 38 "Actually See the Bottom of Your Purse")
+(rule 39 "Organize Your Shoes")
+(rule 40 "Sort Your Sock Drawer")
+(rule 41 "Return Rentals on Time")
+(rule 42 "Take Control of Your Junk Drawer")
+(rule 43 "Organize the Medicine Cabinet")
+(rule 44 "Schedule Car Maintenance")
+(rule 45 "Organize Pet Supplies")
+(rule 46 "Manage Garbage and Recyclables")
+(rule 47 "Prepare Crab 'n' Go Activity Bags")
+(rule 48 "Keep Your Car Clean and Orderly")
+(rule 49 "Deal With a Pack Rat")
+(rule 50 "Sell Stuff Online")
+(rule 51 "Organize Your Bookshelves")
+(rule 52 "Categorize Newspaper and Magazine Clippings")
+(rule 53 "Organize Your Photos")
+(rule 54 "Arrange Photos and Pictures")
+(rule 55 "Arrange an Art Colection")
+(rule 56 "End Collection Chaos")
+(rule 57 "Live Better Through Labelling")
+(rule 58 "Organize Jewelry")
+(ruleset "HEART & HOME")
+(rule 59 "Plan Your Dream Kitchen")
+(rule 60 "Conquer Your Closets")
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(ruleset "GET ORGANIZED")
+(rule 1 "Get Organized")
+(rule 2 "Set Priorities")
+(rule 3 "Write an Effective To-Do List")
+(precondition (rule 4 "Run Errands Efficiently") (has-transportation ?person))
+(precondition (rule 5 "Hire a Professional Organizer") (has-discretionary-funds ?person))
+(rule 6 "Meet Deadlines")
+(precondition (rule 7 "Deal With a Flood of Mail") (has-mailbox ?person))
+(precondition (rule 8 "Overcome Chronic Disorganization") (is-disorganized ?person))
+(rule 9 "Organize Your Thoughts")
+(rule 10 "Set Up a Reminder System")
+(rule 11 "Organize Your Contacts")
+(rule 12 "Get Rid of What You Don't Want")
+(rule 13 "Say No Without Feeling Guilty")
+(rule 14 "Balance Home and Work")
+(rule 15 "Live With Less")
+(rule 16 "Set Goals")
+(ruleset "LIFE'S NITTY GRITTY")
+(rule 17 "Streamline Your Morning Routine")
+(precondition (rule 18 "Organize a Chore Schedule for Kids") (and (has-child ?person1 ?person2) (lives-with ?person1 ?person2)))
+(rule 19 "Organize Your Chores")
+(rule 20 "Never Be Late Again")
+(rule 21 "Schedule Television Watching")
+(rule 22 "Design a Healthy Lifestyle")
+(rule 23 "Plan to Avoid Junk Food")
+(rule 24 "Choose a Weight Loss Plan")
+(rule 25 "Design Your Workout Schedule")
+(rule 26 "Schedule Doctor Visits")
+(rule 27 "Prepare for Cold and Flu Season")
+(rule 28 "Get a Drastic Makeover")
+(rule 29 "Arrange to Meet an Online Date")
+(rule 30 "Plan the Perfect Date")
+(rule 31 "Mastermind a Breakup")
+(rule 32 "Plan Your Social Calendar")
+(rule 33 "Meet Mr. or Ms. Right")
+(rule 34 "Marry Up")
+(ruleset "DAILY DEBRIS")
+(rule 35 "Find Your Keys")
+(rule 36 "Tidy Up in 15 Minutes")
+(rule 37 "Conquer Cluttter")
+(rule 38 "Actually See the Bottom of Your Purse")
+(rule 39 "Organize Your Shoes")
+(rule 40 "Sort Your Sock Drawer")
+(rule 41 "Return Rentals on Time")
+(rule 42 "Take Control of Your Junk Drawer")
+(rule 43 "Organize the Medicine Cabinet")
+(rule 44 "Schedule Car Maintenance")
+(rule 45 "Organize Pet Supplies")
+(rule 46 "Manage Garbage and Recyclables")
+(rule 47 "Prepare Crab 'n' Go Activity Bags")
+(rule 48 "Keep Your Car Clean and Orderly")
+(rule 49 "Deal With a Pack Rat")
+(rule 50 "Sell Stuff Online")
+(rule 51 "Organize Your Bookshelves")
+(rule 52 "Categorize Newspaper and Magazine Clippings")
+(rule 53 "Organize Your Photos")
+(rule 54 "Arrange Photos and Pictures")
+(rule 55 "Arrange an Art Colection")
+(rule 56 "End Collection Chaos")
+(rule 57 "Live Better Through Labelling")
+(rule 58 "Organize Jewelry")
+(ruleset "HEART & HOME")
+(rule 59 "Plan Your Dream Kitchen")
+(rule 60 "Conquer Your Closets")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(ruleset "GET ORGANIZED")
+; (rule 1 "Get Organized")
+; (rule 2 "Set Priorities")
+; (rule 3 "Write an Effective To-Do List")
+; (rule 4 "Run Errands Efficiently")
+(rule 5 "Hire a Professional Organizer")
+; (rule 6 "Meet Deadlines")
+; (rule 7 "Deal With a Flood of Mail")
+; (rule 8 "Overcome Chronic Disorganization")
+; (rule 9 "Organize Your Thoughts")
+; (rule 10 "Set Up a Reminder System")
+; (rule 11 "Organize Your Contacts")
+; (rule 12 "Get Rid of What You Don't Want")
+;? (rule 13 "Say No Without Feeling Guilty")
+; (rule 14 "Balance Home and Work")
+; (rule 15 "Live With Less")
+; (rule 16 "Set Goals")
+(ruleset "LIFE'S NITTY GRITTY")
+; (rule 17 "Streamline Your Morning Routine")
+(rule 18 "Organize a Chore Schedule for Kids")
+; (rule 19 "Organize Your Chores")
+; (rule 20 "Never Be Late Again")
+(rule 21 "Schedule Television Watching")
+; (rule 22 "Design a Healthy Lifestyle")
+; (rule 23 "Plan to Avoid Junk Food")
+; (rule 24 "Choose a Weight Loss Plan")
+; (rule 25 "Design Your Workout Schedule")
+; (rule 26 "Schedule Doctor Visits")
+; (rule 27 "Prepare for Cold and Flu Season")
+(rule 28 "Get a Drastic Makeover")
+(rule 29 "Arrange to Meet an Online Date")
+(rule 30 "Plan the Perfect Date")
+(rule 31 "Mastermind a Breakup")
+(rule 32 "Plan Your Social Calendar")
+(rule 33 "Meet Mr. or Ms. Right")
+(rule 34 "Marry Up")
+(ruleset "DAILY DEBRIS")
+; (rule 35 "Find Your Keys")
+; (rule 36 "Tidy Up in 15 Minutes")
+; (rule 37 "Conquer Cluttter")
+(rule 38 "Actually See the Bottom of Your Purse")
+(rule 39 "Organize Your Shoes")
+; (rule 40 "Sort Your Sock Drawer")
+; (rule 41 "Return Rentals on Time")
+; (rule 42 "Take Control of Your Junk Drawer")
+; (rule 43 "Organize the Medicine Cabinet")
+; (rule 44 "Schedule Car Maintenance")
+(rule 45 "Organize Pet Supplies")
+; (rule 46 "Manage Garbage and Recyclables")
+(rule 47 "Prepare Crab 'n' Go Activity Bags")
+; (rule 48 "Keep Your Car Clean and Orderly")
+(rule 49 "Deal With a Pack Rat")
+; (rule 50 "Sell Stuff Online")
+; (rule 51 "Organize Your Bookshelves")
+; (rule 52 "Categorize Newspaper and Magazine Clippings")
+; (rule 53 "Organize Your Photos")
+(rule 54 "Arrange Photos and Pictures")
+(rule 55 "Arrange an Art Colection")
+(rule 56 "End Collection Chaos")
+(rule 57 "Live Better Through Labelling")
+(rule 58 "Organize Jewelry")
+(ruleset "HEART & HOME")
+(rule 59 "Plan Your Dream Kitchen")
+; (rule 60 "Conquer Your Closets")
+
+61 Organize the Linen Closet
+62 Organize Your Laundry Center
+63 Create a Sewing Center
+64 Get Ready for the Housecleaner
+65 Organize Cleaning Supplies
+66 Organize Spring Cleaning
+67 Keep the Family Room Organized
+68 Set Up a Bathroom Schedule
+69 Organize Bathrooms
+70 Organize Entryways and Mudrooms
+71 Organize a Dorm Room
+72 Organize Your School Locker
+73 Make Your Home Safe for Small Children
+74 Organize Kids' Rooms
+75 Organize Sports Equipment
+76 Organize Kids' Play Spaces
+77 Safeguard Your Home Against Allergens
+78 Prepare for Skyrocketing Energy Costs
+79 Use Feng Shui to Organize Your Home
+80 Design a New Home With Feng Shui
+81 Design Your House
+82 Use Home Design and Planning Software
+83 Establish Your Home's Space Plan
+84 Incorporate Universal Design Principles
+85 Plan a Remodel
+86 Plan a Multimedia Center
+87 Turn a Basement Into a Media Room or Playroom
+88 Organize the Attic
+89 Organize the Basement
+90 Organize the Garage
+91 Organize a Toolbox
+92 Set Up a Woodshop
+93 Organize Your Wine Collection
+94 Plan a Successful Estate Sale
+95 Plan a Yard or Garage Sale
+96 Prepare Your Home for Sale
+97 Plan a Move
+98 Downsize Your House
+99 Organize a Studio or Small Apartment
+100 Manage Warranty Documents
+101 Manager Home-Improvement Paperwork
+102 Merge Two Households
+103 Decorate for the Seasons
+104 Prepare a  Vacation Home for the Off-Season
+105 Prepare Your Home for Nature's Worst
+ 
+YARD & GARDEN
+106 Prepare an Organic Vegetable Garden
+107 Plant a Kitchen Herb Garden
+108 Plan a Butterfly Garden
+109 Design a Bird Garden
+110 Design a Children's Garden
+111 Plant a Cut-Flower Garden
+112 Design a Shade Garden
+113 Design a Dry Garden
+114 Plan for a Long-Season Container Garden
+115 Organize Gardening Tools
+116 Add a Potting Bench to a Yard
+117 Schedule Fruit Tree Maintenance
+118 Lay Out a Sprinkler System
+119 Plan and Plant a Lawn
+120 Design a New Landscape
+121 Plan an Outdoor Kitchen
+122 Design a Deck or Patio
+123 Design a Water Feature
+124 Design a Garden Path
+125 Set Up a Compost System
+126 Winterize Plants
+127 Schedule Yard Work
+ 
+STORAGE SOLUTIONS
+128 Store ANything
+129 Store Bulk Purchases
+130 Storage Solutions for Any Room
+131 Cature More SStorage SPace
+132 Expand the Capacity fo a Small Room
+133 Organize Craft and Hooby Materials
+134 Organize Art Supplies
+135 Organize Gift Wrap and Seasonal Decorations
+136 Organize Kids' Schoolwork and Artwork
+137 Organize Movies, Music and Other Media
+138 Store China and Family Heirlooms
+139 Store Out-of-Season Clothes
+
+140 Store Your Wedding Dress and Other Textiles
+141 Store a Fur Coat
+142 Store Bicycles and Gear
+143 Store Ski Gear
+144 Organize Camping Equipment
+145 Store Paint and Other Hazardous Materials
+146 Organize a Storage Unit
+147 Store a Boat for the Winter
+148 Store a Car
+ 
+EDUCATION & CAREER
+
+149 Decide Which College is Right for You
+150 Get Into a  Top College or University
+151 Ace the College Admissions Tests
+152 Organize Your College Applications
+153 Plan Your Course of Study in College
+154 Organize a Research Paper
+155 Get Into Grad School
+156 Get Into an Elite Law School
+157 Prepare for the Bar Exam
+158 Get a Degree While You're Working
+159 Work at Home With Kids
+160 Go Back to Work After a Long Absence
+161 Set Up an Internship
+162 Plan a Sabbatical
+163 Work Abroad
+164 Join the Peace Corps
+165 Produce a Newsletter
+166 Organize Your Job Search
+167 Prepare for a Career Change
+168 Open a Restaurant
+169 Become a Physicist
+170 Become a Concert Violinist
+171 Become a Cowboy
+172 Become a Brain Surgeon
+173 Become a Rabbi
+174 Become a Catholic Nun
+175 Organize an Exhibition
+176 Develop a Reality-Show Concept
+177 Become a Talk-Show Host
+178 Become a Photojournalist
+179 Become a Movie Director
+180 Become a Model
+181 Become a Stunt Person
+182 Become a Tour Guide
+183 Organize an Archaeological Dig
+
+BUSINESS & WORK
+184 Conquer Your Paper Piles
+185 Create a Flawless Filing System
+186 Organize Your Briefcase
+187 Organize Your Desk
+188 Organize Your WOrkday
+189 Get a Handle on E-mail
+190 Organize Computer Files
+191 Schedule Appointments Efficiently
+192 Take Control of a Conference Call
+193 Prepare for a Meeting
+194 Prepare for a Salary Review
+195 Climb the Corporate Ladder Effecitvely
+196 Add a Workspace to Any Room
+197 Organize a Home Office
+198 Organize a Home Network
+199 Choose the Best Phone System
+200 Decide on an Accounting System
+201 Make a Networking Plan
+202 Plan Your Business Travel
+203 WRite a Business Plan
+204 Set Up a New Business
+205 Create a Marketing Plan
+206 Amass a Real-Estate Empire
+207 Polish Your Presentation Skills
+208 Prepare a Speech
+209 Prepare a Pitch to a Venture Capitalist
+210 Plan an IPO
+211 Delegate Responsibilities
+212 Hire an Employee
+213 Fire an Employee
+214 Pass on a Family Business
+215 Stay on Top of Your Sales Game
+216 Restructure a Company to Increase Profits
+217 Form a Board of Directors
+218 Organize a Shareholders Meeting
+219 Plan a Company Picnic
+220 Plan a Company Retreat

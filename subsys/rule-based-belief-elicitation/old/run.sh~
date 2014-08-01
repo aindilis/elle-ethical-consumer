@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# run clips with the default file
+
+echo '(batch "/var/lib/myfrdcsa/codebases/minor/elle-ethical-consumer/subsystems/electrofriend-expert-system/custom-clips-domains/base-1.clp")'
+cd /var/lib/myfrdcsa/codebases/minor/action-planner/subsystems/electrofriend-expert-system/clipsjni-0.3 &&
+ java -cp CLIPSJNI.jar -Djava.library.path=. CLIPSJNI.Environment

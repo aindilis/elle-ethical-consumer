@@ -1,0 +1,1351 @@
+Initializing sources...
+Initializing (Com/elle/)bLeaf/EvidenceGenerator/Source/Causes.pm...
+Initializing (Com/elle/)bLeaf/EvidenceGenerator/Source/EthicalConsumer.pm...
+Initializing (Com/elle/)bLeaf/EvidenceGenerator/Source/GreenAmerica.pm...
+Started loading
+Generating Language Model
+Generating IDF
+Done Generating Language Model
+Finished loading
+Loading sources...
+Loading GreenAmerica...
+Loading source: Green America
+$VAR1 = {
+          '398' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=398',
+                   'MajorSub' => undef,
+                   'ID' => '398',
+                   'CompanyName' => 'British Airways',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '276' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=276&MajorSub=1&CompanyName=True%20North',
+                   'MajorSub' => '1',
+                   'ID' => '276',
+                   'CompanyName' => 'True North',
+                   'CompanyNameHTMLEntities' => 'True%20North'
+                 },
+          '443' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=443',
+                   'MajorSub' => undef,
+                   'ID' => '443',
+                   'CompanyName' => 'Intercontinental Hotels Group',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '206' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=206&MajorSub=1&CompanyName=Wesson',
+                   'MajorSub' => '1',
+                   'ID' => '206',
+                   'CompanyName' => 'Wesson',
+                   'CompanyNameHTMLEntities' => 'Wesson'
+                 },
+          '407' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=407',
+                   'MajorSub' => undef,
+                   'ID' => '407',
+                   'CompanyName' => 'Comcast',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '358' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=358',
+                   'MajorSub' => undef,
+                   'ID' => '358',
+                   'CompanyName' => 'AOL',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '445' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=445',
+                   'MajorSub' => undef,
+                   'ID' => '445',
+                   'CompanyName' => 'Wyndham Worldwide',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '200' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=200',
+                   'MajorSub' => undef,
+                   'ID' => '200',
+                   'CompanyName' => 'Cargill',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '376' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=376',
+                   'MajorSub' => undef,
+                   'ID' => '376',
+                   'CompanyName' => 'Hanesbrand Inc.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '190' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=190',
+                   'MajorSub' => undef,
+                   'ID' => '190',
+                   'CompanyName' => 'Bank of America',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '272' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=272',
+                   'MajorSub' => undef,
+                   'ID' => '272',
+                   'CompanyName' => 'Nissan',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '233' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=233',
+                   'MajorSub' => undef,
+                   'ID' => '233',
+                   'CompanyName' => 'General Motors',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '437' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=437',
+                   'MajorSub' => undef,
+                   'ID' => '437',
+                   'CompanyName' => 'Pernod Ricard',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '259' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=259&MajorSub=1&CompanyName=Victoria%27s%20Secret%20%28Limited%20Brands%20subsidiary%29',
+                   'MajorSub' => '1',
+                   'ID' => '259',
+                   'CompanyName' => 'Victoria\'s Secret (Limited Brands subsidiary)',
+                   'CompanyNameHTMLEntities' => 'Victoria%27s%20Secret%20%28Limited%20Brands%20subsidiary%29'
+                 },
+          '298' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=298',
+                   'MajorSub' => undef,
+                   'ID' => '298',
+                   'CompanyName' => 'Toyota',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '194' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=194',
+                   'MajorSub' => undef,
+                   'ID' => '194',
+                   'CompanyName' => 'BMW',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '368' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=368',
+                   'MajorSub' => undef,
+                   'ID' => '368',
+                   'CompanyName' => 'Verizon',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '458' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=458',
+                   'MajorSub' => undef,
+                   'ID' => '458',
+                   'CompanyName' => 'The Cheesecake Factory',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '424' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=424',
+                   'MajorSub' => undef,
+                   'ID' => '424',
+                   'CompanyName' => 'Aetna',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '400' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=400',
+                   'MajorSub' => undef,
+                   'ID' => '400',
+                   'CompanyName' => 'Delta Air Lines, Inc',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '451' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=451',
+                   'MajorSub' => undef,
+                   'ID' => '451',
+                   'CompanyName' => 'Brinker\'s International Restaurants',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '220' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=220&MajorSub=1&CompanyName=Tom%20Ford',
+                   'MajorSub' => '1',
+                   'ID' => '220',
+                   'CompanyName' => 'Tom Ford',
+                   'CompanyNameHTMLEntities' => 'Tom%20Ford'
+                 },
+          '243' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=243',
+                   'MajorSub' => undef,
+                   'ID' => '243',
+                   'CompanyName' => 'IBM',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '231' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=231',
+                   'MajorSub' => undef,
+                   'ID' => '231',
+                   'CompanyName' => 'General Electric (GE)',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '395' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=395',
+                   'MajorSub' => undef,
+                   'ID' => '395',
+                   'CompanyName' => 'Novartis AG',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '343' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=343',
+                   'MajorSub' => undef,
+                   'ID' => '343',
+                   'CompanyName' => 'SunTrust Banks',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '287' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=287',
+                   'MajorSub' => undef,
+                   'ID' => '287',
+                   'CompanyName' => 'Sempra Energy',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '208' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=208&MajorSub=1&CompanyName=Dodge',
+                   'MajorSub' => '1',
+                   'ID' => '208',
+                   'CompanyName' => 'Dodge',
+                   'CompanyNameHTMLEntities' => 'Dodge'
+                 },
+          '434' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=434',
+                   'MajorSub' => undef,
+                   'ID' => '434',
+                   'CompanyName' => 'Humana',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '397' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=397',
+                   'MajorSub' => undef,
+                   'ID' => '397',
+                   'CompanyName' => 'American Airlines (AMR Corp)',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '275' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=275',
+                   'MajorSub' => undef,
+                   'ID' => '275',
+                   'CompanyName' => 'Peabody Energy',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '197' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=197',
+                   'MajorSub' => undef,
+                   'ID' => '197',
+                   'CompanyName' => 'Burger King',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '203' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=203',
+                   'MajorSub' => undef,
+                   'ID' => '203',
+                   'CompanyName' => 'Citigroup',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '261' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=261',
+                   'MajorSub' => undef,
+                   'ID' => '261',
+                   'CompanyName' => 'Lowe\'s',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '291' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=291',
+                   'MajorSub' => undef,
+                   'ID' => '291',
+                   'CompanyName' => 'Starbucks',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '442' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=442',
+                   'MajorSub' => undef,
+                   'ID' => '442',
+                   'CompanyName' => 'Hyatt',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '199' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=199&MajorSub=1&CompanyName=V8%20Beverages',
+                   'MajorSub' => '1',
+                   'ID' => '199',
+                   'CompanyName' => 'V8 Beverages',
+                   'CompanyNameHTMLEntities' => 'V8%20Beverages'
+                 },
+          '226' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=226',
+                   'MajorSub' => undef,
+                   'ID' => '226',
+                   'CompanyName' => 'Ford',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '211' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=211&MajorSub=1&CompanyName=Tone',
+                   'MajorSub' => '1',
+                   'ID' => '211',
+                   'CompanyName' => 'Tone',
+                   'CompanyNameHTMLEntities' => 'Tone'
+                 },
+          '431' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=431',
+                   'MajorSub' => undef,
+                   'ID' => '431',
+                   'CompanyName' => 'Southern Company',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '337' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=337',
+                   'MajorSub' => undef,
+                   'ID' => '337',
+                   'CompanyName' => 'Sanyo',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '432' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=432',
+                   'MajorSub' => undef,
+                   'ID' => '432',
+                   'CompanyName' => 'Blue Cross Blue Shield',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '409' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=409&MajorSub=1&CompanyName=Becks',
+                   'MajorSub' => '1',
+                   'ID' => '409',
+                   'CompanyName' => 'Becks',
+                   'CompanyNameHTMLEntities' => 'Becks'
+                 },
+          '459' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=459',
+                   'MajorSub' => undef,
+                   'ID' => '459',
+                   'CompanyName' => 'Alaska Airlines',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '284' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=284&MajorSub=1&CompanyName=Tom%20Thumb',
+                   'MajorSub' => '1',
+                   'ID' => '284',
+                   'CompanyName' => 'Tom Thumb',
+                   'CompanyNameHTMLEntities' => 'Tom%20Thumb'
+                 },
+          '247' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=247',
+                   'MajorSub' => undef,
+                   'ID' => '247',
+                   'CompanyName' => 'Jones Apparel',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '204' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=204',
+                   'MajorSub' => undef,
+                   'ID' => '204',
+                   'CompanyName' => 'Coca-Cola',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '289' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=289&MajorSub=1&CompanyName=Yano',
+                   'MajorSub' => '1',
+                   'ID' => '289',
+                   'CompanyName' => 'Yano',
+                   'CompanyNameHTMLEntities' => 'Yano'
+                 },
+          '241' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=241',
+                   'MajorSub' => undef,
+                   'ID' => '241',
+                   'CompanyName' => 'Honda',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '198' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=198&MajorSub=1&CompanyName=Yoo%2DHoo',
+                   'MajorSub' => '1',
+                   'ID' => '198',
+                   'CompanyName' => 'Yoo-Hoo',
+                   'CompanyNameHTMLEntities' => 'Yoo%2DHoo'
+                 },
+          '346' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=346',
+                   'MajorSub' => undef,
+                   'ID' => '346',
+                   'CompanyName' => 'Toshiba Corp.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '389' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=389',
+                   'MajorSub' => undef,
+                   'ID' => '389',
+                   'CompanyName' => 'Clorox Company',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '401' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=401',
+                   'MajorSub' => undef,
+                   'ID' => '401',
+                   'CompanyName' => 'United Airlines (UAL Corporation)',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '186' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=186',
+                   'MajorSub' => undef,
+                   'ID' => '186',
+                   'CompanyName' => 'Apple',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '339' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=339',
+                   'MajorSub' => undef,
+                   'ID' => '339',
+                   'CompanyName' => 'Sony Corp.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '280' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=280',
+                   'MajorSub' => undef,
+                   'ID' => '280',
+                   'CompanyName' => 'Puma',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '273' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=273',
+                   'MajorSub' => undef,
+                   'ID' => '273',
+                   'CompanyName' => 'Nordstrom',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '236' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=236&MajorSub=1&CompanyName=T%2EG%2EI%2E%20Friday%27s',
+                   'MajorSub' => '1',
+                   'ID' => '236',
+                   'CompanyName' => 'T.G.I. Friday\'s',
+                   'CompanyNameHTMLEntities' => 'T%2EG%2EI%2E%20Friday%27s'
+                 },
+          '202' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=202&MajorSub=1&CompanyName=Fresh%20Express',
+                   'MajorSub' => '1',
+                   'ID' => '202',
+                   'CompanyName' => 'Fresh Express',
+                   'CompanyNameHTMLEntities' => 'Fresh%20Express'
+                 },
+          '361' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=361',
+                   'MajorSub' => undef,
+                   'ID' => '361',
+                   'CompanyName' => 'Bridgestone Firestone',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '249' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=249&MajorSub=1&CompanyName=Zesta%20Crackers',
+                   'MajorSub' => '1',
+                   'ID' => '249',
+                   'CompanyName' => 'Zesta Crackers',
+                   'CompanyNameHTMLEntities' => 'Zesta%20Crackers'
+                 },
+          '218' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=218',
+                   'MajorSub' => undef,
+                   'ID' => '218',
+                   'CompanyName' => 'DuPont',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '268' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=268',
+                   'MajorSub' => undef,
+                   'ID' => '268',
+                   'CompanyName' => 'Monsanto',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '184' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=184',
+                   'MajorSub' => undef,
+                   'ID' => '184',
+                   'CompanyName' => 'Amazon.com',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '345' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=345',
+                   'MajorSub' => undef,
+                   'ID' => '345',
+                   'CompanyName' => 'Time Warner Inc.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '178' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=178',
+                   'MajorSub' => undef,
+                   'ID' => '178',
+                   'CompanyName' => 'Abercrombie & Fitch',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '224' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=224',
+                   'MajorSub' => undef,
+                   'ID' => '224',
+                   'CompanyName' => 'Fila USA',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '285' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=285&MajorSub=1&CompanyName=West%20Virginia%20Brand',
+                   'MajorSub' => '1',
+                   'ID' => '285',
+                   'CompanyName' => 'West Virginia Brand',
+                   'CompanyNameHTMLEntities' => 'West%20Virginia%20Brand'
+                 },
+          '187' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=187',
+                   'MajorSub' => undef,
+                   'ID' => '187',
+                   'CompanyName' => 'Archer Daniels Midland Company',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '223' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=223',
+                   'MajorSub' => undef,
+                   'ID' => '223',
+                   'CompanyName' => 'Fidelity',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '412' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=412&MajorSub=1&CompanyName=Tanqueray',
+                   'MajorSub' => '1',
+                   'ID' => '412',
+                   'CompanyName' => 'Tanqueray',
+                   'CompanyNameHTMLEntities' => 'Tanqueray'
+                 },
+          '181' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=181&MajorSub=1&CompanyName=TRESemme',
+                   'MajorSub' => '1',
+                   'ID' => '181',
+                   'CompanyName' => 'TRESemme',
+                   'CompanyNameHTMLEntities' => 'TRESemme'
+                 },
+          '385' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=385',
+                   'MajorSub' => undef,
+                   'ID' => '385',
+                   'CompanyName' => 'H&M',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '234' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=234',
+                   'MajorSub' => undef,
+                   'ID' => '234',
+                   'CompanyName' => 'Gillette (Procter and Gamble)',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '282' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=282&MajorSub=1&CompanyName=Ultima%20II',
+                   'MajorSub' => '1',
+                   'ID' => '282',
+                   'CompanyName' => 'Ultima II',
+                   'CompanyNameHTMLEntities' => 'Ultima%20II'
+                 },
+          '307' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=307',
+                   'MajorSub' => undef,
+                   'ID' => '307',
+                   'CompanyName' => 'Wells Fargo & Company',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '262' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=262',
+                   'MajorSub' => undef,
+                   'ID' => '262',
+                   'CompanyName' => 'Mary Kay',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '212' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=212',
+                   'MajorSub' => undef,
+                   'ID' => '212',
+                   'CompanyName' => 'Dillard\'s',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '238' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=238&MajorSub=1&CompanyName=Zero',
+                   'MajorSub' => '1',
+                   'ID' => '238',
+                   'CompanyName' => 'Zero',
+                   'CompanyNameHTMLEntities' => 'Zero'
+                 },
+          '251' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=251',
+                   'MajorSub' => undef,
+                   'ID' => '251',
+                   'CompanyName' => 'Kmart',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '253' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=253&MajorSub=1&CompanyName=Wheat%20Thins',
+                   'MajorSub' => '1',
+                   'ID' => '253',
+                   'CompanyName' => 'Wheat Thins',
+                   'CompanyNameHTMLEntities' => 'Wheat%20Thins'
+                 },
+          '279' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=279',
+                   'MajorSub' => undef,
+                   'ID' => '279',
+                   'CompanyName' => 'Procter & Gamble',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '367' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=367',
+                   'MajorSub' => undef,
+                   'ID' => '367',
+                   'CompanyName' => 'Sprint Nextel Corporation',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '448' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=448',
+                   'MajorSub' => undef,
+                   'ID' => '448',
+                   'CompanyName' => 'Ruby Tuesday',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '209' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=209&MajorSub=1&CompanyName=White%20Wave%20Foods',
+                   'MajorSub' => '1',
+                   'ID' => '209',
+                   'CompanyName' => 'White Wave Foods',
+                   'CompanyNameHTMLEntities' => 'White%20Wave%20Foods'
+                 },
+          '357' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=357',
+                   'MajorSub' => undef,
+                   'ID' => '357',
+                   'CompanyName' => 'Yahoo!',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '216' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=216',
+                   'MajorSub' => undef,
+                   'ID' => '216',
+                   'CompanyName' => 'Dominion',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '256' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=256',
+                   'MajorSub' => undef,
+                   'ID' => '256',
+                   'CompanyName' => 'L.L. Bean, Inc.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '270' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=270',
+                   'MajorSub' => undef,
+                   'ID' => '270',
+                   'CompanyName' => 'New Balance',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '195' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=195',
+                   'MajorSub' => undef,
+                   'ID' => '195',
+                   'CompanyName' => 'Borders',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '391' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=391',
+                   'MajorSub' => undef,
+                   'ID' => '391',
+                   'CompanyName' => 'Pfizer Inc',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '455' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=455',
+                   'MajorSub' => undef,
+                   'ID' => '455',
+                   'CompanyName' => 'Denny\'s',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '227' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=227',
+                   'MajorSub' => undef,
+                   'ID' => '227',
+                   'CompanyName' => 'Fox Entertainment',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '288' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=288',
+                   'MajorSub' => undef,
+                   'ID' => '288',
+                   'CompanyName' => 'Shell Petroleum',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '193' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=193',
+                   'MajorSub' => undef,
+                   'ID' => '193',
+                   'CompanyName' => 'Big Lots',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '453' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=453',
+                   'MajorSub' => undef,
+                   'ID' => '453',
+                   'CompanyName' => 'OSI Restaurants',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '457' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=457',
+                   'MajorSub' => undef,
+                   'ID' => '457',
+                   'CompanyName' => 'Chipotle',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '180' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=180',
+                   'MajorSub' => undef,
+                   'ID' => '180',
+                   'CompanyName' => 'Adidas',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '244' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=244',
+                   'MajorSub' => undef,
+                   'ID' => '244',
+                   'CompanyName' => 'J. Crew',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '179' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=179',
+                   'MajorSub' => undef,
+                   'ID' => '179',
+                   'CompanyName' => 'Acer',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '433' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=433',
+                   'MajorSub' => undef,
+                   'ID' => '433',
+                   'CompanyName' => 'Cigna',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '255' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=255&MajorSub=1&CompanyName=YSL%20Beaute',
+                   'MajorSub' => '1',
+                   'ID' => '255',
+                   'CompanyName' => 'YSL Beaute',
+                   'CompanyNameHTMLEntities' => 'YSL%20Beaute'
+                 },
+          '264' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=264',
+                   'MajorSub' => undef,
+                   'ID' => '264',
+                   'CompanyName' => 'Lord & Taylor',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '410' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=410&MajorSub=1&CompanyName=Molson',
+                   'MajorSub' => '1',
+                   'ID' => '410',
+                   'CompanyName' => 'Molson',
+                   'CompanyNameHTMLEntities' => 'Molson'
+                 },
+          '297' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=297',
+                   'MajorSub' => undef,
+                   'ID' => '297',
+                   'CompanyName' => 'TJX Companies',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '240' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=240',
+                   'MajorSub' => undef,
+                   'ID' => '240',
+                   'CompanyName' => 'Home Depot',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '246' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=246&MajorSub=1&CompanyName=Vendome',
+                   'MajorSub' => '1',
+                   'ID' => '246',
+                   'CompanyName' => 'Vendome',
+                   'CompanyNameHTMLEntities' => 'Vendome'
+                 },
+          '359' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=359',
+                   'MajorSub' => undef,
+                   'ID' => '359',
+                   'CompanyName' => 'Google',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '182' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=182&MajorSub=1&CompanyName=Shaws',
+                   'MajorSub' => '1',
+                   'ID' => '182',
+                   'CompanyName' => 'Shaws',
+                   'CompanyNameHTMLEntities' => 'Shaws'
+                 },
+          '440' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=440',
+                   'MajorSub' => undef,
+                   'ID' => '440',
+                   'CompanyName' => 'Hilton Worldwide',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '230' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=230',
+                   'MajorSub' => undef,
+                   'ID' => '230',
+                   'CompanyName' => 'Gateway',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '299' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=299',
+                   'MajorSub' => undef,
+                   'ID' => '299',
+                   'CompanyName' => 'Toys R Us',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '277' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=277',
+                   'MajorSub' => undef,
+                   'ID' => '277',
+                   'CompanyName' => 'Phillips-Van Heusen',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '447' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=447',
+                   'MajorSub' => undef,
+                   'ID' => '447',
+                   'CompanyName' => 'DineEquity',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '201' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=201',
+                   'MajorSub' => undef,
+                   'ID' => '201',
+                   'CompanyName' => 'Chevron',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '232' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=232&MajorSub=1&CompanyName=Yoplait',
+                   'MajorSub' => '1',
+                   'ID' => '232',
+                   'CompanyName' => 'Yoplait',
+                   'CompanyNameHTMLEntities' => 'Yoplait'
+                 },
+          '423' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=423',
+                   'MajorSub' => undef,
+                   'ID' => '423',
+                   'CompanyName' => 'Kaiser Permanente',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '189' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=189',
+                   'MajorSub' => undef,
+                   'ID' => '189',
+                   'CompanyName' => 'Avon',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '452' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=452',
+                   'MajorSub' => undef,
+                   'ID' => '452',
+                   'CompanyName' => 'Cracker Barrel',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '207' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=207',
+                   'MajorSub' => undef,
+                   'ID' => '207',
+                   'CompanyName' => 'Costco',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '263' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=263',
+                   'MajorSub' => undef,
+                   'ID' => '263',
+                   'CompanyName' => 'Mattel',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '295' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=295',
+                   'MajorSub' => undef,
+                   'ID' => '295',
+                   'CompanyName' => 'Target',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '266' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=266',
+                   'MajorSub' => undef,
+                   'ID' => '266',
+                   'CompanyName' => 'McDonald\'s',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '394' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=394',
+                   'MajorSub' => undef,
+                   'ID' => '394',
+                   'CompanyName' => 'Sanofi-Aventis',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '438' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=438',
+                   'MajorSub' => undef,
+                   'ID' => '438',
+                   'CompanyName' => 'Marriott',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '419' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=419',
+                   'MajorSub' => undef,
+                   'ID' => '419',
+                   'CompanyName' => 'Grupo Modelo',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '444' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=444',
+                   'MajorSub' => undef,
+                   'ID' => '444',
+                   'CompanyName' => 'Accor',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '214' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=214',
+                   'MajorSub' => undef,
+                   'ID' => '214',
+                   'CompanyName' => 'Doctors Associates Inc. (Subway Restaurants)',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '422' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=422',
+                   'MajorSub' => undef,
+                   'ID' => '422',
+                   'CompanyName' => 'CITGO',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '304' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=304',
+                   'MajorSub' => undef,
+                   'ID' => '304',
+                   'CompanyName' => 'Vivendi Universal S.A.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '221' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=221',
+                   'MajorSub' => undef,
+                   'ID' => '221',
+                   'CompanyName' => 'ExxonMobil',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '210' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=210',
+                   'MajorSub' => undef,
+                   'ID' => '210',
+                   'CompanyName' => 'Dell',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '406' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=406',
+                   'MajorSub' => undef,
+                   'ID' => '406',
+                   'CompanyName' => 'T-Mobile',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '396' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=396',
+                   'MajorSub' => undef,
+                   'ID' => '396',
+                   'CompanyName' => 'Bayer AG',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '258' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=258',
+                   'MajorSub' => undef,
+                   'ID' => '258',
+                   'CompanyName' => 'Levi Strauss',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '302' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=302&MajorSub=1&CompanyName=Wish%2DBone%20Classic',
+                   'MajorSub' => '1',
+                   'ID' => '302',
+                   'CompanyName' => 'Wish-Bone Classic',
+                   'CompanyNameHTMLEntities' => 'Wish%2DBone%20Classic'
+                 },
+          '393' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=393',
+                   'MajorSub' => undef,
+                   'ID' => '393',
+                   'CompanyName' => 'Abbott Laboratories',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '229' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=229&MajorSub=1&CompanyName=Old%20Navy',
+                   'MajorSub' => '1',
+                   'ID' => '229',
+                   'CompanyName' => 'Old Navy',
+                   'CompanyNameHTMLEntities' => 'Old%20Navy'
+                 },
+          '449' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=449',
+                   'MajorSub' => undef,
+                   'ID' => '449',
+                   'CompanyName' => 'Darden Restaurant',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '405' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=405',
+                   'MajorSub' => undef,
+                   'ID' => '405',
+                   'CompanyName' => 'Southwest Airlines',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '260' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=260',
+                   'MajorSub' => undef,
+                   'ID' => '260',
+                   'CompanyName' => 'Liz Claiborne',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '293' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=293',
+                   'MajorSub' => undef,
+                   'ID' => '293',
+                   'CompanyName' => 'Sunoco, Inc.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '237' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=237',
+                   'MajorSub' => undef,
+                   'ID' => '237',
+                   'CompanyName' => 'Hasbro',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '365' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=365',
+                   'MajorSub' => undef,
+                   'ID' => '365',
+                   'CompanyName' => 'Whirlpool Corporation',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '306' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=306',
+                   'MajorSub' => undef,
+                   'ID' => '306',
+                   'CompanyName' => 'Wal-Mart',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '309' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=309',
+                   'MajorSub' => undef,
+                   'ID' => '309',
+                   'CompanyName' => 'Whole Foods',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '402' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=402',
+                   'MajorSub' => undef,
+                   'ID' => '402',
+                   'CompanyName' => 'US Airways Group',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '380' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=380',
+                   'MajorSub' => undef,
+                   'ID' => '380',
+                   'CompanyName' => 'Dynegy',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '300' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=300',
+                   'MajorSub' => undef,
+                   'ID' => '300',
+                   'CompanyName' => 'Trader Joe\'s',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '222' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=222',
+                   'MajorSub' => undef,
+                   'ID' => '222',
+                   'CompanyName' => 'Macy\'s, Inc.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '403' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=403',
+                   'MajorSub' => undef,
+                   'ID' => '403',
+                   'CompanyName' => 'Virgin Atlantic Airways',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '252' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=252',
+                   'MajorSub' => undef,
+                   'ID' => '252',
+                   'CompanyName' => 'Kohl\'s',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '286' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=286',
+                   'MajorSub' => undef,
+                   'ID' => '286',
+                   'CompanyName' => 'Sears, Roebuck & Co.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '283' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=283&MajorSub=1&CompanyName=Tops%20Markets%2C%20LLC%20%28Giant%20Food%20Stores%2C%20LLC%20subsidiary%29',
+                   'MajorSub' => '1',
+                   'ID' => '283',
+                   'CompanyName' => 'Tops Markets, LLC (Giant Food Stores, LLC subsidiary)',
+                   'CompanyNameHTMLEntities' => 'Tops%20Markets%2C%20LLC%20%28Giant%20Food%20Stores%2C%20LLC%20subsidiary%29'
+                 },
+          '310' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=310',
+                   'MajorSub' => undef,
+                   'ID' => '310',
+                   'CompanyName' => 'Yum! Brands',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '303' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=303',
+                   'MajorSub' => undef,
+                   'ID' => '303',
+                   'CompanyName' => 'Vanguard Group, Inc.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '192' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=192',
+                   'MajorSub' => undef,
+                   'ID' => '192',
+                   'CompanyName' => 'Barnes and Noble',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '305' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=305',
+                   'MajorSub' => undef,
+                   'ID' => '305',
+                   'CompanyName' => 'Wachovia (now owned by Wells Fargo)',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '308' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=308',
+                   'MajorSub' => undef,
+                   'ID' => '308',
+                   'CompanyName' => 'Wendy\'s',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '254' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=254&MajorSub=1&CompanyName=Ralphs%20Grocery%20Company',
+                   'MajorSub' => '1',
+                   'ID' => '254',
+                   'CompanyName' => 'Ralphs Grocery Company',
+                   'CompanyNameHTMLEntities' => 'Ralphs%20Grocery%20Company'
+                 },
+          '392' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=392',
+                   'MajorSub' => undef,
+                   'ID' => '392',
+                   'CompanyName' => 'Merck & Co, Inc.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '215' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=215',
+                   'MajorSub' => undef,
+                   'ID' => '215',
+                   'CompanyName' => 'Dole',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '450' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=450',
+                   'MajorSub' => undef,
+                   'ID' => '450',
+                   'CompanyName' => 'Carlson Worldwide',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '278' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=278',
+                   'MajorSub' => undef,
+                   'ID' => '278',
+                   'CompanyName' => 'Polo Ralph Lauren Corporation',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '271' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=271',
+                   'MajorSub' => undef,
+                   'ID' => '271',
+                   'CompanyName' => 'NIKE',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '373' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=373',
+                   'MajorSub' => undef,
+                   'ID' => '373',
+                   'CompanyName' => 'AT&T',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '387' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=387',
+                   'MajorSub' => undef,
+                   'ID' => '387',
+                   'CompanyName' => 'Daimler AG',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '217' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=217',
+                   'MajorSub' => undef,
+                   'ID' => '217',
+                   'CompanyName' => 'Dow Chemical Company',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '245' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=245',
+                   'MajorSub' => undef,
+                   'ID' => '245',
+                   'CompanyName' => 'JCPenney',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '239' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=239',
+                   'MajorSub' => undef,
+                   'ID' => '239',
+                   'CompanyName' => 'Hewlett-Packard (HP)',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '267' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=267',
+                   'MajorSub' => undef,
+                   'ID' => '267',
+                   'CompanyName' => 'Microsoft',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '269' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=269&MajorSub=1&CompanyName=Wonka',
+                   'MajorSub' => '1',
+                   'ID' => '269',
+                   'CompanyName' => 'Wonka',
+                   'CompanyNameHTMLEntities' => 'Wonka'
+                 },
+          '205' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=205',
+                   'MajorSub' => undef,
+                   'ID' => '205',
+                   'CompanyName' => 'Colgate-Palmolive',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '281' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=281',
+                   'MajorSub' => undef,
+                   'ID' => '281',
+                   'CompanyName' => 'Reebok',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '219' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=219',
+                   'MajorSub' => undef,
+                   'ID' => '219',
+                   'CompanyName' => 'Eddie Bauer',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '399' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=399',
+                   'MajorSub' => undef,
+                   'ID' => '399',
+                   'CompanyName' => 'Continental Airlines Inc',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '235' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=235&MajorSub=1&CompanyName=Light%20%27n%27%20Fit',
+                   'MajorSub' => '1',
+                   'ID' => '235',
+                   'CompanyName' => 'Light \'n\' Fit',
+                   'CompanyNameHTMLEntities' => 'Light%20%27n%27%20Fit'
+                 },
+          '301' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=301&MajorSub=1&CompanyName=Wright',
+                   'MajorSub' => '1',
+                   'ID' => '301',
+                   'CompanyName' => 'Wright',
+                   'CompanyNameHTMLEntities' => 'Wright'
+                 },
+          '436' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=436',
+                   'MajorSub' => undef,
+                   'ID' => '436',
+                   'CompanyName' => 'Heineken',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '185' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=185',
+                   'MajorSub' => undef,
+                   'ID' => '185',
+                   'CompanyName' => 'Amerada Hess',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '183' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=183',
+                   'MajorSub' => undef,
+                   'ID' => '183',
+                   'CompanyName' => 'Altria Group (formerly Philip Morris)',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '390' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=390',
+                   'MajorSub' => undef,
+                   'ID' => '390',
+                   'CompanyName' => 'GlaxoSmithKline plc',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '248' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=248',
+                   'MajorSub' => undef,
+                   'ID' => '248',
+                   'CompanyName' => 'JP Morgan Chase & Co.',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '213' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=213',
+                   'MajorSub' => undef,
+                   'ID' => '213',
+                   'CompanyName' => 'Disney',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '456' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=456',
+                   'MajorSub' => undef,
+                   'ID' => '456',
+                   'CompanyName' => 'Sizzler',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '408' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=408&MajorSub=1&CompanyName=Samual%20Adams%20',
+                   'MajorSub' => '1',
+                   'ID' => '408',
+                   'CompanyName' => 'Samual Adams',
+                   'CompanyNameHTMLEntities' => 'Samual%20Adams%20'
+                 },
+          '362' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=362',
+                   'MajorSub' => undef,
+                   'ID' => '362',
+                   'CompanyName' => 'Goodyear',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '439' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=439',
+                   'MajorSub' => undef,
+                   'ID' => '439',
+                   'CompanyName' => 'Choice Hotels International',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '296' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=296',
+                   'MajorSub' => undef,
+                   'ID' => '296',
+                   'CompanyName' => 'Timberland',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '411' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=411',
+                   'MajorSub' => undef,
+                   'ID' => '411',
+                   'CompanyName' => 'Constellation Brands',
+                   'CompanyNameHTMLEntities' => undef
+                 },
+          '196' => {
+                   'URL' => 'http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=196',
+                   'MajorSub' => undef,
+                   'ID' => '196',
+                   'CompanyName' => 'BP',
+                   'CompanyNameHTMLEntities' => undef
+                 }
+        };

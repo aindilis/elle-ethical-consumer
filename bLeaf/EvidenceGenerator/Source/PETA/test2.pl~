@@ -1,0 +1,8 @@
+#!/usr/bin/perl -w
+
+my $cacher = PerlLib::Cacher->new
+  (
+   CacheRoot => "/var/lib/myfrdcsa/codebases/minor/elle-ethical-consumer/subsys/source-analysis/source/peta/FileCache",
+  );
+
+$cacher->get("http://www.frdcsa.org");

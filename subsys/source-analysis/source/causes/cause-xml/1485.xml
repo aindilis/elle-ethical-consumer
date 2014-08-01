@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>       This cause was created to support the Relay for Life foundation.
+       Relay for Life is a non-profit organization that donates money that is used to research cures for cancers.  I have experienced the dramatic effects cancer can have on a family.  Both of my grandmothers passed away in their late fifties, just 81 days apart.  My family was devastated.  My Mom and Dad both contributed by becoming captains of a team in my county that raises thousands of dollars a year to the Relay for Life.
+       Do your part by donating as much money as you feel led to.  All donations will be forwarded to the Relay for Life organization. Thank you.
+
+1. Position #1</description>
+  <mission>raise money to provide better research for a cure for cancer.</mission>
+  <name>Relay for Life</name>
+  <canonical-url>http://www.causes.com/causes/1485</canonical-url>
+  <member-count type="integer">30</member-count>
+  <total-raised type="decimal">25.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/WST/pMMS.jpg</photo-url>
+</cause>

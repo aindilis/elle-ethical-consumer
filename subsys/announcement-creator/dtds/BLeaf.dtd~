@@ -1,0 +1,12 @@
+<!ELEMENT announcements (announcement+)>
+<!ELEMENT announcement (source,public-key,items)>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT public-key (#PCDATA)>
+<!ELEMENT items (item+)>
+<!ELEMENT item (title,logic,reason-given)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT logic (assert|retract)>
+<!ELEMENT assert (#PCDATA)>
+<!ELEMENT retract (#PCDATA)>
+<!ELEMENT reason-given (reason,source)>
+<!ELEMENT reason (#PCDATA)>

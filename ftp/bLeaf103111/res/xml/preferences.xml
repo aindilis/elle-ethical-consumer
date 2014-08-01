@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory 
+        android:title="Feed Settings"
+        android:key="feed_settings">
+        
+        <CheckBoxPreference 
+            android:key="perform_updates"
+            android:summary="I dont do anything"
+            android:title="Enable updates" 
+            android:defaultValue="true"
+        />
+
+        <Preference
+            android:key="test_feeds"
+            android:title="Feed Testing" 
+            android:summary="Please wait while the nozzle is calibrating." />
+
+        <Preference
+            android:key="manage_feeds"
+            android:title="Manage Sources" 
+            android:summary="Choose where to receive information." />
+
+        <Preference
+            android:key="load_feed"
+            android:title="Load Feed" 
+            android:summary="Load XML feed from elleconnect." />
+
+        <Preference
+            android:key="nuke"
+            android:title="Nuke Database" 
+            android:summary="Remove ALL databse entries. Cannot be undone!" />
+            
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="Category Settings"
+        android:key="category_settings">
+
+        <Preference
+            android:key="rate_categories"
+            android:title="Set Categories" 
+            android:summary="Assign ratings to each category." />
+
+    </PreferenceCategory>
+    
+</PreferenceScreen>

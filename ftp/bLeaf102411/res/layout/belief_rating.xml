@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout 
+    	android:id="@+id/rating_button_layout"
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true" >
+    	<Button 
+    		android:id="@+id/rating_ok"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:text="Done" />
+    	<Button 
+    		android:id="@+id/rating_cancel"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:text="Cancel" />"
+    </LinearLayout>
+    <ListView
+    	android:id="@+id/rating_listview"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_above="@id/rating_button_layout"
+    	android:layout_alignParentTop="true"
+		android:cacheColorHint="@android:color/transparent" />
+</RelativeLayout>

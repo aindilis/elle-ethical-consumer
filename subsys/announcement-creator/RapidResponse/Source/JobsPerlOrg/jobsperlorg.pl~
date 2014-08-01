@@ -1,0 +1,25 @@
+#!/usr/bin/perl -w
+
+use PerlLib::Cacher;
+use PerlLib::SwissArmyKnife;
+
+use WWW::Mechanize;
+
+my $content;
+if (0) {
+  my $mech = WWW::Mechanize->new();
+  $mech->get("http://jobs.perl.org/rss/telecommute.rss");
+  $content = $mech->content();
+} else {
+  $content = read_file("telecommute.rss");
+}
+my @urls = $content =~ /<item rdf:about="([^\"]+)">/sg;
+print Dumper(\@urls);
+my $cacher = PerlLib::Cacher->new
+  (
+   CacheRoot => "/var/lib/myfrdcsa/codebases/minor/js-rapid-response/data/source/JobsPerlOrg/FileCache",
+  );
+foreach my $url (@urls) {
+  $cacher->get($url);
+  print Dumper($cacher->content());
+}

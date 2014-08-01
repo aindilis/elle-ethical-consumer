@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>big big big big pointless test that has a point.
+
+1. testing tester test</description>
+  <mission>this is a giant test</mission>
+  <name>Tester Cause</name>
+  <canonical-url>http://www.causes.com/causes/9209</canonical-url>
+  <member-count type="integer">1</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/tC/Aw/6i/F3/6l/tP/o5rS.jpg</photo-url>
+</cause>

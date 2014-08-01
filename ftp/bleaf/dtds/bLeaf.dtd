@@ -1,0 +1,14 @@
+<!DOCTYPE evidences [
+<!ELEMENT evidences (evidence+)>
+<!ELEMENT evidence (title,description,categories,source,link,companies)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT categories (category+)>
+<!ELEMENT category (name,rating)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT companies (company+)>
+<!ELEMENT company (#PCDATA)>
+]>

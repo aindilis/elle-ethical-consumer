@@ -1,0 +1,24 @@
+<evidences>
+ <evidence>
+  <title>Do not buy XYZ products</title>
+  <description>
+    This cause says that X should be the case and action Y would be a
+    good way to achieve X, but this company is against action Y.
+  </description>
+  <categories>
+    <category>
+      <name>Animal testing</name>
+      <rating>-5</rating>
+    </category>
+  </categories>
+  <source>
+    Greenpeace
+  </source>
+  <link>
+    http://news.google.com/
+  </link>
+  <companies>
+    <company>XYZ</company>
+  </companies>
+ </evidence>
+</evidences>

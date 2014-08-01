@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application xmlns="http://research.sun.com/wadl/2006/10">
+    <doc xmlns:jersey="http://jersey.java.net/" jersey:generatedBy="Jersey: 1.8 06/24/2011 12:39 PM"/>
+    <resources base="http://spotlight.dbpedia.org/rest">
+        <resource path="/annotate">
+            <method name="GET" id="getHTML">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                </request>
+                <response>
+                    <representation mediaType="text/html"/>
+                </response>
+            </method>
+            <method name="GET" id="getRDFa">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                </request>
+                <response>
+                    <representation mediaType="application/xhtml+xml"/>
+                </response>
+            </method>
+            <method name="GET" id="getXML">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                </request>
+                <response>
+                    <representation mediaType="text/xml"/>
+                    <representation mediaType="application/xml"/>
+                </response>
+            </method>
+            <method name="GET" id="getJSON">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                </request>
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <method name="POST" id="postHTML">
+                <request>
+                    <representation mediaType="application/x-www-form-urlencoded">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="text/html"/>
+                </response>
+            </method>
+            <method name="POST" id="postRDFa">
+                <request>
+                    <representation mediaType="application/x-www-form-urlencoded">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="application/xhtml+xml"/>
+                </response>
+            </method>
+            <method name="POST" id="postXML">
+                <request>
+                    <representation mediaType="application/x-www-form-urlencoded">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="text/xml"/>
+                </response>
+            </method>
+            <method name="POST" id="postJSON">
+                <request>
+                    <representation mediaType="application/x-www-form-urlencoded">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/candidates">
+            <method name="GET" id="getXML">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                </request>
+                <response>
+                    <representation mediaType="text/xml"/>
+                </response>
+            </method>
+            <method name="GET" id="getJSON">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                </request>
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <method name="POST" id="postXML">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    <representation mediaType="application/x-www-form-urlencoded">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="text/xml"/>
+                </response>
+            </method>
+            <method name="POST" id="postJSON">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="spotter"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    <representation mediaType="application/x-www-form-urlencoded">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/disambiguate">
+            <method name="GET" id="getHTML">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    <representation mediaType="text/plain">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="text/html"/>
+                </response>
+            </method>
+            <method name="GET" id="getRDFa">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    <representation mediaType="text/plain">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="application/xhtml+xml"/>
+                </response>
+            </method>
+            <method name="GET" id="getXML">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    <representation mediaType="text/plain">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="text/xml"/>
+                </response>
+            </method>
+            <method name="GET" id="getJSON">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    <representation mediaType="text/plain">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <method name="POST" id="postHTML">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    <representation mediaType="application/x-www-form-urlencoded">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="text/html"/>
+                </response>
+            </method>
+            <method name="POST" id="postRDFa">
+                <request>
+                    <representation mediaType="application/x-www-form-urlencoded">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="application/xhtml+xml"/>
+                </response>
+            </method>
+            <method name="POST" id="postXML">
+                <request>
+                    <representation mediaType="application/x-www-form-urlencoded">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="text/xml"/>
+                </response>
+            </method>
+            <method name="POST" id="postJSON">
+                <request>
+                    <representation mediaType="application/x-www-form-urlencoded">
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="text"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="0.5" type="xs:double" style="query" name="confidence"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="30" type="xs:int" style="query" name="support"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="types"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="" type="xs:string" style="query" name="sparql"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="whitelist" type="xs:string" style="query" name="policy"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="true" type="xs:boolean" style="query" name="coreferenceResolution"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="Default" type="xs:string" style="query" name="disambiguator"/>
+                    </representation>
+                </request>
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+    </resources>
+</application>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>Owen needs some money, so give him yours.
+
+1. Give Owen money.</description>
+  <mission>give Owen money.</mission>
+  <name>Give Owen money.</name>
+  <canonical-url>http://www.causes.com/causes/5198</canonical-url>
+  <member-count type="integer">2</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/2X/hH/07/Jf/yd/jH/URCS.jpg</photo-url>
+</cause>

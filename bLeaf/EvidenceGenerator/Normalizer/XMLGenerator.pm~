@@ -1,0 +1,94 @@
+package Com::elle::bLeaf::EvidenceGenerator::Normalizer::XMLGenerator;
+
+# ("created-by" "PPI-Convert-Script-To-Module")
+# use Com::elle::bLeaf::RuleGenerator::Annotator;
+
+use Manager::Dialog qw(ChooseByProcessor QueryUser ApproveCommands);
+
+use BOSS::Config;
+use PerlLib::Cacher;
+
+use PerlLib::SwissArmyKnife;
+use Text::CSV;
+use Text::LevenshteinXS qw(distance);
+use Tk;
+use XML::Simple qw(XMLout);
+
+use Class::MethodMaker
+  new_with_init => 'new',
+  get_set       =>
+  [
+
+   qw / Num /
+
+  ];
+
+sub init {
+  my ($self,%args) = @_;
+  $self->Num(0);
+}
+
+sub GenerateEvidencePointXML {
+  my ($self,%args) = @_;
+  print Dumper(\%args);
+  my $sourceprepped = $self->Prep($args{Source});
+  my $linkprepped = $self->Prep($args{SourceURL});
+  my @companies = @{$args{Companies}};
+  my @categories = @{$args{Categories}};
+  my $titleprepped = $self->Prep("Boycott ".join(", ",map {$_->{Norm}} @companies));
+  my $descriptionprepped = $self->Prep($args{Description});
+  my $categoriesprepped = "";
+  my $companiesprepped = "";
+  foreach my $category (@categories) {
+    $categoriesprepped .= "<category>
+      <name>".$self->Prep($category->{category})."</name>
+      <rating>".Prep($category->{rating})."</rating>
+    </category>";
+  }
+  my @companies2;
+  foreach my $companyhash (@companies) {
+    # process the company name
+    my @gcps;
+    foreach my $gcp (@{$companyhash->{GCP}}) {
+      push @gcps, "<GCP>".$self->Prep($gcp)."</GCP>";
+    }
+    my $gcps = join("\n",@gcps);
+    push @companies2, "   <company>
+      <norm>".$self->Prep($companyhash->{Norm})."</norm>
+      <tagged>".$self->Prep($companyhash->{Tagged})."</tagged>
+      <GCPs>".$gcps."</GCPs>
+    </company>";
+  }
+  $companiesprepped = join("\n",@companies2);
+  my $xmlcontents = " <evidence>
+  <title>$titleprepped</title>
+  <description>
+    $descriptionprepped
+  </description>
+  <categories>
+    $categoriesprepped
+  </categories>
+  <source>
+    $sourceprepped
+  </source>
+  <link>
+    $linkprepped
+  </link>
+  <companies>
+$companiesprepped
+  </companies>
+ </evidence>";
+  return $xmlcontents;
+}
+
+sub Prep {
+  my ($self,$it) = (shift,shift);
+  my $tmp = XMLout($it);
+  if ($tmp =~ /^<opt>(.*)<\/opt>$/sm) {
+    return $1;
+  } else {
+    die "ERROR <$tmp>\n";
+  }
+}
+
+1;

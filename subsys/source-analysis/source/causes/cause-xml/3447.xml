@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>A cause that can help everyone. This is a fund to help raise money for disaster relief before and after disasters have occured. This will rasie money that will perpare organizations with the supplies needed to help with disaster relief.
+
+1. We need to be prepared for disasters</description>
+  <mission>To raise money for disaster relief </mission>
+  <name>Disaster Relief Fund</name>
+  <canonical-url>http://www.causes.com/causes/3447</canonical-url>
+  <member-count type="integer">5</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/IP/1l/l3/hw/Ti/Mo/GguS.jpg</photo-url>
+</cause>

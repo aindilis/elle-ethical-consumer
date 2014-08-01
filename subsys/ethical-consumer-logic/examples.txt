@@ -1,0 +1,18 @@
+B_I(Phi)
+
+S_x(B_i(Phi) -> B_i([]Boycott_x(M)))
+
+
+I_should_boycott(Company)
+
+
+Obligatory(Boycott_me(Company))
+Obligatory(!Boycott_me(Company))
+!Obligatory(Boycott_me(Company))
+!Obligatory(!Boycott_me(Company))
+
+Obligatory(Prefer_me(Company))
+Obligatory(!Prefer_me(Company))
+
+Permissible(Boycott_me(Company))
+Permissible(Boycott_me(Company))

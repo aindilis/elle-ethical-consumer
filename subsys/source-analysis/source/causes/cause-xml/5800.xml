@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>Code for Change is an exciting new program which brings together computer science students and recent graduates in the summer to lead an open source software development project. The projects will vary from year to year, but they'll tend to focus on furthering the online organizing work of grassroots advocacy organizations working on everything from stopping global warming to preventing human rights abuses.
+
+These organizations need high tech software to get their message and get people involved in their issues. Code for Change works to build a community of "software activists" who want to write code to change the world.
+
+1. Open source software is the way of the future.
+
+2. Making social change in the 21st century requires high tech software, and it should be cheap, open, and awesome.
+
+3. Programmers are activists too.</description>
+  <mission>write code. change the world.</mission>
+  <name>Code for Change</name>
+  <canonical-url>http://www.causes.com/causes/5800</canonical-url>
+  <member-count type="integer">8</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/os/mR/fe/jK/z6/MC/1LLS.jpg</photo-url>
+</cause>

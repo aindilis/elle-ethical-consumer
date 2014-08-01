@@ -1,0 +1,1040 @@
+package RapidResponse;
+
+use Bard::Util;
+use BOSS::Config;
+use Manager::Dialog qw(Approve ApproveCommands);
+use MyFRDCSA qw(ConcatDir);
+use PerlLib::SwissArmyKnife;
+use RapidResponse::Application;
+use RapidResponse::Application::FollowUp;
+use RapidResponse::Application::History;
+use RapidResponse::Configuration;
+use RapidResponse::Responses;
+use RapidResponse::Resources;
+
+use Tk;
+use Tk::TableMatrix;
+use XML::Simple;
+
+use Class::MethodMaker
+  new_with_init => 'new',
+  get_set       =>
+  [
+
+   qw / Config Conf MyResources CutOff CutoffLabel SearchText
+	ThresholdFrame Top1 TopFrame TableFrame Res1 Res2 DebugData
+	Statuses MyApplications MyConfHistory MyHistory MyResponses
+	MyTable MyConfiguration EntryIDs LastID /
+
+  ];
+
+sub init {
+  my ($self,%args) = @_;
+  $specification = q(
+	-a			Enable actual use as opposed to development
+	-s			Actually send the email to the correct location
+	-d <host> <username> <passwd> <dbname>		Use a remote database
+	-u [<host> <port>]	Run as a UniLang agent
+);
+  $self->Config
+    (BOSS::Config->new
+     (Spec => $specification));
+  $self->Conf
+    ($self->Config->CLIConfig);
+  $conf = $self->Conf;
+
+  $UNIVERSAL::agent->DoNotDaemonize(1);
+  $UNIVERSAL::agent->Register
+    (Host => defined $conf->{-u}->{'<host>'} ?
+     $conf->{-u}->{'<host>'} : "localhost",
+     Port => defined $conf->{-u}->{'<port>'} ?
+     $conf->{-u}->{'<port>'} : "9000");
+
+
+  $UNIVERSAL::systemdir = "/var/lib/myfrdcsa/codebases/minor/js-rapid-response";
+
+  $self->Top1
+    (MainWindow->new
+     (
+      -title => "Job-Search Rapid Response Tool",
+      -height => 600,
+      -width => 1000,
+     ));
+
+  $UNIVERSAL::managerdialogtkwindow = $self->Top1;
+
+  $self->MyConfiguration
+    (RapidResponse::Configuration->new
+     (MainWindow => $self->Top1));
+  $self->MyConfiguration->SelectProfile();
+
+  my $dbname;
+  if ($conf->{'-a'}) {
+    $dbname = "js_rapid_response";
+  } else {
+    $dbname = "js_rapid_response_test";
+  }
+  my $host;
+  my $username;
+  if ($conf->{'-d'}) {
+    my $hash = $conf->{'-d'};
+    $dbname = $hash->{'<dbname>'};
+    $host = $hash->{'<host>'};
+    $username = $hash->{'<username>'};
+    $password = $hash->{'<password>'};
+  } else {
+    print Dumper($myconfiguration);
+    my $hash = $self->MyConfiguration->CurrentProfile->{database};
+    $dbname = $hash->{'dbname'};
+    $host = $hash->{'hostname'};
+    $username = $hash->{'username'};
+    $password = $hash->{'password'};
+  }
+
+  $self->MyResources
+    (RapidResponse::Resources->new
+     (
+      MainWindow => $self->Top1,
+      DBName => $dbname,
+      Host => $host,
+      Username => $username,
+      Password => $password,
+     ));
+
+  $self->TopFrame($self->Top1->Frame());
+  $self->ThresholdFrame($self->TopFrame->Frame);
+  $self->CutOff
+    ($self->ThresholdFrame->Scale
+     (
+      -orient => "horizontal",
+      -from => 0,
+      -to => 100,
+     )->pack(-side => "left"));
+  $self->CutoffLabel
+    ($self->ThresholdFrame->Label
+     (
+      -text => "Threshold",
+     )->pack(-side => "left"));
+
+  $self->DebugData({});
+  if (! exists $conf->{'-a'}) {
+    my $rssfile = "/var/lib/myfrdcsa/codebases/minor/js-rapid-response/data/index.rss";
+    my $c = read_file($rssfile);
+    my $xml = XMLin($c);
+    my $items = [reverse @{$xml->{item}}];
+    my $size = scalar @$items;
+    $self->DebugData->{XML} = [[reverse splice @$items, 0, int($size/2)]];
+    while (@$items) {
+      push @{$self->DebugData->{XML}}, [reverse splice @$items, 0, int(rand(5))];
+    }
+  }
+  $self->MyApplications({});
+  $self->LoadStatuses;
+}
+
+sub Execute {
+  my ($self,%args) = @_;
+  $frame = $self->Top1->Frame(-relief => 'flat');
+  $frame->pack(-side => 'top', -fill => 'x', -anchor => 'center');
+  $menu = $self->Top1->Frame(-relief => 'raised', -borderwidth => '1');
+  $menu->pack(-before => $frame, -side => 'top', -fill => 'x');
+  $menu_file_1 = $menu->Menubutton
+    (
+     -text => 'File',
+     -tearoff => 0,
+     -underline => 0,
+    );
+  $menu_file_1->command
+    (
+     -label => "Update",
+     -command => sub {
+       $self->UpdateDatabaseFromRSSFeed();
+     },
+    );
+  $menu_file_1->command
+    (
+     -label => "Refresh",
+     -command => sub {
+       $self->RefreshDisplay();
+     },
+    );
+  $menu_file_1->command
+    (
+     -label => "Truncate DB",
+     -command => sub {
+       $self->TruncateDB();
+     },
+    );
+  $menu_file_1->command
+    (
+     -label => 'Exit',
+     -command => sub {
+       $self->Exit();
+     },
+     -underline => 0,
+    );
+  $menu_file_1->pack
+    (
+     -side => 'left',
+    );
+
+  $menu_file_2 = $menu->Menubutton
+    (
+     -text => 'View',
+     -tearoff => 0,
+     -underline => 0,
+    );
+  $menu_file_2->command
+    (
+     -label => 'Configuration',
+     -command => sub {
+       # load the profile of all the different
+       $self->EditConfiguration();
+     },
+     -underline => 0,
+    );
+  $menu_file_2->command
+    (
+     -label => 'Application History',
+     -command => sub {
+       # load the profile of all the different
+       $self->ShowHistory();
+     },
+     -underline => 0,
+    );
+  $menu_file_2->command
+    (
+     -label => 'Responses',
+     -command => sub {
+       $self->ShowResponses();
+     },
+     -underline => 0,
+    );
+  $menu_file_2->pack
+    (
+     -side => 'left',
+    );
+
+  $searchframe = $self->TopFrame->Frame();
+  my $text = $searchframe->Text
+    (
+     -width => 60,
+     -height => 2,
+    )->pack(-side => "left");
+  $text->Contents
+    (join
+     ("\n\n",
+      (
+       "DEAL LOCALLY WITH FOLKS YOU CAN MEET IN PERSON - follow this one simple rule and you will avoid 99% of the scam attempts on craigslist.",
+       "NEVER WIRE FUNDS VIA WESTERN UNION, MONEYGRAM or any other wire service - anyone who asks you to do so is a scammer.",
+       "FAKE CASHIER CHECKS & MONEY ORDERS ARE COMMON, and BANKS WILL CASH THEM AND THEN HOLD YOU RESPONSIBLE when the fake is discovered weeks later.",
+       "CRAIGSLIST IS NOT INVOLVED IN ANY TRANSACTION, and does not handle payments, guarantee transactions, provide escrow services, or offer \"buyer protection\" or \"seller certification\"",
+       "NEVER GIVE OUT FINANCIAL INFORMATION (bank account number, social security number, eBay/PayPal info, etc.)",
+       "AVOID DEALS INVOLVING SHIPPING OR ESCROW SERVICES and know that ONLY A SCAMMER WILL \"GUARANTEE\" YOUR TRANSACTION.",
+      )));
+  my $searchtext = "";
+  $searchframe->Entry
+    (
+     -textvariable => $searchtext,
+    )->pack(-side => "left");
+  $self->SearchText(\$searchtext);
+  $searchframe->Button
+    (
+     -text => "Search Jobs",
+     -command => sub {
+       $self->RefreshDisplay
+	 (
+	  Search => $self->SearchText,
+	 );
+     },
+    )->pack(-side => "right");
+  $searchframe->pack
+    (
+     -side => "left",
+    );
+  $self->CutOff->set(80);
+
+
+  $self->ThresholdFrame->pack
+    (
+     -side => "right",
+    );
+  $self->TopFrame->pack(-side => "top");
+  $self->TableFrame
+    ($self->Top1->Frame());
+  $self->TableFrame->pack(-fill => "both", -expand => 1);
+  $self->RefreshDisplay();
+  $self->MyMainLoop;
+}
+
+sub UpdateDatabaseFromRSSFeed {
+  my ($self,%args) = @_;
+  # get it, try using with WWW::Mechanize;
+  my @xmls;
+  if (exists $self->Conf->{'-a'}) {
+    my $data = {};
+    foreach my $source (keys %{$self->MyConfiguration->CurrentProfile->{sources}}) {
+      foreach my $url (split /\n/, $self->MyConfiguration->CurrentProfile->{sources}->{$source}) {
+	$self->MyResources->Mech->get
+	  ($url);
+	my $content = $self->MyResources->Mech->content();
+	$content =~ s///g;
+	push @xmls, XMLin($content);
+      }
+    }
+  } else {
+    my $xml = {};
+    $xml->{item} = $self->GetNextXML();
+    my $size = scalar @{$xml->{item}};
+    print "Updating, current debug size is $size\n";
+    push @xmls, $xml;
+  }
+  # load all of the entries into the DB if they haven't been seen before
+  # update all the entries into the pane
+  # add to the database
+
+  # load the existing urls
+  my $sources = {};
+  my $res1 = $self->MyResources->MyMySQL->Do(Statement => "select ID,dc_source from entries;");
+  foreach my $key (keys %$res1) {
+    $sources->{$res1->{$key}->{dc_source}} = 1;
+  }
+  foreach my $xml (@xmls) {
+    foreach my $item (reverse @{$xml->{item}}) {
+      if (! exists $sources->{$item->{"dc:source"}}) {
+	# can go ahead and add it
+	my @values1 = (undef);
+	foreach my $key 
+	  (qw(title link description dc_date dc_language
+	      dc_rights dc_source dc_title dc_type dcterms_issued)) {
+	  my $key2 = $key;
+	  $key2 =~ s/_/:/g;
+	  push @values1, $item->{$key2};
+	}
+	$self->MyResources->MyMySQL->Insert
+	  (
+	   Table => "entries",
+	   Values => \@values1,
+	  );
+	my $id = $self->MyResources->MyMySQL->InsertID;
+	# ID, Entry_Id, Status, IRT
+	my @values2 = (undef,$id,"unread",undef,undef);
+	$self->MyResources->MyMySQL->Insert
+	  (
+	   Table => "metadata",
+	   Values => \@values2,
+	  );
+      } else {
+	# otherwise it already exists
+	# print "Already exists: ".$item->{"dc:source"}."\n";
+      }
+    }
+  }
+  $self->RefreshDisplay();
+}
+
+sub GetNextXML {
+  my ($self,%args) = @_;
+  if (! exists $self->DebugData->{Counter}) {
+    $self->DebugData->{Counter} = 0;
+  }
+  my @items;
+  foreach my $i (0 .. $self->DebugData->{Counter}) {
+    push @items, @{$self->DebugData->{XML}->[$i]}
+  }
+  $self->DebugData->{Counter} = $self->DebugData->{Counter} + 1;
+  return \@items;
+}
+
+sub RefreshDisplay {
+  my ($self,%args) = @_;
+  my $position;
+  if (defined $self->MyTable) {
+    # try to get the scroll position
+    my $res = $self->MyTable->yview;
+    $position = $res->[0];
+  }
+
+  print "Starting to refresh display\n";
+  # remove any preexisting tables
+  if (scalar $self->TableFrame->children) {
+    $self->TableFrame->children->[0]->destroy;
+  }
+
+  # FIXME
+  my @allkeys = qw(ID title link description dc_date dc_language dc_rights dc_source dc_title dc_type dcterms_issued);
+  my @keys = ("ID", "dc_date", "title");
+  my $propername =
+    {
+     ID => "ID",
+     title => "Title",
+     "dc_date" => "Posting Date",
+    };
+  # here are some additional flags
+  # indicate unread visually
+
+  my @additional = ("Status", "Ethics","Similarity","IRT");
+
+  # basically do a search here
+
+  my $res1 = $self->MyResources->MyMySQL->Do
+    (
+     Statement => "select * from entries order by ID desc limit 500;",
+    );
+
+  my $res2 = $self->MyResources->MyMySQL->Do
+    (
+     Statement => "select * from metadata;",
+    );
+  foreach my $key (keys %$res2) {
+    $entryids->{$res2->{$key}->{Entry_ID}} = $key;
+  }
+
+  $self->Res1($res1);
+  $self->Res2($res2);
+  $self->EntryIDs($entryids);
+
+  # where field like $args{Search};
+  # do a spreadsheet view of all the relevant items
+  my $numberofrows = scalar keys %$res1;
+
+  # get the size
+  my $table = $self->TableFrame->Scrolled
+    (
+     "TableMatrix",
+     # -resizeborders => 'none',
+     -titlerows => 1,
+     -rows => $numberofrows,
+     -colstretchmode => 'all',
+     -cols => ((scalar @keys) + (scalar @additional)),
+     -cache => 1,
+     -scrollbars => "osoe",
+    );
+
+  $table->bind("<Button-4>", sub { $table->yviewScroll(-3,"units") });
+  $table->bind("<Button-5>", sub { $table->yviewScroll(3,"units") });
+
+  # add some other stuff for other fields as needed
+
+  my $col2 = 0;
+  foreach my $fieldname (@keys) {
+    # $table->insertCols("$col2.0", 1);
+    $table->set("0,$col2", $propername->{$fieldname});
+    ++$col2;
+  }
+  foreach my $fieldname (@additional) {
+    # $table->insertCols("$col2.0", 1);
+    $table->set("0,$col2", $fieldname);
+    ++$col2;
+  }
+  $table->colWidth(1, 20);
+  $table->colWidth(2, 60);
+  $table->colWidth(3, 5);
+
+  my $row = 1;
+  # sort by date first of all, not by number as if we use a limited format...  ID cannot be important
+
+  foreach my $key (sort {$res1->{$b}->{dc_date} cmp $res1->{$a}->{dc_date}} keys %$res1) {
+    my $col3 = 0;
+    foreach my $fieldname (@keys) {
+      $table->set("$row,$col3", $res1->{$key}->{$fieldname});
+      ++$col3;
+    }
+    foreach my $fieldname (@additional) {
+      my $id = $entryids->{$key};
+      next unless defined $id;
+      if ($fieldname eq "Status") {
+	# set the color based on the status
+	my $status = $res2->{$id}->{$fieldname};
+	my $color = $self->Statuses->{$status}->{Color};
+	# set the color based on the status
+	my $button = $table->Button
+	  (
+	   -text => $status,
+	   -background => $color,
+	   -command => sub {
+	     $self->PerformStateTransition
+	       (
+		Key => $key,
+		Status => $status,
+	       );
+	   },
+	  );
+	$table->windowConfigure
+	  (
+	   "$row,$col3",
+	   -window => $button,
+	   -sticky => 'nsew',
+	  );
+      } elsif ($fieldname eq "IRT") {
+	# set the color based on the status
+	my $time = $res2->{$id}->{$fieldname};
+	# go ahead and derive a color for the response code
+	# gold silver bronze, etc
+	my $color;
+	if (0) {
+	  if (! defined $time) {
+
+	  } elsif ($time < 1) {
+	    $color = "gold";
+	  } elsif ($time < 3) {
+	    $color = "#F6F9F9";	# silver
+	  } elsif ($time < 7) {
+	    $color = "#9C6963";	# bronze
+	  }
+	}
+	my $blank;
+	if (defined $color) {
+	  $blank = $table->Label
+	    (
+	     -text => $time,
+	     -background => $color,
+	     -cursor => ['left_ptr'],
+	    );
+	} else {
+	  $blank = $table->Label
+	    (
+	     -text => $time,
+	     -cursor => ['left_ptr'],
+	    );
+	}
+	$table->windowConfigure
+	  (
+	   "$row,$col3",
+	   -window => $blank,
+	   -sticky => 'nsew',
+	  );
+      } elsif ($fieldname eq "Ethics") {
+	# set the color based on the status
+	# analyze the text of the item to see how bad the morality is
+	my $ethicality = $self->CalculateEthics();
+	if (defined $ethicality) {
+	  my $gradescale = {
+			    "A+" => 1,
+			    "A" => 0.933,
+			    "A-" => 0.9,
+			    "B+" => 0.867,
+			    "B" => 0.833,
+			    "B-" => 0.80,
+			    "C+" => 0.767,
+			    "C" => 0.733,
+			    "C-" => 0.70,
+			    "D+" => 0.667,
+			    "D" => 0.633,
+			    "D-" => 0.6,
+			    "F" => 0,
+			   };
+	  my $colorscale = {
+			    "A" => "gold",
+			    "B" => "#F6F9F9", # silver
+			    "C" => "#9C6963", # bronze
+			   };
+	  my $finalgrade = "F";
+	  foreach my $grade (sort {$gradescale->{$b} <=> $gradescale->{$a}} keys %$gradescale) {
+	    if ($ethicality >= $gradescale->{$grade}) {
+	      $finalgrade = $grade;
+	      last;
+	    }
+	  }
+	  my $color;
+	  foreach my $grade (keys %$colorscale) {
+	    if ($finalgrade =~ /$grade/) {
+	      $color = $colorscale->{$grade};
+	      last;
+	    }
+	  }
+	  my $blank;
+	  if (defined $color) {
+	    $blank = $table->Label
+	      (
+	       -text => $finalgrade,
+	       -background => $color,
+	       -cursor => ['left_ptr'],
+	      );
+	  } else {
+	    $blank = $table->Label
+	      (
+	       -text => $finalgrade,
+	       -cursor => ['left_ptr'],
+	      );
+	  }
+	  $table->windowConfigure
+	    (
+	     "$row,$col3",
+	     -window => $blank,
+	     -sticky => 'nsew',
+	    );
+	}
+      } elsif ($fieldname eq "Similarity") {
+	# set the color based on the status
+	my $similarity = $self->CalculateSimilarity();
+	if (defined $similarity) {
+	  $table->set("$row,$col3", '%'.int($similarity));
+	}
+      } else {
+	my $label = $table->Label
+	  (
+	   -text => $res2->{$id}->{$fieldname},
+	   -cursor => ['left_ptr'],
+	  );
+	$table->windowConfigure
+	  (
+	   "$row,$col3",
+	   -window => $label,
+	   -sticky => 'nsew',
+	  );
+	# $table->set("$row,$col3", $res2->{$id}->{$fieldname});
+      }
+      ++$col3;
+    }
+    ++$row;
+  }
+
+  $table->pack
+    (
+     -expand => 1,
+     -fill => 'both',
+    );
+  if (defined $position) {
+    $table->yviewMoveto($position);
+  }
+  $self->MyTable($table);
+  print "Finished refreshing display\n";
+}
+
+sub PerformStateTransition {
+  my ($self,%args) = @_;
+  # prompt the user for participation
+  # pop up a menu asking which of the following occurred
+
+  my $entry = $self->ConvertDBToHash(DB => $self->Res1->{$args{Key}});
+
+  # first get the location of the mouse click
+  my $menu = $self->Top1->Menu(-tearoff => 0);
+  # add each of the operations for the current status
+  my @menuitems = @{$self->Statuses->{$args{Status}}->{Order}};
+  # $args{Key},
+
+  $menu->add
+    (
+     'command',
+     -label => "Dismiss",
+     -command => sub {
+
+     },
+    );
+  foreach my $menuitem (@menuitems) {
+    $menu->add
+      (
+       'command',
+       -label => Capitalize(Text => $menuitem),
+       -command => sub {
+	 my $transition = $self->Statuses->{$args{Status}}->{Transitions}->{$menuitem};
+	 my $disturbed = 0;
+	 if (exists $transition->{Action}) {
+	   $disturbed = 1;
+	   $transition->{Action}->
+	     (
+	      Entry => $entry,
+	     );
+	 }
+	 if (exists $transition->{Result}) {
+	   $disturbed = 1;
+	   $self->UpdateState
+	     (
+	      Entry => $entry,
+	      State => $transition->{Result},
+	     );
+	 }
+	 $self->RefreshDisplay if $disturbed;
+       },
+      );
+  }
+  my $screenx = $self->Top1->winfo('pointerx');
+  my $screeny = $self->Top1->winfo('pointery');
+  $menu->post($screenx, $screeny);
+}
+
+sub CalculateEthics {
+  my ($self,%args) = @_;
+  my $ethicalviolations =
+    {
+     "patent" => 1,
+    };
+  return;
+  return rand(1.0);
+}
+
+sub CalculateSimilarity {
+  my ($self,%args) = @_;
+  return;
+  return rand(100.0);
+}
+
+sub Exit {
+  my ($self,%args) = @_;
+  if (Approve("Exit Program?")) {
+    exit(0);
+  }
+}
+
+sub ConvertDBToHash {
+  my ($self,%args) = @_;
+  my $hash = {};
+  foreach my $key (keys %{$args{DB}}) {
+    $key2 = $key;
+    $key2 =~ s/_/:/g;
+    $hash->{$key2} = $args{DB}->{$key};
+  }
+  return $hash;
+}
+
+sub UpdateState {
+  my ($self,%args) = @_;
+  # update the database
+  # print "setting something to state ".$args{State}." for entry id ".$args{Entry}->{ID}."\n";
+  my $statement = "update metadata set status=\"".$args{State}."\" where Entry_ID=".($args{ID} || $args{Entry}->{ID}).";";
+  $self->MyResources->MyMySQL->Do(Statement => $statement);
+}
+
+sub TruncateDB {
+  my ($self,%args) = @_;
+  if (Approve("Truncate the Database?")) {
+    my @tables = qw(entries history metadata);
+    foreach my $table (@tables) {
+      $self->MyResources->MyMySQL->Do(Statement => "truncate $table");
+    }
+    $self->RefreshDisplay();
+  }
+}
+
+sub LoadStatuses {
+  my ($self,%args) = @_;
+  my $actions =
+    {
+     "read" => sub {
+       my %args = @_;
+       $self->MyApplications->{$args{Entry}->{ID}} =
+	 RapidResponse::Application->new
+	     (
+	      Entry => $args{Entry},
+	      Markup => $UNIVERSAL::rapidresponse->MyResources->MyMarkup,
+	     );
+     },
+     "send followup" => sub {
+       my %args = @_;
+       $self->MyApplications->{$args{Entry}->{ID}} =
+	 RapidResponse::Application::FollowUp->new
+	     (
+	      Entry => $args{Entry},
+	      Markup => $UNIVERSAL::rapidresponse->MyResources->MyMarkup,
+	     );
+     },
+    };
+  my $statuses =
+    {
+     "unread" => {
+		  Order => [qw(read ignore reset)],
+		  Transitions => {
+				  "read" => {
+					     Action => $actions->{"read"},
+					     Result => "seen",
+					    },
+				  "ignore" => {
+					       Result => "ignored",
+					      },
+				  "reset" => {
+					      Result => "unread",
+					     },
+				 },
+		  Color => "Red",
+		 },
+     "seen" => {
+		Order => [qw(read ignore reset)],
+		Transitions => {
+				"read" => {
+					   Action => $actions->{"read"},
+					   Result => "their turn",
+					  },
+				"ignore" => {
+					     Action => sub {},
+					     Result => "ignored",
+					    },
+				"reset" => {
+					    Result => "unread",
+					   },
+			       },
+		Color => "Blue",
+	       },
+     "ignored" => {
+		   Order => [qw(read reset)],
+		   Transitions => {
+				   "read" => {
+					      Action => $actions->{"read"},
+					      Result => "seen",
+					     },
+				   "reset" => {
+					       Result => "unread",
+					      },
+				  },
+		   Color => "Grey",
+		  },
+     "their turn" => {
+		      Order => ["got response", "send followup", "ignore", "reset"],
+		      Transitions => {
+
+				      "got response" => {
+							 Action => sub {},
+							 Result => "our turn",
+							},
+				      "send followup" => {
+							  Action => $actions->{"send followup"},
+							  Result => "followed up",
+							 },
+				      "ignore" => {
+						   Action => sub {},
+						   Result => "ignored",
+						  },
+				      "reset" => {
+						  Result => "unread",
+						 },
+				     },
+		      Color => "Yellow",
+		     },
+     "followed up" => {
+		       Order => ["got response", "send followup", "ignored", "reset"],
+		       Transitions => {
+
+				       "got response" => {
+							  Action => sub {},
+							  Result => "our turn",
+							 },
+				       "send followup" => {
+							   Action => $actions->{"send followup"},
+							   Result => "followed up",
+							  },
+				       "ignore" => {
+						    Action => sub {},
+						    Result => "ignored",
+						   },
+				       "reset" => {
+						   Result => "unread",
+						  },
+				     },
+		      Color => "Yellow",
+		     },
+     "our turn" => {
+		    Order => ["respond", "got job", "reset"],
+		    Transitions => {
+				    "respond" => {
+						  Action => sub {
+						    # we will want to
+						    # have a look at
+						    # their last
+						    # response, and
+						    # then execute a
+						    # window to send a
+						    # response
+						  },
+						  Result => "their turn",
+						 },
+				    "got job" => {
+						  Action => sub {
+						    # we can set this
+						    # to inform
+						    # certain people
+						    # of our success
+						    # automatically
+						  },
+						  Result => "job acquired",
+						 },
+				    "reset" => {
+						Result => "unread",
+					       },
+				   },
+		    Color => "Green",
+		   },
+     "job acquired" => {
+			Order => ["successful completion", "quit", "fired", "reset"],
+			Transitions => {
+					"successful completion" => {
+								    Action => sub {
+								      # might
+								      # want
+								      # initiate
+								      # a
+								      # payroll
+								      # mechanism
+								    },
+								    Result => "job finished",
+								   },
+					"quit" => {
+						   Action => sub {
+						     # post 2 weeks
+						     # notice if
+						     # applicable -
+						     # note the type
+						     # of job
+						   },
+						   Result => "job finished",
+						  },
+					"fired" => {
+						    Action => sub {
+						      # record the reason somewhere
+						    },
+						    Result => "job finished",
+						   },
+					"reset" => {
+						    Result => "unread",
+						   },
+				       },
+			Color => "Grey",
+		       },
+     "job finished" => {
+			Order => ["send invoice", "payment acquired"],
+			Transitions => {
+					"send invoice" => {
+							   Action => sub {
+							     # based
+							     # on the
+							     # type of
+							     # job, we
+							     # may
+							     # wish to
+							     # send an
+							     # invoice
+							   },
+							   Result => "paid",
+							  },
+					"payment acquired" => {
+							       Action => sub {},
+							       Result => "paid",
+							      },
+					# "cancel" => "unread",
+					# "reset" => "unread",
+				       },
+			Color => "Grey",
+		       },
+     "paid" => {
+		Order => [],
+		Transitions => {},
+		Color => "Gold",
+	       },
+    }
+      ;
+  $self->Statuses
+    ($statuses);
+}
+
+sub ShowConfiguration {
+  my ($self,%args) = @_;
+  if (! defined $self->MyConfHistory) {
+    $self->MyConfHistory
+      (RapidResponse::Application::Configuration->new);
+    $self->MyConfHistory->Execute();
+  }
+  $self->MyConfHistory->RefreshDisplay;
+}
+
+sub ShowHistory {
+  my ($self,%args) = @_;
+  # # create a new database table
+  # status
+  # # # history
+  # time_elapsed_since_last_history
+  # time_to_initial_response
+  # time_since_my_response
+  # time_since_their_response
+  # if (! defined $self->MyHistory) {
+  $self->MyHistory(undef);
+  $self->MyHistory
+    (RapidResponse::Application::History->new);
+  $self->MyHistory->Execute();
+  # }
+  $self->MyHistory->RefreshDisplay;
+}
+
+sub ShowResponses {
+  my ($self,%args) = @_;
+  # if (! defined $self->MyResponses) {
+  $self->MyResponses(undef);
+  $self->MyResponses
+    (RapidResponse::Responses->new);
+  $self->MyResponses->Execute();
+  # }
+  $self->MyResponses->RefreshDisplay;
+}
+
+sub Checks {
+  my ($self,%args) = @_;
+  # CheckEmail
+  my $responses = RapidResponse::Responses->new();
+  my $lastid = $responses->Execute(Check => 1);
+  if ($lastid != $self->LastID) {
+    if (defined $self->LastID) {
+      # send a notification of new mail
+      $UNIVERSAL::agent->SendContents
+	(
+	 Receiver => "Notification-Manager",
+	 Data => {
+		  Action => "Add",
+		  Type => "Notifications",
+		  Description => "New JS-Rapid-Response Job Email Response: ".$lastid, # maybe eventually add the subject
+		 },
+	);
+    }
+    $self->LastID($lastid);
+  }
+  $responses->DESTROY();
+
+  # UpdateCraigslist
+  $self->UpdateDatabaseFromRSSFeed
+    (
+     MakeNotification => 1,
+    );
+  $UNIVERSAL::agent->SendContents
+    (
+     Receiver => "Notification-Manager",
+     Data => {
+	      Action => "Add",
+	      Type => "Notifications",
+	      Description => "JS-Rapid-Response Job Listing Updated, Check For Jobs",
+	     },
+    );
+}
+
+sub EditConfiguration {
+  my ($self,%args) = @_;
+  $self->MyConfiguration->EditProfile();
+}
+
+sub MyMainLoop {
+  my ($self,%args) = @_;
+  $self->Top1->repeat
+    (
+     50,
+     sub {
+       $self->AgentListen(),
+     },
+    );
+  $self->Top1->repeat
+    (
+     60 * 60 * 1000,
+     sub {
+       $self->Checks(),
+     },
+    );
+  MainLoop();
+}
+
+sub AgentListen {
+  my ($self,%args) = @_;
+  # UniLang::Agent::Agent
+  # print ".\n";
+  $UNIVERSAL::agent->Listen
+    (
+     TimeOut => 0.05,
+    );
+}
+
+1;

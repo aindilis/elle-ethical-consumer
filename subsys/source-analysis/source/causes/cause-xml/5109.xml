@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>404 Not Found</title>
+  <link href="http://s0.causes.com/k/9cee95083f03e36cbfb24e68cf99cd0a632438bc/images/icons/causes.gif" rel="shortcut icon" />
+</head>
+<body>
+  <style type="text/css">
+    a {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #3b5998;
+    }
+    h1, p {
+      color: #d87808;
+    }
+    h1 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 17px;
+    }
+    .body {
+      background: #f6f7f9;
+      border: 1px solid #edeff4;
+      font-family: "Lucida Grande", Tahoma, Helvetica, sans-serif;
+      margin: 80px auto;
+      padding: 30px 40px;
+      text-align: center;
+      width: 380px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: -moz-linear-gradient(top, #f6f7f9, #edeff4 20%);
+      background: -webkit-gradient(linear, left top, left bottom, from(#f6f7f9),
+        to(#edeff4), color-stop(20%, #f6f7f9));
+    }
+  </style>
+  <div class="body">
+    <img src="http://s0.causes.com/k/9cee95083f03e36cbfb24e68cf99cd0a632438bc/images/logos/logo-large.png" alt="" />
+    <h1>The web address you entered cannot be found.</h1>
+    <p>
+      <a href="http://causes.com">Back to causes.com</a>
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>This is a cause to find a cure for the disease that affects us all in one way or another.
+
+1. We must find a cure for Cancer.
+
+2. We must give funds to those who cant afford their treatments.</description>
+  <mission>find a cure to cancer</mission>
+  <name>American Association for Cancer Research</name>
+  <canonical-url>http://www.causes.com/causes/1431</canonical-url>
+  <member-count type="integer">10554</member-count>
+  <total-raised type="decimal">1768.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/HTP/BRwS.jpg</photo-url>
+</cause>

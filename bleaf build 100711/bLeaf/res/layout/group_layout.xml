@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/grouplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="75dip"
+        android:orientation="horizontal"
+        android:padding="10dip"
+        android:background="@drawable/gatorjuicethesequal">
+        <TextView
+        	android:id="@+id/grouptext"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical|left"
+	        android:textStyle="bold"
+	        android:textColor="#ffffff" />"
+</LinearLayout>

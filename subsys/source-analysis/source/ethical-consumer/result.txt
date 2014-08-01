@@ -1,0 +1,94 @@
+GS1 - The global language of business
+
+Contact your local GS1 office      Extranet Login
+[                    ]
+ [searchbtn]
+
+  • Home
+  • About Us
+  • Products & Solutions
+  • Services
+  • Sectors & Collaborations
+
+Header Images
+
+GEPIR
+
+  • - all searches
+  • - search by barcode
+  • - search by SSCC
+  • - search by location
+  • - search by name
+
+More info
+
+  • - Contact
+  • - About
+
+X
+        Hosted MO Login
+
+Username [                    ] 
+Password [                    ] 
+                         [Login]
+Hosted MO Login
+
+Search by Company Name
+
+Locate enterprise by its name and country. In case you receive too many results
+precise "Street Address", "Zip/Postal Code" or "City" information. "Company
+name" and "Country" are mandatory fields.
+
+ 
+
+     Company Name: [Estee Lauder        ]
+   Street Address: [                    ]
+  Zip/Postal Code: [                    ]
+             City: [                    ]
+          Country: [UNITED STATES (3.0)                               ]
+[Search]
+[Wait]
+
+
+This information is provided on behalf of GS1 US, INC..
+     GLN             Company          Contact     Last    GCP   Status Provider
+                                                 Change                  GLN
+              Estee Lauder          
+              International
+              NY                    Tel:(631)
+0801993000004 145 Pinelawn Road     454-7000            0801993   0
+              North Suite
+              11747-3115  Melville
+              United States
+              Estee Lauder Inc.     
+              NY
+              7 Corporate Center    Tel:(631)
+0027131000006 Drive                 454-7000            0027131   0
+
+              11747-3115  Melville
+              United States
+              Estee Lauder Inc.     
+              NY
+              7 Corporate Center    Tel:(631)
+0027131000006 Drive                 454-7000                      0
+
+              11747-3115  Melville
+              United States
+              Estee Lauder          
+              Cosmeticos, S.A. De
+              C.V.
+0663563000001 Felix Guzman No. 9-A  Tel:00730763        0663563   0
+              Col. El Parque        Fax:5805251
+              53390  Naucalpan,
+              Edo. De M
+              Mexico
+              Estee Lauder Inc.     
+              NY
+              7 Corporate Center    Tel:(631)
+0027131000006 Drive                 454-7000            0763511   0
+
+              11747-3115  Melville
+              United States
+Responder: 0614141800001, Responses: 5, RC: 0 (No error)
+
+Disclaimer | Privacy | Sitemap | Contact webmaster 00 | [Δ]

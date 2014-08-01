@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>This is just for testing and will be deleted
+
+1. testing is necessary</description>
+  <mission>test the Cause app</mission>
+  <name>Test Cause</name>
+  <canonical-url>http://www.causes.com/causes/7393</canonical-url>
+  <member-count type="integer">1</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/CO/Xy/zP/0u/c0/CF/jA0S.jpg</photo-url>
+</cause>

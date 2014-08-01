@@ -1,0 +1,7 @@
+(load "/var/lib/myfrdcsa/codebases/minor/action-planner/subsystems/electrofriend-expert-system/custom-clips-domains/domains/functions.clp")
+(load "/var/lib/myfrdcsa/codebases/minor/action-planner/subsystems/electrofriend-expert-system/custom-clips-domains/domains/extension-0.clp")
+(load "/var/lib/myfrdcsa/codebases/minor/action-planner/subsystems/electrofriend-expert-system/custom-clips-domains/domains/extension-1.clp")
+(load "/var/lib/myfrdcsa/codebases/minor/action-planner/subsystems/electrofriend-expert-system/custom-clips-domains/domains/extension-2.clp")
+(load "/var/lib/myfrdcsa/codebases/minor/action-planner/subsystems/electrofriend-expert-system/custom-clips-domains/situations/situation-1.clp")
+(reset)
+(run)

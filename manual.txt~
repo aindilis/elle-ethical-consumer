@@ -1,0 +1,14 @@
+Basically first off check if it's reviewed or not, if not reviewed,
+find next unreviewed.  Shows you it's reviewed.  Show companies
+
+What if the US is a country, not a company.
+
+If it's a company named entity which isn't 
+
+Normalize companies
+
+If you know what the company is, and you know what the right name is.
+
+If it is a company, but none of them, select none of the above.
+
+Then Write to DB

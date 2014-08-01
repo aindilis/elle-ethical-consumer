@@ -1,0 +1,43 @@
+my $categories =
+  {
+
+   "Human Rights" => {
+		      "Poverty" => 1,
+		      "Health and Wellness" => 1,
+		      "Discrimination" => 1,
+		      "Religious Rights" => 1,
+		     },
+   "Animal" => {
+		"Animal Testing" => 1,
+		"Factory Farming" => 1,
+		"Animal Rights & Cruelty" => 1,
+	       },
+   "Environment" => {
+		     "Environmental Reporting" => 1,
+		     "Nuclear Power" => 1,
+		     "Climate Change" => 1,
+		     "Pollution and Toxics" => 1,
+		     "Habitats and Resources" => 1,
+		     "Carbon Footprint" => 1,
+		    },
+   "Business Practices" => {
+			    "Worker Rights" => 1,
+			    "Supply Chain Policy" => 1,
+			    "Irresponsible Marketing" => 1,
+			    "Arms and Military Supply" => 1,
+			   },
+   "Politics" => {
+		  "Anti Social Finance" => 1,
+		  "Boycott Calls" => 1,
+		  "Genetic Engineering" => 1,
+		  "Political Activity" => 1,
+		  "Fairtrade" => 1,
+		 },
+   "Technology" => {
+		    "Net Neutrality" => 1,
+		    "Open/Closed Source" => 1,
+		    "Big/Little Brother" => 1,
+		    "Genetic Engineering" => 1,
+		    "Stem Cell/Cloning Research" => 1,
+		   },
+  };

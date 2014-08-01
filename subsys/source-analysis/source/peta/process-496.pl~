@@ -1,0 +1,45 @@
+#!/usr/bin/perl -w
+
+use PerlLib::SwissArmyKnife;
+
+my $contents = read_file("496.aspx");
+my ($contact,$products,$availability) = ("","","");
+my @contactinfo;
+if ($contents =~ /<dl class="company-item company-contact">(.+?)<\/dl>/s) {
+  $contact = $1;
+  if ($contact =~ /<dd>(.+?)<\/dd>/s) {
+    my $contracted = $1;
+    foreach my $entry (split /<br \/>/, $contracted) {
+      if ($entry =~ /<a title="([^"]+?)" href="([^"]+?)" target="_blank">(.+?)<\/a>/) {
+	push @contactinfo,
+	  {
+	   Title => $1,
+	   Href => $2,
+	   Name => $3,
+	  };
+      } else {
+	$entry =~ s/^\s*//;
+	$entry =~ s/\s*$//;
+	$entry =~ s/\s+/ /g;
+	push @contactinfo, $entry;
+      }
+    }
+  }
+}
+my @productsinfo;
+if ($contents =~ /<dl class="company-item company-products">(.+?)<\/dl>/s) {
+  $products = $1;
+  if ($products =~ /<ul class="content-list">(.+?)<\/ul>/s) {
+    my $contracted = $1;
+    @productsinfo = $contracted =~ /<li class="content-item">(.+?)<\/li>/sg;
+  }
+}
+if ($contents =~ /<dl class="company-item company-availability">(.+?)<\/dl>/s) {
+  $availability = $1;
+  if ($availability =~ /<ul class="content-list">(.+?)<\/ul>/s) {
+    my $contracted = $1;
+    @availabilityinfo = $contracted =~ /<li class="content-item">(.+?)<\/li>/sg;
+  }
+
+}
+print Dumper([\@contactinfo,\@productsinfo,\@availabilityinfo]);

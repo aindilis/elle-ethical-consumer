@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>Myasthenia Gravis is an autoimmune disease. 
+For every 1,000,000 people 50 people will end up being diagnosed with MG. 
+If you have MG you can survive with a very special daily routine, but some people with MG will not survive. Myasthenia gravis (MG) is a complex, autoimmune disorder in which antibodies destroy neuromuscular connections. This causes problems with the nerves that communicate with muscles. MG affects the voluntary muscles of the body, especially the eyes, mouth, throat, and limbs.
+
+
+1. A cure needs to be found for this disease.
+
+2. Many people with MG suffer daily. </description>
+  <mission>Find a cure </mission>
+  <name>Join the Journey to find a cure for MG.</name>
+  <canonical-url>http://www.causes.com/causes/418</canonical-url>
+  <member-count type="integer">100</member-count>
+  <total-raised type="decimal">100.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/lhF/nK2S.jpg</photo-url>
+</cause>

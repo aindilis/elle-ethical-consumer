@@ -1,0 +1,16 @@
+#!/usr/bin/perl -w
+
+use PerlLib::SwissArmyKnife;
+use System::WWW::GEPIR;
+
+my $gepir = System::WWW::GEPIR->new();
+
+my $results = $gepir->SearchByName
+  (
+   CompanyName => "Estee Lauder",
+  );
+
+# print Dumper($results);
+if ($results->{Success}) {
+  print Dumper($results->{Result});
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>From Wikipedia:
+"Instant runoff voting (IRV) is a voting system used for single winner elections in which voters rank candidates in order of preference. In an IRV election, if no candidate receives an overall majority of first preferences, the candidates with fewest votes are eliminated one by one, and their votes transferred according to their second and third preferences (and so on) and all votes retallied, until one candidate achieves a majority. The term 'instant runoff voting' is used because this process resembles a series of run-off elections."
+
+Therefore if your ballot looks like this:
+
+1  Mr. Littleguy
+2  Mrs. Bigshot
+3  Mr. Eh
+
+...and Mr. Littleguy doesn't stand a chance, your vote will be transfered to Mrs. Bigshot, and your vote won't be "wasted."  Voting should not be a strategical process of settling for less.  IRV promotes democracy and allows voters to vote with confidence and pride.
+
+1. Citizens should not have to worry about "wasting" a vote.
+
+2. A two-party system should not be the only option.</description>
+  <mission>Spread awareness and bring IRV into the mainstream.</mission>
+  <name>Instant Runoff Voting</name>
+  <canonical-url>http://www.causes.com/causes/134</canonical-url>
+  <member-count type="integer">749</member-count>
+  <total-raised type="decimal">60.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/IB8/sWRS.jpg</photo-url>
+</cause>

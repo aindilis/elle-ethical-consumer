@@ -1,0 +1,10 @@
+#!/usr/bin/perl -w
+
+# review aggregated proclamations
+
+my $procolamationdir = "/var/lib/myfrdcsa/codebases/minor/elle-ethical-consumer/subsys/rule-based-belief-elicitation/";
+my $files = `ls $proclamationdir`;
+print "$files\n";
+foreach my $file (split /\n/, $files) {
+  print "<$file>\n";
+}

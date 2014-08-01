@@ -1,0 +1,215 @@
+package Com::elle::bLeaf::EvidenceGenerator::Source::PETA;
+
+use Com::elle::bLeaf::EvidenceGenerator::Link;
+use Com::elle::bLeaf::EvidenceGenerator::News;
+use Com::elle::bLeaf::EvidenceGenerator::NewsSource;
+
+use PerlLib::Cacher;
+use PerlLib::SwissArmyKnife;
+
+use HTML::Entities;
+
+use Class::MethodMaker
+  new_with_init => 'new',
+  get_set       =>
+  [
+   qw / Loaded MyNews Verbose Causes Count MyCacher /
+  ];
+
+sub init {
+  my ($self,%args) = @_;
+  $self->Verbose(0);
+  $self->Loaded(0);
+  $self->MyNews
+    (PerlLib::Collection->new
+     (StorageFile => $args{StorageFile}
+      || "$UNIVERSAL::systemdir/data/source/PETA/news",
+      Type => "Com::elle::bLeaf::EvidenceGenerator::News"));
+  $self->MyNews->Contents({});
+  $self->Causes({});
+  $self->Count(0);
+}
+
+sub UpdateSource {
+  my ($self,%args) = @_;
+}
+
+sub LoadSource {
+  my ($self,%args) = @_;
+  Message(Message => "Loading source: PETA");
+  $self->MyCacher
+    (PerlLib::Cacher->new
+     (
+      CacheRoot => "/var/lib/myfrdcsa/codebases/minor/elle-ethical-consumer/subsys/source-analysis/source/peta/FileCache",
+     ));
+
+  foreach my $i (0..67) {
+    my $url = "http://www.peta.org/living/beauty-and-personal-care/companies/search.aspx?Testing=0&PageIndex=$i";
+    $self->MyCacher->get($url);
+    print $url."\n";
+
+    if (! $self->MyCacher->is_cached()) {
+      sleep 10;
+    }
+    $self->ProcessContent
+      (
+       URL => $url,
+       Type => "doesn't do animal testing",
+       Content => $self->MyCacher->content(),
+      );
+  }
+
+  foreach my $i (0..11) {
+    my $url = "http://www.peta.org/living/beauty-and-personal-care/companies/search.aspx?Testing=1&PageIndex=$i";
+    $self->MyCacher->get($url);
+    print $url."\n";
+    # print $self->MyCacher->content()."\n";
+    if (! $self->MyCacher->is_cached()) {
+      sleep 10;
+    }
+    $self->ProcessContent
+      (
+       URL => $url,
+       Type => "does animal testing",
+       Content => $self->MyCacher->content(),
+      );
+  }
+
+  my $num = scalar keys %$urls;
+  print "NUM $num\n";
+  # print Dumper($urls);
+
+  $self->MyNews->Save;
+  Message(Message => "Done loading source: Causes");
+}
+
+sub ProcessContent {
+  my ($self,%args) = @_;
+  my $c = $args{Content};
+  # print $c."\n";
+  if ($c =~ /currently tied up with some technical difficulties/) {
+    # try reloading the url
+    $self->MyCacher->delete($url);
+    $self->MyCacher->get($url);
+    $c = $self->MyCacher->content();
+  }
+  if ($c =~ /<ul class="company-list">(.+?)<\/ul>/s) {
+    # print $1;
+    my $contents = $1;
+    my @items = $contents =~ /<li>(.+?)<\/li>/sg;
+    foreach my $item (@items) {
+      if ($item =~ /<a title="[^"]+" href="([^"]+)">(.+?)<\/a>/s) {
+	my $url = "http://www.peta.org".$1;
+	my $name = $2;
+	$urls->{$name} =
+	  {
+	   Name => $name,
+	   URL => $url,
+	   Type => $args{Type},
+	  };
+	if (1) {
+	  print "\t$url\n";
+	  $self->MyCacher->get($url);
+	  if ( ! $self->MyCacher->is_cached()) {
+	    sleep 5;
+	  }
+	  $self->ProcessContent496
+	    (
+	     URL => $urls->{$name},
+	     Content => $self->MyCacher->content(),
+	    );
+	}
+      } else {
+	print "ERROR: $item\n";
+      }
+    }
+  }
+}
+
+sub ProcessContent496 {
+  my ($self,%args) = @_;
+  my $contents = $args{Content},
+  my ($contact,$products,$availability) = ("","","");
+  my @contactinfo;
+  my $companyheader = "";
+  if ($contents =~ /<dl class="company-header"><dt>Company: <\/dt><dd>(.+?)<\/dd><\/dl>/) {
+    $companyheader = decode_entities($1);
+  }
+  my @links;
+  if ($contents =~ /<dl class="company-item company-contact">(.+?)<\/dl>/s) {
+    $contact = $1;
+    if ($contact =~ /<dd>(.+?)<\/dd>/s) {
+      my $contracted = $1;
+      foreach my $entry (split /<br \/>/, $contracted) {
+	if ($entry =~ /<a title="([^"]+?)" href="([^"]+?)" target="_blank">(.+?)<\/a>/) {
+	  my $title = $1;
+	  my $href = $2;
+	  my $name = $3;
+	  push @links,
+	    Com::elle::bLeaf::EvidenceGenerator::Link->new
+		(
+		 URL => $href,
+		 LinkText => decode_entities(decode_entities($title))." (".decode_entities($name).")",
+		);
+	} else {
+	  $entry = decode_entities($entry);
+	  $entry =~ s/^\s*//;
+	  $entry =~ s/\s*$//;
+	  $entry =~ s/\s+/ /g;
+	  push @contactinfo, $entry;
+	}
+      }
+    }
+  }
+  my @productsinfo;
+  if ($contents =~ /<dl class="company-item company-products">(.+?)<\/dl>/s) {
+    $products = $1;
+    if ($products =~ /<ul class="content-list">(.+?)<\/ul>/s) {
+      my $contracted = $1;
+      @productsinfo = $contracted =~ /<li class="content-item">(.+?)<\/li>/sg;
+    }
+  }
+  if ($contents =~ /<dl class="company-item company-availability">(.+?)<\/dl>/s) {
+    $availability = $1;
+    if ($availability =~ /<ul class="content-list">(.+?)<\/ul>/s) {
+      my $contracted = $1;
+      @availabilityinfo = $contracted =~ /<li class="content-item">(.+?)<\/li>/sg;
+    }
+
+  }
+  # print Dumper([$companyheader,\@contactinfo,\@productsinfo,\@availabilityinfo]);
+
+  my @final;
+  push @final, $companyheader;
+  push @final, join("\n",@contactinfo);
+  push @final, join("\n",@productsinfo);
+  push @final, join("\n",@availabilityinfo);
+  my $desc = join("\n\n",@final);
+
+  my $newssource = Com::elle::bLeaf::EvidenceGenerator::NewsSource->new
+    (
+     SourceText => "PETA.org: ".$args{URL}->{Name},
+     URL => $args{URL}->{URL},
+    );
+
+  my $news = Com::elle::bLeaf::EvidenceGenerator::News->new
+    (
+     Sources => [$newssource],
+     Links => \@links,
+     Title => $companyheader." ".$args{URL}->{Type},
+     Contents => $desc,
+     Score => undef,
+     Categories => {
+		    "Animal | Animal Testing" => 1
+		   },
+     MiscInfo => "", # $args{Content},
+    );
+
+  # process this with both OpenCalais and DBpediaSpotlight
+  $self->MyNews->AddAutoIncrement
+    (
+     Item => $news,
+    );
+}
+
+1;

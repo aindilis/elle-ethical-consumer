@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, EthicalConsumerActivity!</string>
+    <string name="app_name">bLeaf</string>
+    <string name="rating_positive">Supports Ethical Practices</string>
+    <string name="rating_negative">Ethical Issues Found</string>
+    <string name="rating_neutral">Possible Ethical Issues</string>
+    <string name="rating_none">No Results Found</string>
+</resources>

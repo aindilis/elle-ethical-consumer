@@ -1,0 +1,26 @@
+<!DOCTYPE announcement [
+<!ELEMENT announcement (metadata,items)>
+<!ELEMENT metadata (version)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT items ((group|evidence)+)>
+<!ELEMENT group (group-name,group-desc,add?,remove?)>
+<!ELEMENT group-name (#PCDATA)>
+<!ELEMENT group-desc (#PCDATA)>
+<!ELEMENT add (company+)>
+<!ELEMENT remove (company+)>
+<!ELEMENT evidence (title,description,categories,source,link,companies)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT categories (category+)>
+<!ELEMENT category (category-name,category-rating)>
+<!ELEMENT category-name (#PCDATA)>
+<!ELEMENT category-rating (#PCDATA)>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT companies (company+)>
+<!ELEMENT company (normalized,tagged,GCPs)>
+<!ELEMENT normalized (#PCDATA)>
+<!ELEMENT tagged (#PCDATA)>
+<!ELEMENT GCPs (GCP+)>
+<!ELEMENT GCP (#PCDATA)>
+]>

@@ -1,0 +1,11 @@
+#!/usr/bin/perl -w
+
+use PerlLib::Cacher;
+use PerlLib::SwissArmyKnife;
+
+my $cacher = PerlLib::Cacher->new
+  (
+   CacheRoot => "/var/lib/myfrdcsa/codebases/minor/elle-ethical-consumer/subsys/source-analysis/source/peta/FileCache",
+  );
+
+print Dumper($cacher->CacheObj->get_keys());

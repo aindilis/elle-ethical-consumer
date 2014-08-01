@@ -1,0 +1,51 @@
+75d74
+< 			boolean read = true;
+85,87c84,85
+< 			    		} catch (Exception e) {
+< 							read = false;
+< 							e.printStackTrace();
+---
+> 			    		} catch (MalformedURLException e) {
+> 							
+92,99c90,95
+< 			if(read){
+< 				BLeafDbAdapter db = new BLeafDbAdapter(context);
+< 				ContentValues v = new ContentValues();
+< 				v.put(BLeafDbHelper.COL_MD5, MD5_Hash(getHeaderStuff(con)));
+< 				String where = "url=?";
+< 				String[] arg = new String[]{pUrl};
+< 				db.updateStuff(BLeafDbHelper.TABLE_FEEDS, v, where, arg);
+< 			}
+---
+> 			BLeafDbAdapter db = new BLeafDbAdapter(context);
+> 			ContentValues v = new ContentValues();
+> 			v.put(BLeafDbHelper.COL_MD5, MD5_Hash(getHeaderStuff(con)));
+> 			String where = "url=?";
+> 			String[] arg = new String[]{pUrl};
+> 			db.updateStuff(BLeafDbHelper.TABLE_FEEDS, v, where, arg);
+101c97
+< 			e.printStackTrace();
+---
+> 			
+119,126c115,122
+< 			InputStream inputStream = url.openConnection().getInputStream();
+< 			BufferedReader r = new BufferedReader(new InputStreamReader(inputStream));
+< 			StringBuilder total = new StringBuilder();
+< 			String line;
+< 			while ((line = r.readLine()) != null) {
+< 			    total.append(line);
+< 			    total.append("\n");
+< 			}
+---
+> //			InputStream inputStream = url.openConnection().getInputStream();
+> //			BufferedReader r = new BufferedReader(new InputStreamReader(inputStream));
+> //			StringBuilder total = new StringBuilder();
+> //			String line;
+> //			while ((line = r.readLine()) != null) {
+> //			    total.append(line);
+> //			    total.append("\n");
+> //			}
+151c147
+< 			String md5 = MD5_Hash(total.toString());
+---
+> 			String md5 = MD5_Hash(getHeaderStuff(connection));

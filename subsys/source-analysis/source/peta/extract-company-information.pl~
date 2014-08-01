@@ -1,0 +1,6 @@
+#!/usr/bin/perl -w
+
+use PerlLib::SwissArmyKnife;
+
+my $c = read_file("sample.html");
+print $c."\n";

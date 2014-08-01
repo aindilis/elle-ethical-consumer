@@ -1,0 +1,36 @@
+package Com::elle::bLeaf::EvidenceGenerator::Link;
+
+use PerlLib::SwissArmyKnife;
+
+use DateTime;
+
+use Class::MethodMaker
+  new_with_init => 'new',
+  get_set       =>
+  [
+
+   qw / URL Text /
+
+  ];
+
+sub init {
+  my ($self,%args) = @_;
+  $self->URL($args{URL});
+  $self->Text($args{Text});
+}
+
+sub Print {
+  my ($self,%args) = @_;
+  print $self->SPrint;
+}
+
+sub SPrint {
+  my ($self,%args) = @_;
+  return Dumper
+    ([
+      $self->URL,
+      $self->Text,
+     ]);
+}
+
+1;

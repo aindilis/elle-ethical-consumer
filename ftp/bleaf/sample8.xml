@@ -1,0 +1,1030 @@
+<?xml version='1.0' ?>
+<!DOCTYPE announcement [
+<!ELEMENT announcement (metadata,items)>
+<!ELEMENT metadata (version)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT items ((group|evidence)+)>
+<!ELEMENT group (group-name,group-desc,add?,remove?)>
+<!ELEMENT group-name (#PCDATA)>
+<!ELEMENT group-desc (#PCDATA)>
+<!ELEMENT add (company+)>
+<!ELEMENT remove (company+)>
+<!ELEMENT evidence (title,description,categories,source,link,companies)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT categories (category+)>
+<!ELEMENT category (category-name,category-rating)>
+<!ELEMENT category-name (#PCDATA)>
+<!ELEMENT category-rating (#PCDATA)>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT companies (company+)>
+<!ELEMENT company (normalized,tagged,GCPs)>
+<!ELEMENT normalized (#PCDATA)>
+<!ELEMENT tagged (#PCDATA)>
+<!ELEMENT GCPs (GCP+)>
+<!ELEMENT GCP (#PCDATA)>
+]>
+<announcement>
+  <metadata>
+    <version>bLeaf 0.1</version>
+  </metadata>
+  <items>
+    <evidence>
+      <title>Boycott estee lauder inc., the iams company, johnson   johnson/health/baby, johnson   johnson ltd., nestle usa, nestle uk limited, nestle france sas, nestle' italiana s.p.a.</title>
+      <description>
+	You should boycott Animal testing and animal rights.
+	A number of companies are on the list for their poor record on animal testing. These companies include Boots, British Heart Foundation, Estee Lauder, Herbal Essences, Iams, Johnson and Johnson and Nestle. There are also several companies on list for animal rights related issues. These include: Adidas, Burberry, Escada, Japan, Harrods, Joseph Ltd, Kentucky Fried Chicken, Kurt Geiger and Tesco. Find out more on the animal rights boycotts page .
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Animal testing and animal rights
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>estee lauder inc.</normalized>
+	  <tagged>Estee Lauder</tagged>
+	  <GCPs><GCP>0027131</GCP>
+	  <GCP>0763511</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>the iams company</normalized>
+	  <tagged>Iams</tagged>
+	  <GCPs><GCP>0019014</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>johnson   johnson/health/baby</normalized>
+	  <tagged>Johnson</tagged>
+	  <GCPs><GCP>0381370</GCP>
+	  <GCP>0381378</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>johnson   johnson ltd.</normalized>
+	  <tagged>Johnson</tagged>
+	  <GCPs><GCP>8901012</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>nestle usa</normalized>
+	  <tagged>Nestle</tagged>
+	  <GCPs><GCP>0011132</GCP>
+	  <GCP>0017800</GCP>
+	  <GCP>0017900</GCP>
+	  <GCP>0020182</GCP>
+	  <GCP>0028000</GCP>
+	  <GCP>0038100</GCP>
+	  <GCP>0039000</GCP>
+	  <GCP>0043695</GCP>
+	  <GCP>0043800</GCP>
+	  <GCP>0045500</GCP>
+	  <GCP>0047557</GCP>
+	  <GCP>0050000</GCP>
+	  <GCP>0051120</GCP>
+	  <GCP>0070002</GCP>
+	  <GCP>0070230</GCP>
+	  <GCP>0072985</GCP>
+	  <GCP>0097421</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>nestle uk limited</normalized>
+	  <tagged>Nestle</tagged>
+	  <GCPs><GCP>5000161</GCP>
+	  <GCP>5000189</GCP>
+	  <GCP>5000243</GCP>
+	  <GCP>5000426</GCP>
+	  <GCP>5011394</GCP>
+	  <GCP>5011476</GCP>
+	  <GCP>5011546</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>nestle france sas</normalized>
+	  <tagged>Nestle</tagged>
+	  <GCPs><GCP>3023081</GCP>
+	  <GCP>3023082</GCP>
+	  <GCP>3033710</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>nestle' italiana s.p.a.</normalized>
+	  <tagged>Nestle</tagged>
+	  <GCPs><GCP>8000300</GCP>
+	  <GCP>8000550</GCP>
+	  <GCP>8005420</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott adidas america, inc., adidas australia pty ltd</title>
+      <description>
+	You should boycott Adidas.
+	Is on the list due to a boycott call from Viva for using kangaroo skin to make some types of football boots.
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Adidas
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>adidas america, inc.</normalized>
+	  <tagged>Adidas</tagged>
+	  <GCPs><GCP>0098090</GCP>
+	  <GCP>0098091</GCP>
+	  <GCP>0098092</GCP>
+	  <GCP>0098093</GCP>
+	  <GCP>0098094</GCP>
+	  <GCP>0098095</GCP>
+	  <GCP>0098096</GCP>
+	  <GCP>0098097</GCP>
+	  <GCP>0098098</GCP>
+	  <GCP>0605950</GCP>
+	  <GCP>0639781</GCP>
+	  <GCP>0660418</GCP>
+	  <GCP>0660419</GCP>
+	  <GCP>0805173</GCP>
+	  <GCP>0826495</GCP>
+	  <GCP>0826512</GCP>
+	  <GCP>0829233</GCP>
+	  <GCP>0829234</GCP>
+	  <GCP>0881938</GCP>
+	  <GCP>0882794</GCP>
+	  <GCP>0883126</GCP>
+	  <GCP>0883226</GCP>
+	  <GCP>0883321</GCP>
+	  <GCP>0885274</GCP>
+	  <GCP>0885611</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>adidas australia pty ltd</normalized>
+	  <tagged>Adidas</tagged>
+	  <GCPs><GCP>9314237</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott bacardi u.s.a., inc.</title>
+      <description>
+	You should boycott Bacardi.
+	Is on the list for continuing to use its Cuban origins in its marketing despite being active in anti-Cuba lobby groups in the US. For more information see Rock around the Blockade . To see how they rated and for alternatives see Ethical Consumer's buyers' guide to rum.
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Bacardi
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>bacardi u.s.a., inc.</normalized>
+	  <tagged>Bacardi</tagged>
+	  <GCPs><GCP>0080480</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott coca cola enterprises europe ltd, coca-cola amatil (nz)  ltd, coca-cola drycker sverige ab, coca-cola bottling midwest, coca-cola elliniki etaireia, coca cola services france sas, coca-cola bottling co. of ny, coca-cola amatil ltd, coca-cola services, coca-cola nestle refreshments, middlesboro coca-cola bottling, coca-cola usa operations</title>
+      <description>
+	You should boycott Coca-Cola.
+	Is under boycott calls from the Colombia Solidarity Campaign , and the India Resource Centre.
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Coca-Cola
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>coca cola enterprises europe ltd</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>5000112</GCP>
+	  <GCP>5000193</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>coca-cola amatil (nz)  ltd</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>9400559</GCP>
+	  <GCP>9415087</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>coca-cola drycker sverige ab</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>7331040</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>coca-cola bottling midwest</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>0071708</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>coca-cola elliniki etaireia</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>5201005</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>coca cola services france sas</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>3174780</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>coca-cola bottling co. of ny</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>0072979</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>coca-cola amatil ltd</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>9300624</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>coca-cola services</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>5449000</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>coca-cola nestle refreshments</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>0083900</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>middlesboro coca-cola bottling</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>0735086</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>coca-cola usa operations</normalized>
+	  <tagged>Coca-Cola</tagged>
+	  <GCPs><GCP>0049000</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott estee lauder inc.</title>
+      <description>
+	You should boycott Estee Lauder.
+	Uncaged are calling for a boycott of Estee Lauder. It was named as a company that either openly used animal-tested chemicals, or failed to demonstrated that the finished products and ingredients they used had not been tested on animals since a fixed cut-off date. To see how they rate and for alternatives see several of Ethical Consumer's Buyers' Guides in the health and beauty section.
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Estee Lauder
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>estee lauder inc.</normalized>
+	  <tagged>Estee Lauder</tagged>
+	  <GCPs><GCP>0027131</GCP>
+	  <GCP>0763511</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott the iams company, procter   gamble company, procter   gamble, cosmetic   frag. prod., procter   gamble uk, procter   gamble distribution company, procter   gamble sas</title>
+      <description>
+	You should boycott Iams (owned by Procter &amp; Gamble).
+	This brand is under a boycott call from Uncaged for unnecessary animal testing. It is estimated Procter &amp; Gambles is responsible for the deaths of 50,000 animals each year. For more information see the Proctor and Gamble boycotts profile page For ratings and alternative brands see Ethical Consumer's free Buyers Guides to cat and dog food .
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Iams (owned by Procter &amp; Gamble)
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>the iams company</normalized>
+	  <tagged>Iams</tagged>
+	  <GCPs><GCP>0019014</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>procter   gamble company</normalized>
+	  <tagged>Procter &amp; Gamble</tagged>
+	  <GCPs><GCP>0012044</GCP>
+	  <GCP>0017200</GCP>
+	  <GCP>0020800</GCP>
+	  <GCP>0025500</GCP>
+	  <GCP>0037000</GCP>
+	  <GCP>0041333</GCP>
+	  <GCP>0047400</GCP>
+	  <GCP>0074262</GCP>
+	  <GCP>0080878</GCP>
+	  <GCP>0082444</GCP>
+	  <GCP>0091494</GCP>
+	  <GCP>0301490</GCP>
+	  <GCP>0301495</GCP>
+	  <GCP>0337000</GCP>
+	  <GCP>0381510</GCP>
+	  <GCP>0381511</GCP>
+	  <GCP>0381512</GCP>
+	  <GCP>0381513</GCP>
+	  <GCP>0381514</GCP>
+	  <GCP>0381515</GCP>
+	  <GCP>0381516</GCP>
+	  <GCP>0381517</GCP>
+	  <GCP>0381518</GCP>
+	  <GCP>0381519</GCP>
+	  <GCP>0723987</GCP>
+	  <GCP>0752077</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>procter   gamble, cosmetic   frag. prod.</normalized>
+	  <tagged>Procter &amp; Gamble</tagged>
+	  <GCPs><GCP>0008100</GCP>
+	  <GCP>0022700</GCP>
+	  <GCP>0093100</GCP>
+	  <GCP>0322700</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>procter   gamble uk</normalized>
+	  <tagged>Procter &amp; Gamble</tagged>
+	  <GCPs><GCP>5000174</GCP>
+	  <GCP>5010264</GCP>
+	  <GCP>5010527</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>procter   gamble distribution company</normalized>
+	  <tagged>Procter &amp; Gamble</tagged>
+	  <GCPs><GCP>5410076</GCP>
+	  <GCP>5413149</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>procter   gamble sas</normalized>
+	  <tagged>Procter &amp; Gamble</tagged>
+	  <GCPs><GCP>3023100</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott johnson   johnson/health/baby, johnson   johnson ltd.</title>
+      <description>
+	You should boycott Johnson &amp; Johnson.
+	Uncaged is calling a boycott of Johnson &amp; Johnson. Uncaged have named the company as one that either openly uses animal-tested chemicals, or failed to demonstrated that the finished products and ingredients it used had not been tested on animals since a fixed cut-off date. To see how they rate and for alternatives see Ethical Consumer's free Buyers' Guides in the health and beauty section
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Johnson &amp; Johnson
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>johnson   johnson/health/baby</normalized>
+	  <tagged>Johnson &amp; Johnson</tagged>
+	  <GCPs><GCP>0381370</GCP>
+	  <GCP>0381378</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>johnson   johnson ltd.</normalized>
+	  <tagged>Johnson &amp; Johnson</tagged>
+	  <GCPs><GCP>8901012</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott kellogg company</title>
+      <description>
+	You should boycott Kellogg's.
+	For using sugar from genetically engineered sugar beets in its products. For more information see the Organic Consumers Association website. To see how they rate and for alternatives see Ethical Consumer's free Buyers' Guide to cereal . Kurt Geiger Kurt Geiger under a boycott call from Campaign Against the Fur Trade for selling boots made from rabbit fur.
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Kellogg's
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>kellogg company</normalized>
+	  <tagged>Kellogg 's</tagged>
+	  <GCPs><GCP>0038000</GCP>
+	  <GCP>0079126</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott l'oreal international, l'oreal coiffure, l'oreal u.s.a., inc., l'oreal (uk) ltd, l'oreal usa, inc./designer fragrance/safari, l'oreal saipo s.p.a., l'oreal classic salon products, l'oreal professionnel paris, l'oreal usa, inc./lancome division, l'oreal parfumerie logist.fr</title>
+      <description>
+	You should boycott L'Oreal.
+	Naturewatch has a long-standing boycott of L'Oreal due to its continued use of animal testing for cosmetics. The French multinational uses ingredients that have been tested on animals, despite public statements to the contrary. It has also been criticised for lobbying against an EU ban on animal testing for cosmetics. See Ethical Consumer's buyers guides to skin care , eyeshadow and mascara for the L'Oreal company rating and alternative brands.
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/L'Oreal
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>l'oreal international</normalized>
+	  <tagged>L'Oreal</tagged>
+	  <GCPs><GCP>3600010</GCP>
+	  <GCP>3600520</GCP>
+	  <GCP>3600530</GCP>
+	  <GCP>3600540</GCP>
+	  <GCP>3600550</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>l'oreal coiffure</normalized>
+	  <tagged>L'Oreal</tagged>
+	  <GCPs><GCP>3474630</GCP>
+	  <GCP>3474633</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>l'oreal u.s.a., inc.</normalized>
+	  <tagged>L'Oreal</tagged>
+	  <GCPs><GCP>0071249</GCP>
+	  <GCP>0075089</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>l'oreal (uk) ltd</normalized>
+	  <tagged>L'Oreal</tagged>
+	  <GCPs><GCP>5011408</GCP>
+	  <GCP>5021044</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>l'oreal usa, inc./designer fragrance/safari</normalized>
+	  <tagged>L'Oreal</tagged>
+	  <GCPs><GCP>0095008</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>l'oreal saipo s.p.a.</normalized>
+	  <tagged>L'Oreal</tagged>
+	  <GCPs><GCP>8024417</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>l'oreal classic salon products</normalized>
+	  <tagged>L'Oreal</tagged>
+	  <GCPs><GCP>0657201</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>l'oreal professionnel paris</normalized>
+	  <tagged>L'Oreal</tagged>
+	  <GCPs><GCP>0670281</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>l'oreal usa, inc./lancome division</normalized>
+	  <tagged>L'Oreal</tagged>
+	  <GCPs><GCP>0096018</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>l'oreal parfumerie logist.fr</normalized>
+	  <tagged>L'Oreal</tagged>
+	  <GCPs><GCP>3054080</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott motorola inc.</title>
+      <description>
+	You should boycott Motorola.
+	The New York Campaign for the Boycott of Israel has called for a boycott of Motorola over the firm's business dealings with the Israel Defense Forces.For more information see the NYCBI website. To see how they rate and for alternatives see Ethical Consumer's free Buyers' Guide to mobile phones .
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Motorola
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>motorola inc.</normalized>
+	  <tagged>Motorola</tagged>
+	  <GCPs><GCP>0723755</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott nestle usa, nestle uk limited, nestle france sas, nestle' italiana s.p.a., sas nestle waters france, nestle waters north america inc./deer park, compania nestle s.a. de c.v.</title>
+      <description>
+	You should boycott Nestl.
+	Baby Milk Action , ha s called a boycott of Nestle for its irresponsible marketing of baby milk formula which infringes the International Code of Marketing of Breastmilk Substitutes. Nestl Purina is listed on the Uncaged website's petfood and animal testing page as a brand to boycott. View the Nestle Boycott profile page .
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Nestl
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>nestle usa</normalized>
+	  <tagged>Nestle</tagged>
+	  <GCPs><GCP>0011132</GCP>
+	  <GCP>0017800</GCP>
+	  <GCP>0017900</GCP>
+	  <GCP>0020182</GCP>
+	  <GCP>0028000</GCP>
+	  <GCP>0038100</GCP>
+	  <GCP>0039000</GCP>
+	  <GCP>0043695</GCP>
+	  <GCP>0043800</GCP>
+	  <GCP>0045500</GCP>
+	  <GCP>0047557</GCP>
+	  <GCP>0050000</GCP>
+	  <GCP>0051120</GCP>
+	  <GCP>0070002</GCP>
+	  <GCP>0070230</GCP>
+	  <GCP>0072985</GCP>
+	  <GCP>0097421</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>nestle uk limited</normalized>
+	  <tagged>Nestle</tagged>
+	  <GCPs><GCP>5000161</GCP>
+	  <GCP>5000189</GCP>
+	  <GCP>5000243</GCP>
+	  <GCP>5000426</GCP>
+	  <GCP>5011394</GCP>
+	  <GCP>5011476</GCP>
+	  <GCP>5011546</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>nestle france sas</normalized>
+	  <tagged>Nestle</tagged>
+	  <GCPs><GCP>3023081</GCP>
+	  <GCP>3023082</GCP>
+	  <GCP>3033710</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>nestle' italiana s.p.a.</normalized>
+	  <tagged>Nestle</tagged>
+	  <GCPs><GCP>8000300</GCP>
+	  <GCP>8000550</GCP>
+	  <GCP>8005420</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>sas nestle waters france</normalized>
+	  <tagged>Nestle</tagged>
+	  <GCPs><GCP>3048431</GCP>
+	  <GCP>3179730</GCP>
+	  <GCP>3179732</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>nestle waters north america inc./deer park</normalized>
+	  <tagged>Nestle</tagged>
+	  <GCPs><GCP>0082657</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>compania nestle s.a. de c.v.</normalized>
+	  <tagged>Nestle</tagged>
+	  <GCPs><GCP>0043456</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott nokia mobile phones, inc., nokia mobile phones</title>
+      <description>
+	You should boycott Nokia Siemens.
+	This company recently provided the Iranian regime with a &quot;monitoring center&quot; that enables security forces to tap cell phones, scramble text-messages, and interrupt calls. Nokia's new surveillance system has enhanced the regime's ability to crack down on dissent during recent protests. See the pledge page or facebook group for information. To see how they rate and for alternatives see Ethical Consumer's free Buyers' Guide to mobile phones .
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Nokia Siemens
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>nokia mobile phones, inc.</normalized>
+	  <tagged>Nokia Siemens</tagged>
+	  <GCPs><GCP>0758478</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>nokia mobile phones</normalized>
+	  <tagged>Nokia Siemens</tagged>
+	  <GCPs><GCP>6417182</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott procter   gamble company, procter   gamble, cosmetic   frag. prod., procter   gamble uk, procter   gamble distribution company, procter   gamble sas</title>
+      <description>
+	You should boycott Procter and Gamble.
+	This company is on the list for its continued use of animal testing for cosmetics, household products and pet food. For more information see the Proctor and Gamble boycott profile page .
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Procter and Gamble
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>procter   gamble company</normalized>
+	  <tagged>Procter and Gamble</tagged>
+	  <GCPs><GCP>0012044</GCP>
+	  <GCP>0017200</GCP>
+	  <GCP>0020800</GCP>
+	  <GCP>0025500</GCP>
+	  <GCP>0037000</GCP>
+	  <GCP>0041333</GCP>
+	  <GCP>0047400</GCP>
+	  <GCP>0074262</GCP>
+	  <GCP>0080878</GCP>
+	  <GCP>0082444</GCP>
+	  <GCP>0091494</GCP>
+	  <GCP>0301490</GCP>
+	  <GCP>0301495</GCP>
+	  <GCP>0337000</GCP>
+	  <GCP>0381510</GCP>
+	  <GCP>0381511</GCP>
+	  <GCP>0381512</GCP>
+	  <GCP>0381513</GCP>
+	  <GCP>0381514</GCP>
+	  <GCP>0381515</GCP>
+	  <GCP>0381516</GCP>
+	  <GCP>0381517</GCP>
+	  <GCP>0381518</GCP>
+	  <GCP>0381519</GCP>
+	  <GCP>0723987</GCP>
+	  <GCP>0752077</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>procter   gamble, cosmetic   frag. prod.</normalized>
+	  <tagged>Procter and Gamble</tagged>
+	  <GCPs><GCP>0008100</GCP>
+	  <GCP>0022700</GCP>
+	  <GCP>0093100</GCP>
+	  <GCP>0322700</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>procter   gamble uk</normalized>
+	  <tagged>Procter and Gamble</tagged>
+	  <GCPs><GCP>5000174</GCP>
+	  <GCP>5010264</GCP>
+	  <GCP>5010527</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>procter   gamble distribution company</normalized>
+	  <tagged>Procter and Gamble</tagged>
+	  <GCPs><GCP>5410076</GCP>
+	  <GCP>5413149</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>procter   gamble sas</normalized>
+	  <tagged>Procter and Gamble</tagged>
+	  <GCPs><GCP>3023100</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott dean foods company</title>
+      <description>
+	You should boycott Rachel's Organic (owned by Dean Foods).
+
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Rachel's Organic (owned by Dean Foods)
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>dean foods company</normalized>
+	  <tagged>Dean Foods</tagged>
+	  <GCPs><GCP>0025293</GCP>
+	  <GCP>0026065</GCP>
+	  <GCP>0030255</GCP>
+	  <GCP>0038046</GCP>
+	  <GCP>0040900</GCP>
+	  <GCP>0041179</GCP>
+	  <GCP>0041191</GCP>
+	  <GCP>0041271</GCP>
+	  <GCP>0041274</GCP>
+	  <GCP>0041295</GCP>
+	  <GCP>0041467</GCP>
+	  <GCP>0041900</GCP>
+	  <GCP>0049063</GCP>
+	  <GCP>0070004</GCP>
+	  <GCP>0070399</GCP>
+	  <GCP>0070472</GCP>
+	  <GCP>0070554</GCP>
+	  <GCP>0070578</GCP>
+	  <GCP>0070720</GCP>
+	  <GCP>0070777</GCP>
+	  <GCP>0070778</GCP>
+	  <GCP>0070810</GCP>
+	  <GCP>0071000</GCP>
+	  <GCP>0071406</GCP>
+	  <GCP>0071462</GCP>
+	  <GCP>0071600</GCP>
+	  <GCP>0072637</GCP>
+	  <GCP>0072650</GCP>
+	  <GCP>0075237</GCP>
+	  <GCP>0075440</GCP>
+	  <GCP>0076545</GCP>
+	  <GCP>0079967</GCP>
+	  <GCP>0087932</GCP>
+	  <GCP>0661005</GCP>
+	  <GCP>0709426</GCP>
+	  <GCP>0742365</GCP>
+	  <GCP>0752586</GCP>
+	  <GCP>0815914</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott starbucks coffee company</title>
+      <description>
+	You should boycott Starbucks.
+	Starbusks is under a boycott call from the Industrial Workers of the World and US Organic Consumer's Association over its treatment of Ethiopian coffee farmers.
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Starbucks
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>starbucks coffee company</normalized>
+	  <tagged>Starbucks</tagged>
+	  <GCPs><GCP>0762111</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott target stores</title>
+      <description>
+	You should boycott Target.
+	US retailer Target has become the subject of a boycott by gay rights campaigners, Moveon.org , after it was revealed the company donated funds to a lobby group that supports Republican Senator Tom Emmer, a fervent supporter of anti-gay legislation. See the facebook page here
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Target
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>target stores</normalized>
+	  <tagged>Target</tagged>
+	  <GCPs><GCP>0085239</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott unilever home and personal care usa, unilever  france sas, unilever hpcuk limited, unilever bestfoods france, unilever italia, unilever uk foods ltd, unilever sverige ab, unilever bestfoods north america, unilever sa foods [pty] ltd, unilever new zealand ltd, unilever de argentina s.a.(elida ponds), unilever schweiz gmbh kressi, unilever maghreb, unilever sa hpc, unilever italia s.r.l.</title>
+      <description>
+	You should boycott Unilever.
+	The Naturewatch Compassionate Shopping Guide 12th Edition 2010 listed Unilever as a company that was not endorsed by Naturewatch. It did not endorse Unilever as the company was unable to demonstrate a fixed cut off date for its animal testing policy. For more information see the Unilever boycott profile page .
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/Unilever
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>unilever home and personal care usa</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>0011111</GCP>
+	  <GCP>0011112</GCP>
+	  <GCP>0045893</GCP>
+	  <GCP>0079400</GCP>
+	  <GCP>0305210</GCP>
+	  <GCP>0305211</GCP>
+	  <GCP>0305212</GCP>
+	  <GCP>0305213</GCP>
+	  <GCP>0305214</GCP>
+	  <GCP>0305215</GCP>
+	  <GCP>0305216</GCP>
+	  <GCP>0305217</GCP>
+	  <GCP>0305218</GCP>
+	  <GCP>0305219</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever  france sas</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>3011360</GCP>
+	  <GCP>3228881</GCP>
+	  <GCP>3228886</GCP>
+	  <GCP>3250546</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever hpcuk limited</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>5000186</GCP>
+	  <GCP>5000228</GCP>
+	  <GCP>5000262</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever bestfoods france</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>0043646</GCP>
+	  <GCP>0075372</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever italia</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>8000600</GCP>
+	  <GCP>8000700</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever uk foods ltd</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>5000118</GCP>
+	  <GCP>5000184</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever sverige ab</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>7310390</GCP>
+	  <GCP>7310394</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever bestfoods north america</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>0048001</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever sa foods [pty] ltd</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>6001089</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever new zealand ltd</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>9400562</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever de argentina s.a.(elida ponds)</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>7791293</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever schweiz gmbh kressi</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>7615400</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever maghreb</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>6111026</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever sa hpc</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>6001085</GCP></GCPs>
+	</company>
+	<company>
+	  <normalized>unilever italia s.r.l.</normalized>
+	  <tagged>Unilever</tagged>
+	  <GCPs><GCP>8000920</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+    <evidence>
+      <title>Boycott wal-mart stores, inc.</title>
+      <description>
+	You should boycott W al-mart / Asda.
+	The Organic Consumers Association (OCA) are calling a boycott against Wal-Mart was found. The OCA called on people to boycott Wal-Mart and support commerce that was organic, local, fair trade and fair made Find out more on the ASDA / Wal Mart boycott profile page
+
+      </description>
+      <categories>
+	<category>
+	  <category-name>Other</category-name>
+	  <category-rating></category-rating>
+	</category>
+      </categories>
+      <source>
+	EthicalConsumer/W al-mart / Asda
+      </source>
+      <link>
+	http://www.ethicalconsumer.org/Boycotts/currentboycottslist.aspx
+      </link>
+      <companies>
+	<company>
+	  <normalized>wal-mart stores, inc.</normalized>
+	  <tagged>Wal-Mart</tagged>
+	  <GCPs><GCP>0078742</GCP>
+	  <GCP>0605388</GCP>
+	  <GCP>0681131</GCP></GCPs>
+	</company>
+      </companies>
+    </evidence>
+  </items>
+</announcement>

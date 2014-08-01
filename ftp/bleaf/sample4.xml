@@ -1,0 +1,82 @@
+<?xml version='1.0' ?>
+<!DOCTYPE announcements SYSTEM "http://elleconnect.com/andrewdo/bleaf/dtds/BLeaf.dtd">
+<announcements>
+  <announcement>
+    <source>elle</source>
+    <public-key></public-key>
+    <items>
+      <item>
+	<title>Do not buy XYZ products</title>
+	<category>Other</category>
+	<logic>
+	  <assert>
+	    <cause>123</cause>
+	    <manufacturers>
+	      <manufacturer>12345</manufacturer>
+	      <manufacturer>23456</manufacturer>
+	    </manufacturers>
+	  </assert>
+	</logic>
+	<reasons>
+	  <reason>
+	    <source>
+	      http://news.google.com
+	    </source>
+	    <content>
+	      This cause says that X should be the case and action Y would
+	      be a good way to achieve X, but this company is against
+	      action Y.
+	    </content>
+	  </reason>
+	</reasons>
+      </item>
+      <item>
+	<title>Do not buy XYZ products</title>
+	<category>Other</category>
+	<logic>
+	  <assert>
+	    <cause>456</cause>
+	    <manufacturers>
+	      <manufacturer>34567</manufacturer>
+	      <manufacturer>45678</manufacturer>
+	    </manufacturers>
+	  </assert>
+	</logic>
+	<reasons>
+	  <reason>
+	    <source>
+	      http://news.google.com
+	    </source>
+	    <content>
+	      This cause says that X should be the case and action Y would
+	      be a good way to achieve X, but this company is against
+	      action Y.
+	    </content>
+	  </reason>
+	</reasons>
+      </item>
+      <item>
+	<title>Baby seal haters!</title>
+	<category>Other</category>
+	<logic>
+	  <assert>
+	    <cause>789</cause>
+	    <manufacturers>
+	      <manufacturer>11491</manufacturer>
+	    </manufacturers>
+	  </assert>
+	</logic>
+	<reasons>
+	  <reason>
+	    <source>
+	      http://news.google.com
+	    </source>
+	    <content>
+	      The seals, the seals!
+	    </content>
+	  </reason>
+	</reasons>
+      </item>
+    </items>
+  </announcement>
+</announcements>

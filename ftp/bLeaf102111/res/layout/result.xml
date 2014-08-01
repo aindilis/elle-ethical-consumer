@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainscreenback">
+	<LinearLayout
+		android:id="@+id/infolayout"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TableLayout
+			android:id="@+id/infotable"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:stretchColumns="1">
+			<TableRow>
+				<ImageView
+					android:src="@drawable/icon"
+				/>
+				<TextView
+					android:id="@+id/resultcompany"
+					android:text="Company Name"
+					android:gravity="center"
+					android:textColor="#000000"
+					android:textStyle="bold"
+					android:textSize="30px"
+				/>
+			</TableRow>
+		</TableLayout>
+		<TextView
+			android:id="@+id/buy"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="BUY THIS ITEM"
+			android:textColor="#ff0000"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:padding="5dip"
+		/>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/belieflayout"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ExpandableListView
+			android:id="@+id/belieflist"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_margin="10dip"
+			android:cacheColorHint="@android:color/transparent"
+		/>
+	</LinearLayout>
+</LinearLayout>

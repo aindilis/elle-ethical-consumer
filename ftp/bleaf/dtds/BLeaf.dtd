@@ -1,0 +1,19 @@
+<!DOCTYPE announcements [
+<!ELEMENT announcements (announcement+)>
+<!ELEMENT announcement (source,public-key,items)>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT public-key (#PCDATA)>
+<!ELEMENT items (item+)>
+<!ELEMENT item (title,category,logic,reasons)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT logic ((assert|retract)+)>
+<!ELEMENT assert (cause,manufacturers)>
+<!ELEMENT retract (cause,manufacturers)>
+<!ELEMENT cause (#PCDATA)>
+<!ELEMENT manufacturers (manufacturer+)>
+<!ELEMENT manufacturer (#PCDATA)>
+<!ELEMENT reasons (reason+)>
+<!ELEMENT reason (source,content)>
+<!ELEMENT content (#PCDATA)>
+]>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:perljobs="http://jobs.perl.org/rss/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://jobs.perl.org/">
+<title>jobs.perl.org</title>
+<link>http://jobs.perl.org/</link>
+<description>The Perl Jobs site</description>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright 2001-2010, jobs.perl.org</dc:rights>
+<dc:date>2011-09-05T17:46:10Z</dc:date>
+<dc:publisher>ask@perl.org</dc:publisher>
+<dc:creator>ask@perl.org</dc:creator>
+<dc:subject>Perl Jobs</dc:subject>
+<syn:updateBase>1901-01-01T00:00+00:00</syn:updateBase>
+<syn:updateFrequency>8</syn:updateFrequency>
+<syn:updatePeriod>daily</syn:updatePeriod>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://jobs.perl.org/job/14544" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/13544" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/14644" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/14728" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/14120" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/14426" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/14666" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/14652" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/13488" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/2975" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/14606" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/13836" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/14570" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/14572" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/13514" />
+  <rdf:li rdf:resource="http://jobs.perl.org/job/13740" />
+ </rdf:Seq>
+</items>
+</channel>
+<item rdf:about="http://jobs.perl.org/job/14544">
+<title>Perl Programmer / Linux System Administrator</title>
+<link>http://jobs.perl.org/job/14544</link>
+<description>Plain Black Corporation - United States, WI, Madison (2011-08-31)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/13544">
+<title>Catalyst Web Developer</title>
+<link>http://jobs.perl.org/job/13544</link>
+<description>Atomic Learning, Inc. - United States, Minnesota, Little Falls (2011-08-31)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/14644">
+<title>Telecommuting Perl Software Developer </title>
+<link>http://jobs.perl.org/job/14644</link>
+<description>Grant Street Group - United States, PA, Pittsburgh (2011-08-29)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/14728">
+<title>Senior Perl Engineer</title>
+<link>http://jobs.perl.org/job/14728</link>
+<description>CollabNet - India, Tamil Nadu, Chennai, (2011-08-25)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/14120">
+<title>Perl Developer Remote/Telecommute Russia/E. Europe - Strong MySQL</title>
+<link>http://jobs.perl.org/job/14120</link>
+<description>HRN - Russia, Moscow (2011-08-19)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/14426">
+<title>Perl Software Engineer</title>
+<link>http://jobs.perl.org/job/14426</link>
+<description>MAD Partners Ltd - United Kingdom, Maidenhead (2011-08-19)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/14666">
+<title>OO/mod_perl/DBI Logistics system programmer</title>
+<link>http://jobs.perl.org/job/14666</link>
+<description>CargoTel, Inc. - United States, MD, Baltimore/Telecommute (2011-08-15)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/14652">
+<title>Perl Developer</title>
+<link>http://jobs.perl.org/job/14652</link>
+<description>Automorphic Software - India, Karnataka, Bangalore (2011-08-12)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/13488">
+<title>Perl Developer</title>
+<link>http://jobs.perl.org/job/13488</link>
+<description>Perl Hunter (2011-08-08)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/2975">
+<title>Mod perl developer for migration of ecommerce websites</title>
+<link>http://jobs.perl.org/job/2975</link>
+<description>PalmVid.com - United States, CO, Colorado Springs (2011-08-04)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/14606">
+<title>Perl + mySQL developer - $1,750/month</title>
+<link>http://jobs.perl.org/job/14606</link>
+<description>Journatic - Eastern Europe or Asia (it&#x27;s a remote job) (2011-08-04)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/13836">
+<title>Freeside/RT programmer (HTML::Mason, PostgreSQL/MySQL)</title>
+<link>http://jobs.perl.org/job/13836</link>
+<description>Freeside Billing - United States, CA, Truckee (2011-08-02)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/14570">
+<title>OO Perl web app dev for large Comms company</title>
+<link>http://jobs.perl.org/job/14570</link>
+<description> - United Kingdom, Lancashire, NW England (BB9) (2011-08-01)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/14572">
+<title>Experienced Perl Coder - Offsite - Full time</title>
+<link>http://jobs.perl.org/job/14572</link>
+<description>Marketing Company - United States, Western/Central US, Anywhere (2011-08-01)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/13514">
+<title>Perl Web Software Engineer</title>
+<link>http://jobs.perl.org/job/13514</link>
+<description>ChargeSmart Inc - United States, CA, San Francisco (2011-07-25)</description>
+</item>
+<item rdf:about="http://jobs.perl.org/job/13740">
+<title>Wheel Report Developer</title>
+<link>http://jobs.perl.org/job/13740</link>
+<description>Western Pennsylvania Industrial - United States, Pennsylvania, Koppel (2011-07-26)</description>
+</item>
+</rdf:RDF>
+
+

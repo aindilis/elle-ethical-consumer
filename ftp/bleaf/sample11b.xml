@@ -1,0 +1,5397 @@
+<?xml version='1.0' ?>
+<!DOCTYPE evidences SYSTEM "http://elleconnect.com/andrewdo/bleaf/dtds/sample11.dtd">
+<announcement>
+  <metadata>
+    <version>bLeaf 0.10</version>
+  </metadata>
+  <items>
+    <evidence>
+      <title>Federal prosecutors are considering manslaughter charges against BP for the Deepwater Horizon oil spill in the Gulf of Mexico that</title>
+      <description>
+    Federal prosecutors are considering manslaughter charges against BP for the Deepwater Horizon oil spill in the Gulf of Mexico that released a total of 4.9 million barrels of crude oil and lasted 87 days; the initial rig explosion also killed 11 workers. Charging individuals for manslaughter involved in the incident is not typical but expected to have a significant deterrent effect, especially in environmental safety cases. BP has committed $20 billion to settle claims by those hurt by the oil spill and has already paid out $4 billion. However, BP stock fell 2.2 percent in London due to talk of the potential charges. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 196</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=196</url>
+          <date>20111025170855</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Business Week</link-text>
+          <url>http://http://www.businessweek.com/news/2011-03-29/bp-is-said-to-face-u-s-review-for-manslaughter-charges.html</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.bp.com</link-text>
+          <url>http://www.bp.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>BP</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T171759Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T210157Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T210853Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>On the 2005 Computer Report Card, published jointly by the Computer TakeBack Campaign and the Silicon Valley Toxics Coalition, App</title>
+      <description>
+    On the 2005 Computer Report Card, published jointly by the Computer TakeBack Campaign and the Silicon Valley Toxics Coalition, Apple received a score of 17 for their policies regarding electronics take back, disposal procedures and the materials used in their computers. Apple&#x2019;s score was better than Acer or Gateway&#x2019;s, slightly worse than Sony and IBM, and trailed HP and Dell by wide margins. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 186</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=186</url>
+          <date>20111025171006</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Silicon Valley Toxics Coalition</link-text>
+          <url>http://svtc.etoxics.org/site/PageServer?pagename=svtc_computer_report_card</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.apple.com</link-text>
+          <url>http://www.apple.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>acer incorporated</normalized>
+          <tagged>Acer</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0099802</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>acer america corporation</normalized>
+          <tagged>Acer</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0750519</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Acer America Corporation</normalized>
+          <tagged>Acer</tagged>
+          <address>CA
+2641 Orchard Parkway
+95134 
+San Jose
+United States</address>
+          <GCPs>
+            <GCP>0750519</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>apple computer, inc.</normalized>
+          <tagged>Apple</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0718908</GCP>
+            <GCP>0885909</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>dell u.s.a. l.p.</normalized>
+          <tagged>Dell</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0744696</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Gateway</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>H.P.</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>IBM Corporation</normalized>
+          <tagged>IBM</tagged>
+          <address>NY
+1 New Orchard Rd.
+10504-1722 
+Armonk
+United States</address>
+          <GCPs>
+            <GCP>0883436</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>sony-bmg</normalized>
+          <tagged>Sony</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0743211</GCP>
+            <GCP>0743212</GCP>
+            <GCP>0743213</GCP>
+            <GCP>0743214</GCP>
+            <GCP>0743215</GCP>
+            <GCP>0743216</GCP>
+            <GCP>0743217</GCP>
+            <GCP>0743218</GCP>
+            <GCP>0828765</GCP>
+            <GCP>0828766</GCP>
+            <GCP>0828767</GCP>
+            <GCP>0828768</GCP>
+            <GCP>0886970</GCP>
+            <GCP>0886971</GCP>
+            <GCP>0888880</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>sony bmg</normalized>
+          <tagged>Sony</tagged>
+          <address/>
+          <GCPs>
+            <GCP>9416333</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Sony-Bmg</normalized>
+          <tagged>Sony</tagged>
+          <address>NY
+550 Madison Ave
+10022 
+New York
+United States</address>
+          <GCPs>
+            <GCP>0886443</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T171819Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T210959Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>&#x2022; UAL Corporation received a score of 88 for the second year in a row on the Human Rights Campaign 2009 Corporate Equality Index w</title>
+      <description>
+    &#x2022; UAL Corporation received a score of 88 for the second year in a row on the Human Rights Campaign 2009 Corporate Equality Index which rates large corporations on policies that affect their gay, lesbian, bisexual and transgender employees, consumers and investors. The HRC Corporate Equality Index rates companies on a scale of 0 to 100 percent. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 401</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=401</url>
+          <date>20111025171321</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Human Rights Campaign</link-text>
+          <url>http://www.hrc.org/documents/HRC_Corporate_Equality_Index_2009.pdf</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.united.com</link-text>
+          <url>http://www.united.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>United Airlines</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T171836Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211320Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>The Nigerian government accepted an offer to settle its $5 billion lawsuit against Pfizer out of court.</title>
+      <description>
+    The Nigerian government accepted an offer to settle its $5 billion lawsuit against Pfizer out of court.  The drug maker was being sued for punitive damages for allegedly illegally testing its antibiotic Trovan on children during a 1996 meningitis epidemic.  According to the Nigerian government and families of the victims, at least 96 children were either killed or suffered severe neurological injury as a result of the administration of the experimental drug.  A separate lawsuit filed in New York by the families was allowed to move forward in January 2009. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 391</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=391</url>
+          <date>20111025171339</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Tide News</link-text>
+          <url>http://www.thetidenews.com/article.aspx?qrDate=01/28/2009&amp;qrTitle=Fed%20Govt,%20Pfizer%20opt%20for%20out-of-court%20settlement&amp;qrColumn=NATION</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.pfizer.com</link-text>
+          <url>http://www.pfizer.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>pfizer inc./consumer health care</normalized>
+          <tagged>Pfizer</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0074300</GCP>
+            <GCP>0086414</GCP>
+            <GCP>0305012</GCP>
+            <GCP>0305013</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>pfizer inc./pfipharmecs div</normalized>
+          <tagged>Pfizer</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0071404</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>pfizer inc.</normalized>
+          <tagged>Pfizer</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0087219</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>pfizer consumer healthcare</normalized>
+          <tagged>Pfizer</tagged>
+          <address/>
+          <GCPs>
+            <GCP>9310059</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>pfizer consumer health products company</normalized>
+          <tagged>Pfizer</tagged>
+          <address/>
+          <GCPs>
+            <GCP>5010123</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>pfizer pty ltd</normalized>
+          <tagged>Pfizer</tagged>
+          <address/>
+          <GCPs>
+            <GCP>9313212</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Pfizer Inc.</normalized>
+          <tagged>Pfizer</tagged>
+          <address>NY
+235 E 42nd St
+10017 
+New York
+United States</address>
+          <GCPs>
+            <GCP>0087219</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Pfizer Inc./Pfipharmecs Div</normalized>
+          <tagged>Pfizer</tagged>
+          <address>MO
+1 SE Pfizer Way
+64081 
+Lees Summit
+United States</address>
+          <GCPs>
+            <GCP>0071404</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Pfizer Consumer Healthcare</normalized>
+          <tagged>Pfizer</tagged>
+          <address>NY
+235 East 42nd St.
+10017 
+New York
+United States</address>
+          <GCPs>
+            <GCP>030573</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172155Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211338Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Time Warner Cable increased its rates without any real reason.</title>
+      <description>
+    Time Warner Cable increased its rates without any real reason.  The Communications Workers of America Union claims that the company is putting more money into executives pockets and leaving lower level employees with nothing.  In 2008 there were 35 employees without a pension plan.  &lt;p&gt;
+Timer Warner Cable says they are increasing their rates due to higher demand for premium packages and the rising cost of fuel.  They also claim that the reason why the CWA is protesting is because the President of the union is an employee of Verizon, which is a rival of Time Warner Cable. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Business Practices | Workers Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 345</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=345</url>
+          <date>20111025171433</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>NBC-WKTV</link-text>
+          <url>http://http://www.wktv.com/news/local/17155736.html</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.timewarner.com</link-text>
+          <url>http://www.timewarner.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>Time Warner Cable</normalized>
+          <tagged>Time Warner</tagged>
+          <address>MN
+9705 Data Park
+55343-9119 
+Minnetonka
+United States</address>
+          <GCPs>
+            <GCP>083633600</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Time Warner Interactive Group</normalized>
+          <tagged>Time Warner</tagged>
+          <address>NY
+1 Time Warner Center
+10019 
+New York
+United States</address>
+          <GCPs>
+            <GCP>0099171</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172206Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211431Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Forest Ethics rated retailers on their paper use in 2009 in terms of use of Forest Stewardship Council certified paper, recycled c</title>
+      <description>
+    Forest Ethics rated retailers on their paper use in 2009 in terms of use of Forest Stewardship Council certified paper, recycled content, paper reduction and the avoidance of paper from endangered forests. Forest Ethics judges the retailer&#x2019;s paper choice in its catalogs and other mailings to form a &#x201C;Naughty/Nice List&#x201D; of a total of 21 companies. Sears earned a &#x201C;naughty&#x201D; rating because although they finally established a paper policy, it is mostly greenwashing. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 286</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=286</url>
+          <date>20111025171451</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Forest Ethics</link-text>
+          <url>http://http://forestethics.org/downloads/naughtynicelist2009_Ultimate.pdf</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.sears.com</link-text>
+          <url>http://www.sears.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>sears, roebuck and co.</normalized>
+          <tagged>Sears</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0633815</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Sears, Roebuck and Co.</normalized>
+          <tagged>Sears</tagged>
+          <address>IL
+3333 Beverly Road
+E3-292B
+60179 
+Hoffman Estates
+United States</address>
+          <GCPs>
+            <GCP>0883967</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172220Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211450Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>An internal Wal-Mart memo to the board of directors was published containing controversial proposals for keeping company health ca</title>
+      <description>
+    An internal Wal-Mart memo to the board of directors was published containing controversial proposals for keeping company health care spending low while simultaneously repairing its damaged public image.  Proposals ranged from making employees withstand a longer waiting period before joining the company's policy to changing all job descriptions to include some level of physical activity, thereby ensuring the hiring of only healthier workers. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 306</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=306</url>
+          <date>20111025171517</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>National Public Radio (NPR)</link-text>
+          <url>http://www.npr.org/templates/story/story.php?storyId=4975919</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.walmartstores.com</link-text>
+          <url>http://www.walmartstores.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>wal-mart stores, inc.</normalized>
+          <tagged>Wal-Mart</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0078742</GCP>
+            <GCP>0605388</GCP>
+            <GCP>0681131</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Wal-Mart Stores, Inc.</normalized>
+          <tagged>Wal-Mart</tagged>
+          <address>AR
+702 S.W. 8th St
+MS 16
+72716 
+Bentonville
+United States</address>
+          <GCPs>
+            <GCP>0078742</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172225Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211516Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>According to the Clean Clothes Campaign, &#x201C;Although Fila has a Code of Business Conduct, we have not been able to trace any informa</title>
+      <description>
+    According to the Clean Clothes Campaign, &#x201C;Although Fila has a Code of Business Conduct, we have not been able to trace any information on how the company actually implements its code. Fila has not joined any multi-stakeholder initiatives on labour standards. Evidence on the ground suggests that the company is far from meeting its ethical commitments.&#x201D; 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Business Practices | Workers Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 224</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=224</url>
+          <date>20111025171537</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Clean Clothes Campaign</link-text>
+          <url>http://www.cleanclothes.org/companies/fila.htm</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.fila.com</link-text>
+          <url>http://www.fila.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>fila usa, inc.</normalized>
+          <tagged>Fila</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0633641</GCP>
+            <GCP>0723567</GCP>
+            <GCP>0731616</GCP>
+            <GCP>0791271</GCP>
+            <GCP>0791272</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Fila USA, Inc.</normalized>
+          <tagged>Fila</tagged>
+          <address>MD
+930 Ridgebrook Rd., Ste 200
+21152
+Sparks
+United States</address>
+          <GCPs>
+            <GCP>0723567</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172235Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211532Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Aetna has agreed to return $5 million to college students who were overcharged by their Aetna insurance plans.</title>
+      <description>
+    Aetna has agreed to return $5 million to college students who were overcharged by their Aetna insurance plans. 73,000 college students will soon be reimbursed for being charged outdated rates. If you believe you are part of the affected group, you can contact an Aetna customer service representative at 866-805-7643. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 424</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=424</url>
+          <date>20111025171559</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>The Consumerist</link-text>
+          <url>http://consumerist.com/2009/02/aetna-underpaid-students-settles-for-5-million.html</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>http://www.aetna.com</link-text>
+          <url>http://http://www.aetna.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Aetna</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172238Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211555Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Environmental Defense published a list of the organizations that have questioned global warming and climate change to which Exxon </title>
+      <description>
+    Environmental Defense published a list of the organizations that have questioned global warming and climate change to which Exxon funneled money.  Exxon has poured millions of dollars into funding "junk science" around the world. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 221</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=221</url>
+          <date>20111025171614</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Environmental Defense</link-text>
+          <url>http://www.environmentaldefense.org/article.cfm?ContentID=4870</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.exxon.mobil.com</link-text>
+          <url>http://www.exxon.mobil.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>exxon company, u.s.a.</normalized>
+          <tagged>Exxon</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0077162</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Exxon Company, U.S.A.</normalized>
+          <tagged>Exxon</tagged>
+          <address>TX
+5959 Las Colinas Blvd
+75039
+Irving
+United States</address>
+          <GCPs>
+            <GCP>0077162</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172245Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211610Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Ford was rated as the 18th worst polluter on the Political Economy Research Institute's (PERI) Toxic 100 index.</title>
+      <description>
+    Ford was rated as the 18th worst polluter on the Political Economy Research Institute's (PERI) Toxic 100 index. PERI is an &#x201C;independent unit of the University of Massachusetts,&#x201D; that promotes environmental sustainability and human rights through research. The index is based on 2007 EPA Toxics Release Inventory data. PERI's Toxic 100 index ranks the nation's largest companies based on the quantity of their emissions, relative toxicity of chemicals emitted, and proximity to population centers, among other criteria. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 226</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=226</url>
+          <date>20111025171625</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Political Economy Research Institute (PERI)</link-text>
+          <url>http://http://www.peri.umass.edu/Toxic-100-Index.430.0.html</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.ford.com</link-text>
+          <url>http://www.ford.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>ford motor co/parts   service</normalized>
+          <tagged>Ford</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0031508</GCP>
+            <GCP>0084422</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>ford motor company/special vehicle oper.</normalized>
+          <tagged>Ford</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0756122</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172253Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211623Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Exxon-Mobil was ranked the fifth &#x201C;greenest&#x201D; oil company out of the top 10 leading US oil corporations by Greenopia in 2011.</title>
+      <description>
+    Exxon-Mobil was ranked the fifth &#x201C;greenest&#x201D; oil company out of the top 10 leading US oil corporations by Greenopia in 2011. Exxon publishes a decent sustainability report but the data for oil spill volume is not included. Greenopia also commends Exxon&#x2019;s relatively low water consumption involved in its oil production and notes that Exxon has had a &#x201C;very small&#x201D; number of spills in regards to the volume of its oil production. However, Greenopia criticizes Exxon&#x2019;s massive production of greenhouse gas emissions, even when scaled to production as Exxon&#x2019;s is the largest oil company. This year&#x2019;s emissions are significantly lower than 2008 but Exxon still produces a lot of waste, even when scaled against production. Exxon has been recently accused for a spill in Brooklyn, New York that was larger in the total amount of oil spilled than the Exxon Valdez, as this spill is estimated at 17-30 million gallons versus the Valdez&#x2019;s 11 million; the spill has been taking place from the 1800s to 1900s and Exxon has not done anything to address it. 
+
+  </description>
+      <categories>
+    
+  </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 221</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=221</url>
+          <date>20111025171754</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Greenopia</link-text>
+          <url>http://http://www.greenopia.com/usa/oil_listing.aspx?ID=6&amp;input=Name-or-product&amp;Listpage=0 </url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>exxon company, u.s.a.</normalized>
+          <tagged>Exxon</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0077162</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Exxon Company, U.S.A.</normalized>
+          <tagged>Exxon</tagged>
+          <address>TX
+5959 Las Colinas Blvd
+75039
+Irving
+United States</address>
+          <GCPs>
+            <GCP>0077162</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172300Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211753Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>&#x2022; Delta Air Lines, Inc is a member of the International Air Transport Association (IATA), a global group of airlines and airports.</title>
+      <description>
+    &#x2022; Delta Air Lines, Inc is a member of the International Air Transport Association (IATA), a global group of airlines and airports.  The IATA has staunchly opposed plans for a carbon emissions trading system in the European Union that could reduce greenhouse gas emissions and mitigate the effects of global climate change.  The organization has argued that such a scheme would be prohibitively expensive for the airlines and make it more difficult to retain profits. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 400</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=400</url>
+          <date>20111025171820</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>New York Times</link-text>
+          <url>http://greeninc.blogs.nytimes.com/2009/02/11/curbing-foreign-airline-emissions-in-europe/</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.delta.com</link-text>
+          <url>http://www.delta.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Delta Air Lines</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172305Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211818Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Christine Drake, a Seattle woman with psychiatric disabilities, is charging Starbucks Coffee Co.</title>
+      <description>
+    Christine Drake, a Seattle woman with psychiatric disabilities, is charging Starbucks Coffee Co. with decreasing her hours, berating her in front of customers, and failing to accommodate her special needs before firing her in 2004. The US Equal Employment Opportunity Commission is requesting Starbucks to pay Drake $40,000 in lost wages.  Should the case go before a jury, Starbucks could pay up to $300,000 in compensatory and punitive damages. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 291</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=291</url>
+          <date>20111025171846</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Seattle Post-Intelligencer</link-text>
+          <url>http://seattlepi.nwsource.com/business/285189_starbucks15.html</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.starbucks.com</link-text>
+          <url>http://www.starbucks.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>starbucks coffee company</normalized>
+          <tagged>Starbucks</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0762111</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>starbucks coffee company</normalized>
+          <tagged>Starbucks Coffee Co.</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0762111</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172335Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211843Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>According to the International Labor Rights Fund (ILRF), Wal-Mart workers from around the world came together to sue Wal-Mart in a</title>
+      <description>
+    According to the International Labor Rights Fund (ILRF), Wal-Mart workers from around the world came together to sue Wal-Mart in a California Superior Court on September 13, 2005, citing a wide range of labor abuses.  Plaintiffs in the case included men and women from California, Bangladesh, China, Indonesia, Nicaragua, and Swaziland who recounted numerous violations of international labor standards under the responsibility of Wal-Mart.  
+&lt;p&gt;
+The ILRF claims that Wal-Mart &#x201C;failed to meet its contractual duty to ensure that its suppliers pay basic wages due; forced [workers] to work excessive hours seven days a week with no time off for holidays; obstructed [workers&#x2019;] attempts to form a union; and, made false and misleading statements to the American public about the company&#x2019;s labor and human rights practices.&#x201D; 
+&lt;p&gt;
+According to the ILRF, Wal-Mart presents foreign suppliers with a Supplier Standards Agreement that makes compliance with Wal-Mart&#x2019;s corporate code of conduct a prerequisite for any supplier-purchaser relationship. The code of conduct inclusion is intended to serve as a built-in protection for workers at foreign factories.  Workers have the right to enforce these standards if employers fail to do so, and the ILRF states that the governments of countries represented in this case lack the necessary legal infrastructure to adequately redress grievances related to labor abuses. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Business Practices | Workers Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 306</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=306</url>
+          <date>20111025171914</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>International Labor Rights Fund</link-text>
+          <url>http://www.laborrights.org/projects/corporate/walmart/WalMartComplaint091305.pdf</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>wal-mart stores, inc.</normalized>
+          <tagged>Wal-Mart</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0078742</GCP>
+            <GCP>0605388</GCP>
+            <GCP>0681131</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Wal-Mart Stores, Inc.</normalized>
+          <tagged>Wal-Mart</tagged>
+          <address>AR
+702 S.W. 8th St
+MS 16
+72716 
+Bentonville
+United States</address>
+          <GCPs>
+            <GCP>0078742</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172357Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211912Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>According to the nonprofit investigative journalism group the Center for Public Integrity, IBM is responsible for 28 current or fo</title>
+      <description>
+    According to the nonprofit investigative journalism group the Center for Public Integrity, IBM is responsible for 28 current or former Superfund sites. Superfund sites are locations designated by the Environmental Protection Agency as being so contaminated by toxic chemicals that they are dangerous to human health. Companies found responsible for superfund sites are required to either pay for the cleanup personally, or to pay the Environmental Protection Agency to conduct the cleanup. IBM, which is designated as bearing full responsibility for one site, and shared responsibility for 27 others, has only successfully cleaned up 2 sites since the Superfund law was passed in 1980. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 243</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=243</url>
+          <date>20111025171954</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Center for Public Integrity</link-text>
+          <url>http://projects.publicintegrity.org/Superfund/SiteResults.aspx?act=IBM</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.ibm.com</link-text>
+          <url>http://www.ibm.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>IBM Corporation</normalized>
+          <tagged>IBM</tagged>
+          <address>NY
+1 New Orchard Rd.
+10504-1722 
+Armonk
+United States</address>
+          <GCPs>
+            <GCP>0883436</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172401Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T211952Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>An Oxfam International report called &#x201C;Offside! Labour Rights and Sportswear Production in Asia,&#x201D; examines how twelve international</title>
+      <description>
+    An Oxfam International report called &#x201C;Offside! Labour Rights and Sportswear Production in Asia,&#x201D; examines how twelve international sports brands are confronting worker rights issues in factories, particularly the right to form and join trade unions. Reebok acted swiftly and decisively in response to violations of trade union workers&#x2019; rights in Factories A and B, two Indonesian factories that workers wish to remain unnamed. Reebok worked in partnership with labor rights organizations, promptly launching an investigation upon hearing trade union workers&#x2019; complaints. The company applied pressure to its suppliers for workers&#x2019; rights compliance, expressed concern over the number of temporary workers, and continuously assisted workers with its human rights staff. Such actions have compelled the management at Factory A to terminate its business relationship with Reebok.
+
+&lt;p&gt;While Reebok has a record of supporting trade unionists, Oxfam International challenges the corporation to examine this issue on a global scale. Oxfam urges Reebok to:
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Properly investigate allegations of discrimination against trade union members, especially in nations where the courts and government are under-resourced&lt;/li&gt;
+&lt;li&gt;Increase transparency to ensure their buying practices do not have negative impacts on workers and their right to organize&lt;/li&gt;&lt;/ul&gt; 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Business Practices | Workers Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 281</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=281</url>
+          <date>20111025172616</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Oxfam</link-text>
+          <url>http://www.oxfam.org/en/files/offside_labor_report/download</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.reebok.com</link-text>
+          <url>http://www.reebok.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>reebok international, ltd.</normalized>
+          <tagged>Reebok</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0054871</GCP>
+            <GCP>0601352</GCP>
+            <GCP>0611368</GCP>
+            <GCP>0630994</GCP>
+            <GCP>0638192</GCP>
+            <GCP>0647201</GCP>
+            <GCP>0650789</GCP>
+            <GCP>0656344</GCP>
+            <GCP>0664712</GCP>
+            <GCP>0688359</GCP>
+            <GCP>0690174</GCP>
+            <GCP>0703518</GCP>
+            <GCP>0713732</GCP>
+            <GCP>0722977</GCP>
+            <GCP>0760617</GCP>
+            <GCP>0785729</GCP>
+            <GCP>0803675</GCP>
+            <GCP>0827066</GCP>
+            <GCP>0882561</GCP>
+            <GCP>0882728</GCP>
+            <GCP>0882738</GCP>
+            <GCP>0882742</GCP>
+            <GCP>0882744</GCP>
+            <GCP>0883181</GCP>
+            <GCP>0883191</GCP>
+            <GCP>0884313</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Reebok France</normalized>
+          <tagged>Reebok</tagged>
+          <address>184 Rue Tabuteau
+78532
+Buc
+France</address>
+          <GCPs>
+            <GCP>0884333</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Reebok Uk Ltd.</normalized>
+          <tagged>Reebok</tagged>
+          <address>Moor Lane Mill
+Moor Lane
+LA1 1GF
+Lancaster
+United Kingdom</address>
+          <GCPs>
+            <GCP>0883415</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Reebok Deutschland Gmbh</normalized>
+          <tagged>Reebok</tagged>
+          <address>Keltenring 14
+82039
+Oberhaching
+Germany</address>
+          <GCPs>
+            <GCP>0786952</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172516Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T212614Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>TGI Friday&#x2019;s received an &#x201C;F&#x201D; from &lt;i&gt;Men&#x2019;s Health&lt;/i&gt; due to the fact that the company has failed to provide their nutritional val</title>
+      <description>
+    TGI Friday&#x2019;s received an &#x201C;F&#x201D; from &lt;i&gt;Men&#x2019;s Health&lt;/i&gt; due to the fact that the company has failed to provide their nutritional values openly. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights | Health and Wellness</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 450</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=450</url>
+          <date>20111025172622</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Men's Health</link-text>
+          <url>http://eatthis.menshealth.com/restaurants/tgi-fridays</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.carlson.com</link-text>
+          <url>http://www.carlson.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>reebok international, ltd.</normalized>
+          <tagged>Reebok</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0054871</GCP>
+            <GCP>0601352</GCP>
+            <GCP>0611368</GCP>
+            <GCP>0630994</GCP>
+            <GCP>0638192</GCP>
+            <GCP>0647201</GCP>
+            <GCP>0650789</GCP>
+            <GCP>0656344</GCP>
+            <GCP>0664712</GCP>
+            <GCP>0688359</GCP>
+            <GCP>0690174</GCP>
+            <GCP>0703518</GCP>
+            <GCP>0713732</GCP>
+            <GCP>0722977</GCP>
+            <GCP>0760617</GCP>
+            <GCP>0785729</GCP>
+            <GCP>0803675</GCP>
+            <GCP>0827066</GCP>
+            <GCP>0882561</GCP>
+            <GCP>0882728</GCP>
+            <GCP>0882738</GCP>
+            <GCP>0882742</GCP>
+            <GCP>0882744</GCP>
+            <GCP>0883181</GCP>
+            <GCP>0883191</GCP>
+            <GCP>0884313</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Reebok France</normalized>
+          <tagged>Reebok</tagged>
+          <address>184 Rue Tabuteau
+78532
+Buc
+France</address>
+          <GCPs>
+            <GCP>0884333</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Reebok Uk Ltd.</normalized>
+          <tagged>Reebok</tagged>
+          <address>Moor Lane Mill
+Moor Lane
+LA1 1GF
+Lancaster
+United Kingdom</address>
+          <GCPs>
+            <GCP>0883415</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Reebok Deutschland Gmbh</normalized>
+          <tagged>Reebok</tagged>
+          <address>Keltenring 14
+82039
+Oberhaching
+Germany</address>
+          <GCPs>
+            <GCP>0786952</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172618Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T212621Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>At the end of 2008, GlaxoSmithKline announced that it would no longer be spending corporate money on political contributions.</title>
+      <description>
+    At the end of 2008, GlaxoSmithKline announced that it would no longer be spending corporate money on political contributions.  During the 2008 campaigns, the company provided over $585,000 in donations to political candidates in the United States.  CEO Andrew Witty said that the decision was made in order to increase corporate transparency and to get rid of the idea that political contributions give pharmaceutical companies special privileges.  The move will not apply to individual employees&#x2019; donations, nor to the political action committee run by employees. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 390</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=390</url>
+          <date>20111025172753</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Wall Street Journal</link-text>
+          <url>http://online.wsj.com/article/SB122999215468528539.html</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.gsk.com</link-text>
+          <url>http://www.gsk.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>glaxosmithkline consumer healthcare, lp.</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0053100</GCP>
+            <GCP>0074684</GCP>
+            <GCP>0307660</GCP>
+            <GCP>0307661</GCP>
+            <GCP>0307662</GCP>
+            <GCP>0307663</GCP>
+            <GCP>0307665</GCP>
+            <GCP>0307667</GCP>
+            <GCP>0311530</GCP>
+            <GCP>0345800</GCP>
+            <GCP>0349692</GCP>
+            <GCP>0353100</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>glaxosmithkline plc</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address/>
+          <GCPs>
+            <GCP>5000124</GCP>
+            <GCP>5000134</GCP>
+            <GCP>5000198</GCP>
+            <GCP>5000199</GCP>
+            <GCP>5000347</GCP>
+            <GCP>5000483</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>glaxosmithkline australia pty ltd</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address/>
+          <GCPs>
+            <GCP>9300673</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>glaxosmithkline consumer healthcare sdn bhd</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address/>
+          <GCPs>
+            <GCP>9556019</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>glaxosmithkline consumer healthcare</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address/>
+          <GCPs>
+            <GCP>9403099</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Glaxosmithkline Consumer Healthcare, Lp.</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address>PA
+P O Box 1467
+15230
+Pittsburgh
+United States</address>
+          <GCPs>
+            <GCP>0353100</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172630Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T212752Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>In 1998, Daimler paid $37 billion to acquire Chrysler.</title>
+      <description>
+    In 1998, Daimler paid $37 billion to acquire Chrysler.  Ten years later, Daimler sold an 80.1% stake in the company to Cerberus Capital Management for $7.4 billion.  Former Chrysler CEO Lee Iacocca criticized Daimler AG for failing to maintain the profitable trend enjoyed by Chrysler prior to the 1998 merger. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 387</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=387</url>
+          <date>20111025172837</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Washington Post</link-text>
+          <url>http://www.businessweek.com/autos/content/may2007/bw20070517_870308.htm?chan=top+news_top+news+index_businessweek+exclusives</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.daimler.com</link-text>
+          <url>http://www.daimler.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Cerberus Capital Management</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Chrysler</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Daimler AG</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172640Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T212820Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T212835Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>The Ethisphere Institute is a New York City based think tank that annually releases a non-ranked list of &#x201C;The World&#x2019;s Most Ethical</title>
+      <description>
+    The Ethisphere Institute is a New York City based think tank that annually releases a non-ranked list of &#x201C;The World&#x2019;s Most Ethical Companies.&#x201D; Starbucks has appeared on the list for all four years, in addition to Google, General Electric and 33 other companies. New 2010 additions include Ford Motor Company and Campbell Soup. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 291</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=291</url>
+          <date>20111025173705</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>ABC News</link-text>
+          <url>http://abcnews.go.com/Business/starbucks-ford-google-worlds-ethical-companies/story?id=10184891 </url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>campbell soup company</normalized>
+          <tagged>Campbell Soup</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0051000</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>ford motor co/parts   service</normalized>
+          <tagged>Ford Motor Company</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0031508</GCP>
+            <GCP>0084422</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>ford motor company/special vehicle oper.</normalized>
+          <tagged>Ford Motor Company</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0756122</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Ford Motor Company, S.A. De C.V.</normalized>
+          <tagged>Ford Motor Company</tagged>
+          <address>Av. Paseo De La Reforma No.333
+Col. Cuauhtemoc
+06500
+Mexico City, D.F.
+Mexico</address>
+          <GCPs>
+            <GCP>0714512</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Ford Motor Company/special Vehicle Oper.</normalized>
+          <tagged>Ford Motor Company</tagged>
+          <address>MI
+1700 Southfield Road
+48101
+Allan Park
+United States</address>
+          <GCPs>
+            <GCP>0756122</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>general electric company</normalized>
+          <tagged>General Electric</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0043168</GCP>
+            <GCP>0783166</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Google Enterprise</normalized>
+          <tagged>Google</tagged>
+          <address>CA
+1600 AMPHITHEATRE PARKWAY
+94043
+MOUNTAIN VIEW
+United States</address>
+          <GCPs>
+            <GCP>0891140002</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>starbucks coffee company</normalized>
+          <tagged>Starbucks</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0762111</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172804Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T213701Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>In 2002, information surfaced on clinical trials undertaken by GlaxoSmithKline in its testing of the efficacy of the anti-depressa</title>
+      <description>
+    In 2002, information surfaced on clinical trials undertaken by GlaxoSmithKline in its testing of the efficacy of the anti-depressant Paxil in children.  Worldwide, hundreds of children participated in three different studies, each involving two groups:  one receiving Paxil, the other receiving a placebo.  In the end, Paxil proved to be no more effective than the placebo.  In the largest trial, Study 329, seven children developed side effects so serious that they needed to be hospitalized.  Significantly more children taking Paxil attempted suicide or self-harm on the drug than the placebo.  When the company discovered these results, it brought in experts to bury the negative test results and ghost-write scientific articles claiming that Paxil was safe and effective in children.  The drug is now banned in the UK and carries a black-box suicide risk label in the United States. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights | Health and Wellness</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 390</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=390</url>
+          <date>20111025173745</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>CorpWatch</link-text>
+          <url>http://www.corpwatch.org/article.php?id=14606</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>glaxosmithkline consumer healthcare, lp.</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0053100</GCP>
+            <GCP>0074684</GCP>
+            <GCP>0307660</GCP>
+            <GCP>0307661</GCP>
+            <GCP>0307662</GCP>
+            <GCP>0307663</GCP>
+            <GCP>0307665</GCP>
+            <GCP>0307667</GCP>
+            <GCP>0311530</GCP>
+            <GCP>0345800</GCP>
+            <GCP>0349692</GCP>
+            <GCP>0353100</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>glaxosmithkline plc</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address/>
+          <GCPs>
+            <GCP>5000124</GCP>
+            <GCP>5000134</GCP>
+            <GCP>5000198</GCP>
+            <GCP>5000199</GCP>
+            <GCP>5000347</GCP>
+            <GCP>5000483</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>glaxosmithkline australia pty ltd</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address/>
+          <GCPs>
+            <GCP>9300673</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>glaxosmithkline consumer healthcare sdn bhd</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address/>
+          <GCPs>
+            <GCP>9556019</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>glaxosmithkline consumer healthcare</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address/>
+          <GCPs>
+            <GCP>9403099</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Glaxosmithkline Consumer Healthcare, Lp.</normalized>
+          <tagged>GlaxoSmithKline</tagged>
+          <address>PA
+P O Box 1467
+15230
+Pittsburgh
+United States</address>
+          <GCPs>
+            <GCP>0353100</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172831Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T213744Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>JCPenney received a "D+" grade on the 2006 NAACP Economic Reciprocity Initiative report.</title>
+      <description>
+    JCPenney received a "D+" grade on the 2006 NAACP Economic Reciprocity Initiative report. The grade reflects a measurement of corporate America's commitment to the African American citizenry and other people of color. Companies were surveyed for their activity in employment, vendor development and contracting, advertising and marketing, dealerships and philanthropy. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 245</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=245</url>
+          <date>20111025173751</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>NAACP</link-text>
+          <url>http://www.naacp.org/advocacy/economic/NAACP_ConsumerGuide06.pdf</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.jcpenney.com</link-text>
+          <url>http://www.jcpenney.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>JCPenney</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172845Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T213750Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>According to the Environmental Working Group, the following Alberto-Culver products contain phthalates (chemicals banned by the Eu</title>
+      <description>
+    According to the Environmental Working Group, the following Alberto-Culver products contain phthalates (chemicals banned by the European Union and linked to birth defects):&lt;p&gt;
+ 
+TRESemme Eurpean Freeze-Hold Hair Spray&lt;p&gt;
+TRESemme European Slick Melting Gel&lt;p&gt;
+VO5 Crystal Clear 14 Hour Hold 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights | Health and Wellness</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 181</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=181&amp;MajorSub=1&amp;CompanyName=TRESemme</url>
+          <date>20111025174015</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Environmental Working Group</link-text>
+          <url>http://www.ewg.org/reports_content/NotTooPretty/NotTooPretty_final.pdf</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.alberto.com</link-text>
+          <url>http://www.alberto.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>alberto-culver usa, inc.</normalized>
+          <tagged>Alberto-Culver</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0022400</GCP>
+            <GCP>0087300</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>alberto culver co uk ltd</normalized>
+          <tagged>Alberto-Culver</tagged>
+          <address/>
+          <GCPs>
+            <GCP>5012254</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>alberto-culver</normalized>
+          <tagged>Alberto-Culver</tagged>
+          <address/>
+          <GCPs>
+            <GCP>6001229</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Alberto-Culver USA, Inc.</normalized>
+          <tagged>Alberto-Culver</tagged>
+          <address>IL
+2525 West Armitage Avenue
+60160
+Melrose Park
+United States</address>
+          <GCPs>
+            <GCP>0087300</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Alberto-Culver (P R) Inc</normalized>
+          <tagged>Alberto-Culver</tagged>
+          <address>GPO Box 366
+00936
+San Juan
+Puerto Rico</address>
+          <GCPs>
+            <GCP>0022035</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172919Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214014Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Dean Foods refused to acknowledge same-sex marriage licenses issued in San Franciso.</title>
+      <description>
+    Dean Foods refused to acknowledge same-sex marriage licenses issued in San Franciso.  Requests by employees seeking to add partners to their health care plans were denied. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 209</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=209&amp;MajorSub=1&amp;CompanyName=White%20Wave%20Foods</url>
+          <date>20111025174042</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>San Francisco Gate</link-text>
+          <url>http://www.sfgate.com/cgi-bin/article.cgi?f=/c/a/2004/04/06/BAGBG610IJ1.DTL&amp;hw=Dean+Foods+marriage&amp;sn=001&amp;sc=1000</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.deanfoods.com</link-text>
+          <url>http://www.deanfoods.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>dean foods company</normalized>
+          <tagged>Dean Foods</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0025293</GCP>
+            <GCP>0026065</GCP>
+            <GCP>0030255</GCP>
+            <GCP>0038046</GCP>
+            <GCP>0040900</GCP>
+            <GCP>0041179</GCP>
+            <GCP>0041191</GCP>
+            <GCP>0041271</GCP>
+            <GCP>0041274</GCP>
+            <GCP>0041295</GCP>
+            <GCP>0041467</GCP>
+            <GCP>0041900</GCP>
+            <GCP>0049063</GCP>
+            <GCP>0070004</GCP>
+            <GCP>0070399</GCP>
+            <GCP>0070472</GCP>
+            <GCP>0070554</GCP>
+            <GCP>0070578</GCP>
+            <GCP>0070720</GCP>
+            <GCP>0070777</GCP>
+            <GCP>0070778</GCP>
+            <GCP>0070810</GCP>
+            <GCP>0071000</GCP>
+            <GCP>0071406</GCP>
+            <GCP>0071462</GCP>
+            <GCP>0071600</GCP>
+            <GCP>0072637</GCP>
+            <GCP>0072650</GCP>
+            <GCP>0075237</GCP>
+            <GCP>0075440</GCP>
+            <GCP>0076545</GCP>
+            <GCP>0079967</GCP>
+            <GCP>0087932</GCP>
+            <GCP>0661005</GCP>
+            <GCP>0709426</GCP>
+            <GCP>0742365</GCP>
+            <GCP>0752586</GCP>
+            <GCP>0815914</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Dean Foods Company</normalized>
+          <tagged>Dean Foods</tagged>
+          <address>TX
+Suite 3400
+2711 North Haskell Avenue
+75204
+Dallas
+United States</address>
+          <GCPs>
+            <GCP>0010212</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T172952Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214040Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Humana says they will save more than 18 million pounds of greenhouse gas emissions by joining the Environmental Protection Agency&#x2019;</title>
+      <description>
+    Humana says they will save more than 18 million pounds of greenhouse gas emissions by joining the Environmental Protection Agency&#x2019;s new &lt;i&gt;Change the World, Start with Energy Star&lt;/i&gt; campaign which encourages people to use energy star products to save money and energy. Humana is ranked 20th out of 480 companies participating in the program. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 434</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=434</url>
+          <date>20111025174107</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Business Wire</link-text>
+          <url>http://www.businesswire.com/portal/site/home/permalink/?ndmViewId=news_view&amp;newsId=20100610005051&amp;newsLang=en</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.humana.com </link-text>
+          <url>http://www.humana.com </url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>Humana USA Inc.</normalized>
+          <tagged>Humana</tagged>
+          <address>NV
+1475 Terminal Way, Suite E
+89502
+Reno
+United States</address>
+          <GCPs>
+            <GCP>0681110</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T173036Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214106Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>&#x2022; In late 2006, US Airways barred six Muslim clerics from a Minneapolis-to-Phoenix flight.</title>
+      <description>
+    &#x2022; In late 2006, US Airways barred six Muslim clerics from a Minneapolis-to-Phoenix flight.  The imams, who had prayed on their prayer rugs prior to boarding the flight, were removed from the plane after a passenger told a flight attendant that he was alarmed by their behavior.  The men were then handcuffed, detained and questioned.  Company officials also stated that the passenger overheard them making what he thought were anti-American statements.  Flight attendants consulted with local law enforcement and the FBI, who decided that the men posed a security risk. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 402</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=402</url>
+          <date>20111025174143</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Washington Post</link-text>
+          <url>http://www.washingtonpost.com/wp-dyn/content/article/2006/11/27/AR2006112701184.html</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.usairways.com</link-text>
+          <url>http://www.usairways.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>US Airways</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T173121Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214142Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>The State Department of Environmental Conservation fined Hess Corporation $1.1 million in February 2008 for petroleum storage viol</title>
+      <description>
+    The State Department of Environmental Conservation fined Hess Corporation $1.1 million in February 2008 for petroleum storage violations. The agreement also entails $300,000 of funding for a wetlands restoration project and the clean up of 65 gas stations and oil storage facilities in New York City and the Hudson Valley. The violations, tracing back to the 1990s and early 2000s, concern noncompliance with storage regulations as well as the restoration of a bulkhead without proper permits. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 185</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=185</url>
+          <date>20111025174154</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>New York Sun</link-text>
+          <url>http://http://www.nysun.com/new-york/hess-must-pay-11-million-fine-for-environmental/72084/</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.hess.com</link-text>
+          <url>http://www.hess.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>amerada hess corporation</normalized>
+          <tagged>Hess Corporation</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0729071</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Amerada Hess Corporation</normalized>
+          <tagged>Hess Corporation</tagged>
+          <address>NJ
+1 Hess Plaza
+07095-0961
+Woodbridge
+United States</address>
+          <GCPs>
+            <GCP>0729071</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T173211Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214153Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>In February 2005 the Equal Employment Opportunity Commission (EEOC) filed a lawsuit against Burger King on behalf of a 16 year-old</title>
+      <description>
+    In February 2005 the Equal Employment Opportunity Commission (EEOC) filed a lawsuit against Burger King on behalf of a 16 year-old former employee who claimed she was fired after refusing the store manager's repeated requests for sex. According to the lawsuit, the teenager started working at a Milwaukee Burger King in January 2003 and refused the store manager's requests for sex. In September 2003, she was fired after making plans to complain about the harassment to some of the company's managers who were scheduled to visit the restaurant, the lawsuit said.&lt;p&gt;The lawsuit seeks a court order reinstating Merriweather to her job, back pay
+and compensatory and punitive damages up to $300,000, said Jean Kamp, an EEOC
+attorney.
+
+&lt;p&gt;The manager who fired Merriweather is in his mid-30s and still works at the
+restaurant, Kamp said. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 197</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=197</url>
+          <date>20111025174203</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>WAGE Project</link-text>
+          <url>http://www.wageproject.org/content/news/</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.burgerking.com</link-text>
+          <url>http://www.burgerking.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>burger king corporation</normalized>
+          <tagged>Burger King</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0675258</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T174221Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214202Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>&#x2022; Sprint Nextel was named by Ethisphere Institute as having one of the best ethics program overall.</title>
+      <description>
+    &#x2022; Sprint Nextel was named by Ethisphere Institute as having one of the best ethics program overall. Ranking companies&#x2019; ethics programs from excellent to unsatisfactory. Sprint Nextel received the "above standard" rating meaning the corporation has &#x201C;strong programs that exceed all government standards," as well as meet most of the criteria that Ethisphere Institutite requires in their evalaution. In addition, an "above average" rank means that the company could meet the other criteria with a few simple changes. Ethisphere Institute is an international think tank committed to promoting &#x201C;business ethics, corporate social responsibility, anti-corruption and sustainability.&#x201D; 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 367</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=367</url>
+          <date>20111025174211</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Ethisphere Institute</link-text>
+          <url>http://www.ethisphere.com/best-ethics-programs-overall-government-contractors/</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.sprint.com</link-text>
+          <url>http://www.sprint.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>sprint nextel corporation</normalized>
+          <tagged>Sprint Nextel</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0639381</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T174308Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214210Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>According to the Social Investment Research Analyst Network, ten years after the Federal Glass Ceiling Commission recommended disc</title>
+      <description>
+    According to the Social Investment Research Analyst Network, ten years after the Federal Glass Ceiling Commission recommended disclosure of diversity data as a way to remove barriers and promote women and minority advancement, most US companies still fail to voluntarily disclose EEO data to the public.  Avon is listed as one of the companies that does not provide full public disclosure.  Rather, disclosure of EEO data is made upon request. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 189</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=189</url>
+          <date>20111025174254</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Social Investment Research Analyst Network (SIRAN)</link-text>
+          <url>http://www.siran.org/eeo1.php</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.avon.com</link-text>
+          <url>http://www.avon.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Avon</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T174410Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214253Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>In January of 2006, Chrysler announced layoffs of 6,000 employees to take place in March of that year, including 20 percent of gen</title>
+      <description>
+    In January of 2006, Chrysler announced layoffs of 6,000 employees to take place in March of that year, including 20 percent of general and administrative staff and 30 percent of management. Said Dieter Zetsche, Chrysler's Chairman of the Board, "Our objective in taking these actions is to create a lean, agile structure, with streamlined and stable processes that will unleash Chrysler's full potential." 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Business Practices | Workers Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 208</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=208&amp;MajorSub=1&amp;CompanyName=Dodge</url>
+          <date>20111025174324</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>www.chrysler.com</link-text>
+          <url>http://www.chrysler.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Chrysler</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T174551Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214319Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>In January 2004, Christian Brothers Investment Services urged Costco shareholders to demand that the company publicly disclose its</title>
+      <description>
+    In January 2004, Christian Brothers Investment Services urged Costco shareholders to demand that the company publicly disclose its land procurement policies at the annual shareholders meeting. Costco has previously lacked a stated policy for land procurement and use. Its practices in such locations as Cuernavaca, Mexico, Cypress, Ca. and other sites in the U.S. have led to the criticism of social, human rights and environmental groups.  (see related items) 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 207</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=207</url>
+          <date>20111025174347</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>PR Newswire</link-text>
+          <url>http://www.cbisonline.com/page.asp?id=102</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.costco.com</link-text>
+          <url>http://www.costco.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>costco companies inc.</normalized>
+          <tagged>Costco</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0096619</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Costco Companies Inc.</normalized>
+          <tagged>Costco</tagged>
+          <address>WA
+999 Lake Drive
+98027
+Issaquah
+United States</address>
+          <GCPs>
+            <GCP>0096619</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T174618Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214346Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Kroger does not attempt to avoid biotech ingredients, citing the federal government position that genetically engineered foods are</title>
+      <description>
+    Kroger does not attempt to avoid biotech ingredients, citing the federal government position that genetically engineered foods are safe and require no labeling. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights | Health and Wellness</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 254</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=254&amp;MajorSub=1&amp;CompanyName=Ralphs%20Grocery%20Company</url>
+          <date>20111025174358</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>www.kroger.com</link-text>
+          <url>http://www.kroger.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>The Kroger Co.</normalized>
+          <tagged>Kroger</tagged>
+          <address>OH
+1014 Vine Street
+45202
+Cincinnati
+United States</address>
+          <GCPs>
+            <GCP>0686924</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T174748Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214357Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>McDonald's scored a 22 out of 100 in "The Climate Counts Company Scorecard Report." The report judged companies on their committme</title>
+      <description>
+    McDonald's scored a 22 out of 100 in "The Climate Counts Company Scorecard Report." The report judged companies on their committment to reversing climate change. The creation, manufacturing, and transportation of goods greatly contribute to pollution. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 266</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=266</url>
+          <date>20111025174415</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Climate Counts</link-text>
+          <url>http://www.climatecounts.org/pdf/CCScorecardReport-App6-07.pdf</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.mcdonalds.com</link-text>
+          <url>http://www.mcdonalds.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>McDonald's Corporation</normalized>
+          <tagged>McDonald's</tagged>
+          <address>IL
+2111 McDonald's Dr.
+60523
+Oak Brook
+United States</address>
+          <GCPs>
+            <GCP>0195500</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T175128Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214414Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>In 2009, the CEO of Macy's Inc, Terry J. Lundgren received $16,092,487 in total compensation.</title>
+      <description>
+    In 2009, the CEO of Macy's Inc, Terry J. Lundgren received $16,092,487 in total compensation. The median worker, however, made $33,190 in 2010. Thus, Lundgren made 484 times the median worker's pay. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 222</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=222</url>
+          <date>20111025174428</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>AFL-CIO</link-text>
+          <url>http://http://www.aflcio.org/corporatewatch/paywatch/ceou/database.cfm?tkr=M&amp;pg=1</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.federated-fds.com</link-text>
+          <url>http://www.federated-fds.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>macy's</normalized>
+          <tagged>Macy's Inc</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0023495</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T175208Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214427Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>At the end of 2008, Novartis paid $880 million to acquire the biopharmaceutical company Speedel.</title>
+      <description>
+    At the end of 2008, Novartis paid $880 million to acquire the biopharmaceutical company Speedel.  The two companies collaborated on the development of Tekturna, a blood pressure drug.  Novartis plans to incorporate Speedel&#x2019;s operations into its own. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 395</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=395</url>
+          <date>20111025174450</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Speedel</link-text>
+          <url>http://www.speedel.com</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.novartis.com</link-text>
+          <url>http://www.novartis.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Novartis</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Speedel</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T175304Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214448Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>21 people filed a $100 million federal lawsuit against Cracker Barrel in December 2001 for widespread racism, ranging from segrega</title>
+      <description>
+    21 people filed a $100 million federal lawsuit against Cracker Barrel in December 2001 for widespread racism, ranging from segregating black customers in the smoking section to denying them service. This case will be the largest civil rights lawsuit against a restaurant chain since Denny&#x2019;s settled a lawsuit in 1994 for $46 million. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 452</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=452</url>
+          <date>20111025174510</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>USA Today</link-text>
+          <url>http://http://www.usatoday.com/money/general/2001/12/13/cracker-barrel-lawsuit.htm </url>
+          <date/>
+        </link>
+        <link>
+          <link-text/>
+          <url>http://</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Cracker Barrel</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T175323Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214508Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Tyson Foods is among the companies that together have paid millions of dollars to settle federal government allegations that they </title>
+      <description>
+    Tyson Foods is among the companies that together have paid millions of dollars to settle federal government allegations that they had violated U.S. trade embargoes against rogue nations. The company reportedly shipped $250,000 worth of frozen chicken parts to Iraq through a broker in Jordan, violating the US trade embargo with Iraq. Tyson Foods paid a fine of $150,000 to settle the allegations. A Tyson Foods spokesman said the shipment was made by Hudson Foods, which was acquired by Tyson in 1998."When we purchased Hudson we acquired all the assets and liabilities, this being a liability.We weren't aware this activity occurred until after the purchase." 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 301</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=301&amp;MajorSub=1&amp;CompanyName=Wright</url>
+          <date>20111025174550</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>www.tysonfoodsinc.com</link-text>
+          <url>http://www.tysonfoodsinc.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>Hudson Foods, Inc.</normalized>
+          <tagged>Hudson Foods</tagged>
+          <address>AR
+1225 Hudson Road
+72756
+Rogers
+United States</address>
+          <GCPs>
+            <GCP>0083091</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>tyson foods inc.</normalized>
+          <tagged>Tyson Foods</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0011200</GCP>
+            <GCP>0012100</GCP>
+            <GCP>0023700</GCP>
+            <GCP>0030499</GCP>
+            <GCP>0070356</GCP>
+            <GCP>0070606</GCP>
+            <GCP>0070695</GCP>
+            <GCP>0072330</GCP>
+            <GCP>0075620</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T175430Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214547Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>&#x2022; In 2006, Virgin Atlantic was investigated by the U.S.</title>
+      <description>
+    &#x2022; In 2006, Virgin Atlantic was investigated by the U.S. Department of Justice and Britain&#x2019;s Office of Fair Trade for an alleged price fixing scheme involving British Airways, Virgin Atlantic, United Airways and American Airlines.  Virgin Airways executives brought the scheme to the attention of the British authorities after an executive from British Airways approached them with an offer to fix prices for international cargo rates and passenger fuel surcharges.  Because Virgin blew the whistle on the plan, it escaped fines and penalties at the conclusion of the investigation. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 403</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=403</url>
+          <date>20111025174617</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>New York Times</link-text>
+          <url>http://www.nytimes.com/2006/06/22/business/22cnd-air.html?_r=2&amp;oref=slogin</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.virgin-atlantic.com</link-text>
+          <url>http://www.virgin-atlantic.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>American Airlines</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>British Airways</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>United Airways</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Virgin Airways</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Virgin Atlantic</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T175627Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214615Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>The state of Tennessee sued Sears, Roebuck &amp; Co. for violating the Tennessee Consumer Protection Act of 1977.</title>
+      <description>
+    The state of Tennessee sued Sears, Roebuck &amp; Co. for violating the Tennessee Consumer Protection Act of 1977.  According to Tennessee&#x2019;s Attorney General, Sears failed to file "reaffirmation agreements" for individuals who had filed for bankruptcy, and unlawfully pressured such persons to continue payments on their Sears credit lines. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 286</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=286</url>
+          <date>20111025174625</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>State of Tennessee</link-text>
+          <url>http://tennessee.gov/consumer/documents/actions/searsact1.pdf</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>sears, roebuck and co.</normalized>
+          <tagged>Sears, Roebuck &amp; Co.</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0633815</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>sears, roebuck and co.</normalized>
+          <tagged>Sears, Roebuck &amp; Co.</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T175719Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214623Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>There was a &#x201C;substantial&#x201D; oil spill from a leaking pipe at a Sunoco pump station near Cygnet, Ohio in February 2009.</title>
+      <description>
+    There was a &#x201C;substantial&#x201D; oil spill from a leaking pipe at a Sunoco pump station near Cygnet, Ohio in February 2009. The pipeline carries approximately 142,000 barrels of crude oil per day and the strong river currents and gusting winds have caused the oil to migrate more than 12 miles northeast in the Portage River, toward Lake Erie. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 293</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=293</url>
+          <date>20111025174633</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Reuters</link-text>
+          <url>http://http://www.reuters.com/article/2009/02/19/pipeline-operations-sunoco-maumee-idUSN1951378720090219</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.sunocoinc.com</link-text>
+          <url>http://www.sunocoinc.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Sunoco</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T175804Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214632Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>L.L. Bean has been officially inducted in the International Labor Rights Forum's 2010 Sweatshop Hall of Fame.</title>
+      <description>
+    L.L. Bean has been officially inducted in the International Labor Rights Forum's 2010 Sweatshop Hall of Fame. This list includes apparel and textile companies that use sweatshops in their global production, tend to evade fair labor standards and are slow to respond to improving working conditions. Most of the companies employ laborers who work in dangerous conditions and for long hours for poverty wages. Many of 2010's inductees also use child labor and suppress worker's rights to organize. Other inductees along L.L. Bean include Abercrombie and Fitch, Gymboree, Hanes, Ikea, Kohl's, Pier 1 Imports and Walmart. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Business Practices | Workers Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 256</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=256</url>
+          <date>20111025174722</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>International Labor Rights Forum</link-text>
+          <url>http://http://www.laborrights.org/creating-a-sweatfree-world/sweatshops/resources/12211</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.llbean.com</link-text>
+          <url>http://www.llbean.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged> Abercrombie and Fitch</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Gymboree, Inc.</normalized>
+          <tagged>Gymboree</tagged>
+          <address>CA
+700 Airport Boulevard
+Suite 200
+94010
+Burlingame
+United States</address>
+          <GCPs>
+            <GCP>0804410</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Hanes</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Ikea</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Kohl's</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>L.L. Bean</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Pier 1 Imports</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>wal-mart stores, inc.</normalized>
+          <tagged>Wal-mart</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0078742</GCP>
+            <GCP>0605388</GCP>
+            <GCP>0681131</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Wal-Mart Stores, Inc.</normalized>
+          <tagged>Wal-mart</tagged>
+          <address>AR
+702 S.W. 8th St
+MS 16
+72716 
+Bentonville
+United States</address>
+          <GCPs>
+            <GCP>0078742</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T175936Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214716Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>In 2002, Coca-Cola was among the first companies to deduct the value of executive stock options as an expense.</title>
+      <description>
+    In 2002, Coca-Cola was among the first companies to deduct the value of executive stock options as an expense. The action was taken in response to increasing public demands for clear and complete financial statements. Prior to the corporate accounting scandals many companies relied heavily on options to compensate executives but did not deducted them as expenses. Analysts blame the use of large numbers of options that aren't reflected in earnings for creating incentives for executives to artificially inflate stock prices. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 204</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=204</url>
+          <date>20111025174756</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>www.cocacola.com</link-text>
+          <url>http://www.cocacola.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>coca cola enterprises europe ltd</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>5000112</GCP>
+            <GCP>5000193</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>coca-cola amatil (nz)  ltd</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>9400559</GCP>
+            <GCP>9415087</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>swire coca cola hk ltd</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>4890008</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>coca-cola amatil ltd</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>9300624</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>middlesboro coca-cola bottling</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0735086</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>hindustan coca - cola beverages private limited</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>8901764</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>coca-cola services</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>5449000</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>coca-cola bottling co. of ny</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0072979</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>coca-cola nestle refreshments</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0083900</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>coca-cola drycker sverige ab</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>7331040</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>coca cola services france sas</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>3174780</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>coca-cola elliniki etaireia</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>5201005</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>coca-cola usa operations</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0049000</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>coca-cola bottling midwest</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0071708</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Keystone Coca-Cola Bottling Co</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>PA
+Omega Corporate Center
+1000 Omega Drive, Suite 1500
+15205
+Pittsburgh
+United States</address>
+          <GCPs>
+            <GCP>0039382</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Associated Coca-Cola Bttlg</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>FL
+320 Orange Avenue
+P.O. Box 111
+32015
+Daytona Beach
+United States</address>
+          <GCPs>
+            <GCP>0072148</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Coca-Cola Bottling Company of Northern New England, Inc.</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>NH
+1 Executive Park Dr
+03110
+Bedford
+United States</address>
+          <GCPs>
+            <GCP>0752385</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Cameron Coca-Cola Bottling Co.</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>PA
+P O Box 814
+15301
+Washington
+United States</address>
+          <GCPs>
+            <GCP>0015697</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Coca-Cola Enterprises Inc.</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>GA
+P.O. Box 723040
+31139
+Atlanta
+United States</address>
+          <GCPs>
+            <GCP>0717842</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Coca-Cola Bottling Sales and Services</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>GA
+SUITE 300 WEST TOWER
+3200 WINDY HILL ROAD
+30339
+ATLANTA
+United States</address>
+          <GCPs>
+            <GCP>0883222</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>The Coca-Cola Company</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>GA
+P O Box 1734
+30301
+Atlanta
+United States</address>
+          <GCPs>
+            <GCP>0888202</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Coca-Cola USA Operations</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>GA
+P.O. Drawer 1734
+30301
+Atlanta
+United States</address>
+          <GCPs>
+            <GCP>0049000</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Rock Springs-Casper Coca-Cola</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>WY
+P.O. Box 939
+82902
+Rock Springs
+United States</address>
+          <GCPs>
+            <GCP>0092065</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Coca-Cola Bottling Works</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>GA
+P O Box 466
+30728
+LaFayette
+United States</address>
+          <GCPs>
+            <GCP>0053045</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Wometco Coca-Cola Bottling Co.</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>TN
+P.O. Box 40818
+37204
+Nashville
+United States</address>
+          <GCPs>
+            <GCP>0072052</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Coca-Cola Bottling Co. Of Ny</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>NY
+555 Taxter Rd 5th Fl
+10523
+Elmsford
+United States</address>
+          <GCPs>
+            <GCP>0072979</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Coca-Cola Nestle Refreshments</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>GA
+C/O Mr Mark Kopp
+P O Box 1734
+30301
+Atlanta
+United States</address>
+          <GCPs>
+            <GCP>0083900</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Middlesboro Coca-Cola Bottling</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>KY
+P O Box 1485
+40965
+Middlesboro
+United States</address>
+          <GCPs>
+            <GCP>0735086</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Ozarks Coca-Cola/dr Pepper</normalized>
+          <tagged>Coca-Cola</tagged>
+          <address>MO
+1777 N PACKER RD
+65808
+SPRINGFIELD
+United States</address>
+          <GCPs>
+            <GCP>081078301</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>+1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T180324Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214755Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>With the increased activism surrounding immigrant rights, there was a series of demonstrations organizing around the meatpacking i</title>
+      <description>
+    With the increased activism surrounding immigrant rights, there was a series of demonstrations organizing around the meatpacking industry in cities such as Washington DC, Boston, New York, Raleigh, Richmond, and Chicago. Specifically, organizers targeted Smithfield Foods, the nation's largest meatpacker. A diverse coalition of groups including DC Jobs with Justice, Campaign for Labor Rights, and United Food and Commercial Workers, highlighted the dangerous working conditions in the world's largest pork processing facility in Tar Heel, North Carolina.  Working conditions have not improved since the 2002 lawsuit that found the company guilty of violating human rights in Tar Heel, NC. (Please see related alert item under &#x201C;Unionization,&#x201D; citing Feedstuff.) 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Business Practices | Workers Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 289</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=289&amp;MajorSub=1&amp;CompanyName=Yano</url>
+          <date>20111025174819</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>US Newswire</link-text>
+          <url>http://www.releases.usnewswire.com/GetRelease.asp?id=67754</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.smithfieldfoods.com</link-text>
+          <url>http://www.smithfieldfoods.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>Smithfield Foods Inc</normalized>
+          <tagged>Smithfield Foods</tagged>
+          <address>IL
+5533 W. Cermak Road
+60650
+Cicero
+United States</address>
+          <GCPs>
+            <GCP>0075932</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T180624Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214818Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>In January 2004, in the wake of worker strikes over health care benefits, Safeway Inc.</title>
+      <description>
+    In January 2004, in the wake of worker strikes over health care benefits, Safeway Inc. awarded 11 senior and executive vice presidents millions of dollars in stock grants and options under a new compensation plan.  When Labor leaders and union representatives criticized this decision, a Safeway spokesperson responded that the awards were necessary because "after two years of wage freezes and undersized bonuses, it was becoming difficult to attract and keep talent. " 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 284</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=284&amp;MajorSub=1&amp;CompanyName=Tom%20Thumb</url>
+          <date>20111025174830</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>www.safeway.com</link-text>
+          <url>http://www.safeway.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>safeway, inc.</normalized>
+          <tagged>Safeway</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0076750</GCP>
+            <GCP>0321130</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T180710Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214828Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Hilton Hotel in Los Angeles allegedly failed to pay temporary worker&#x2019;s livable wages.</title>
+      <description>
+    Hilton Hotel in Los Angeles allegedly failed to pay temporary worker&#x2019;s livable wages.  Two housekeepers filed for a law suit on June 15, 2010 claiming that workers hired by Hilton were not getting paid the minimal amount required by the city. According to the article by Business Journal, the Los Angeles hotel had original tried to challenge the new law requiring them to pay the livable wage which is $10.30 per hour with insurance benefits or $11.35 per hour without insurance benefits. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Business Practices | Workers Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 440</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=440</url>
+          <date>20111025174845</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Business Journal</link-text>
+          <url>http://www.labusinessjournal.com/news/2010/jun/16/wages-lawsuit-targets-lax-hilton/</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.hiltonworldwide.com</link-text>
+          <url>http://www.hiltonworldwide.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Hilton</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Hilton Hotel</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T180749Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214843Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Announced in 1998, the Cuiaba pipeline in South America has been controversial from the onset.</title>
+      <description>
+    Announced in 1998, the Cuiaba pipeline in South America has been controversial from the onset. Running through Bolivia's Chiquitano Tropical Forest, the 390 mile long natural gas pipeline was built by the now infamous Enron and is partly owned by Shell is part owner of the Cuiaba pipeline in South America. The pipeline has substantially affected indigenous communities that reside in the region surrounding the pipeline, threatened more than 90 endangered species living in the forest, and has led to an increase in illegal logging and poaching.  Indigenous communities, NGOs and even the governments of the countries affected proposed alternative routes for the pipeline, but Enron and Shell claimed they would be too costly. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Environment</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 288</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=288</url>
+          <date>20111025174918</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Amazon Watch</link-text>
+          <url>http://http://www.amazonwatch.org/amazon/BO/cuiaba/index.php?page_number=1</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.shell.com</link-text>
+          <url>http://www.shell.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Enron</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Shell Oil Products</normalized>
+          <tagged>Shell</tagged>
+          <address>TX
+P.O. BOX 4427
+77210
+Houston
+United States</address>
+          <GCPs>
+            <GCP>0758413</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T180925Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214916Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>The International Labor Rights Fund (ILRF) has sued Nestl&#xE9;, Archer Daniels Midland, and Cargill in Federal District Court in Los A</title>
+      <description>
+    The International Labor Rights Fund (ILRF) has sued Nestl&#xE9;, Archer Daniels Midland, and Cargill in Federal District Court in Los Angeles for involvement in the trafficking, torture, and forced labor of children who cultivate and harvest cocoa beans that the companies import from Africa. They filed suit on behalf of a class of Malian children who were trafficked from Mali into the Ivory Coast and forced to work twelve to fourteen hours a day with no pay, little food and sleep, and frequent beatings. The three children acting as class representative plaintiffs are proceeding anonymously as John Does because of feared retaliation by the farm owners for whom they worked. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Business Practices | Workers Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 187</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=187</url>
+          <date>20111025174933</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>International Labor Rights Fund</link-text>
+          <url>http://www.laborrights.org/stop-child-labor/cocoa-campaign/585</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.admworld.com</link-text>
+          <url>http://www.admworld.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>archer daniels midland company</normalized>
+          <tagged>Archer Daniels Midland</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0716071</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized/>
+          <tagged>Cargill</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T181204Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T214930Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>In September 2009, a white man started beating a black woman in front of her daughter while calling her racial slurs, vulgar names</title>
+      <description>
+    In September 2009, a white man started beating a black woman in front of her daughter while calling her racial slurs, vulgar names and curse words at a Cracker Barrel in Georgia. Both the man and the woman were customers of the restaurant and the brawl started when the man forced the door open and almost hit the victim's daughter. The man has been charged with cruelty to chidren, battery adn disorderly conduct but is out of jail on bond. The local police has referred this case to the FBI for investigation as a hate crime. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 452</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=452</url>
+          <date>20111025175028</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>CBS News</link-text>
+          <url>http://www.cbsatlanta.com/news/20915187/detail.html</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Cracker Barrel</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>0</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T181516Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T215012Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Pepsi donated over $127,000 to defeat Oregon&#x2019;s Measure 27, requiring GMO food to be labeled in that state.</title>
+      <description>
+    Pepsi donated over $127,000 to defeat Oregon&#x2019;s Measure 27, requiring GMO food to be labeled in that state. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 276</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=276&amp;MajorSub=1&amp;CompanyName=True%20North</url>
+          <date>20111025175038</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>www.pepsico.com</link-text>
+          <url>http://www.pepsico.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>pepsi-cola north america inc.</normalized>
+          <tagged>Pepsi</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0012000</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>pepsi-cola general bottlers poland sp. z o.o.</normalized>
+          <tagged>Pepsi</tagged>
+          <address/>
+          <GCPs>
+            <GCP>5900497</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>7-Up Pepsi Bottling Company</normalized>
+          <tagged>Pepsi</tagged>
+          <address>LA
+2301 RUFFIN DR
+71202 
+Monroe
+United States</address>
+          <GCPs>
+            <GCP>0073266</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Pepsi-Cola Bottling/central Va</normalized>
+          <tagged>Pepsi</tagged>
+          <address>VA
+P.O. Box 9035
+22906-9035 
+Charlottesville
+United States</address>
+          <GCPs>
+            <GCP>0720035</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>PepsiCo, Inc.</normalized>
+          <tagged>Pepsi</tagged>
+          <address>NY
+700 Anderson Hill Rd
+10577 
+Purchase
+United States</address>
+          <GCPs>
+            <GCP>083609332</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Pepsico World Trading Co., Inc</normalized>
+          <tagged>Pepsi</tagged>
+          <address>NY
+700 Anderson Hill Rd
+10577 
+Purchase
+United States</address>
+          <GCPs>
+            <GCP>0015158</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T181533Z</date>
+        </review>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T181623Z</date>
+        </review>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T181821Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T215036Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Merck &amp; Co, Inc. received a perfect score on the Human Rights Campaign 2009 Corporate Equality Index which rates large corporation</title>
+      <description>
+    Merck &amp; Co, Inc. received a perfect score on the Human Rights Campaign 2009 Corporate Equality Index which rates large corporations on policies that affect their gay, lesbian, bisexual and transgender employees, consumers and investors. The HRC Corporate E 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Business Practices | Workers Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 392</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=392</url>
+          <date>20111025175107</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Human Rights Campaign</link-text>
+          <url>http://www.hrc.org/documents/HRC_Corporate_Equality_Index_2009.pdf</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.merck.com</link-text>
+          <url>http://www.merck.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>merck pharmaceutical (hk) ltd</normalized>
+          <tagged>Merck</tagged>
+          <address/>
+          <GCPs>
+            <GCP>4897016</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T155357Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T215106Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>180 people became ill with a gastrointestinal illness after eating at a Chipotle in Ohio.</title>
+      <description>
+    180 people became ill with a gastrointestinal illness after eating at a Chipotle in Ohio. Some of the side effects included diarrhea, vomiting, and nausea. The cause is believed to be food-borne bacteria from a sick employee. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights | Health and Wellness</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 457</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=457</url>
+          <date>20111025175118</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>US News</link-text>
+          <url>http://health.usnews.com/health-news/family-health/articles/2008/04/21/ohio-disease-outbreak-linked-to-chipotle-restaurant.html</url>
+          <date/>
+        </link>
+        <link>
+          <link-text/>
+          <url>http://</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Chipotle</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T155402Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T215116Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>ExxonMobil, Chevron, Shell, and BP, as well as a handful of other exploration and pipeline companies are being charged in a class-</title>
+      <description>
+    ExxonMobil, Chevron, Shell, and BP, as well as a handful of other exploration and pipeline companies are being charged in a class-action lawsuit filed weeks after Hurricane Katrina destroyed much of southern Louisiana.  The class-action case faults oil and exploration companies for heightening the level of ruin caused by the hurricane.  Plaintiffs claim that in efforts to uncover oil and natural gas, these companies indiscriminately and irresponsibly dredged the coastal wetlands of Louisiana, which serve as a critical natural buffer against storm surges and flooding.  The case was filed on behalf of all Hurricane Katrina survivors. The lawsuit was initially rejected by a district court when it was first filed in 2005 but in 2010, several federal appeals court judges agreed that the case could be heard, eventually agreeing to set a hearing date and decide whether the case can progress by the end of the year. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights | Health and Wellness</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 221</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=221</url>
+          <date>20111025175154</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>AFX News Limited</link-text>
+          <url>http://www.forbes.com/markets/feeds/afx/2005/09/23/afx2241383.html</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>BP</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>chevron usa products company</normalized>
+          <tagged>Chevron</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0611167</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>chevron u.s.a.</normalized>
+          <tagged>Chevron</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0023968</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Chevron USA Products Company</normalized>
+          <tagged>Chevron</tagged>
+          <address>CA
+6101 Bollinger Canyon Road
+94583-0804
+San Ramon
+United States</address>
+          <GCPs>
+            <GCP>0611167</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Chevron U.S.A.</normalized>
+          <tagged>Chevron</tagged>
+          <address>CA
+PO BOX 2069
+94604-2069
+Oakland
+United States</address>
+          <GCPs>
+            <GCP>0023968</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Chevron Oil Co</normalized>
+          <tagged>Chevron</tagged>
+          <address>CA
+225 Bust St
+PO Box 3495
+94104
+San Francisco
+United States</address>
+          <GCPs>
+            <GCP>0072544</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>exxon company, u.s.a.</normalized>
+          <tagged>Exxon</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0077162</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Exxon Company, U.S.A.</normalized>
+          <tagged>Exxon</tagged>
+          <address>TX
+5959 Las Colinas Blvd
+75039 
+Irving
+United States</address>
+          <GCPs>
+            <GCP>0077162</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Shell Oil Products</normalized>
+          <tagged>Shell</tagged>
+          <address>TX
+P.O. BOX 4427
+77210
+Houston
+United States</address>
+          <GCPs>
+            <GCP>0758413</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T181957Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T155438Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T215151Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>The &lt;i&gt;Wall Street Journal&lt;/i&gt; reported that Thomas M.</title>
+      <description>
+    The &lt;i&gt;Wall Street Journal&lt;/i&gt; reported that Thomas M. Coughlin, former board member and Vice Chairman of Wal-Mart, claims to have operated an &#x201C;illegal anti-union slush fund&#x201D; while employed at the company.  The fund, he alleges, was part of an actual Wal-Mart program to prevent workers from unionizing in the workplace.  According to the Wall Street Journal, if these allegations prove to be true, Wal-Mart would be guilty of violating the federal Taft-Hartly Act, which outlaws efforts to discourage employees from participating in a workers union vis-&#xE0;-vis monetary coercion. 
+
+  </description>
+      <categories>
+    
+  </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 306</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=306</url>
+          <date>20111025175206</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>United Food and Commercial Workers</link-text>
+          <url>http://www.ufcw.org/press_room/fact_sheets_and_backgrounder/walmart/andunions.cfm</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>wal-mart stores, inc.</normalized>
+          <tagged>Wal-Mart</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0078742</GCP>
+            <GCP>0605388</GCP>
+            <GCP>0681131</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Wal-Mart Stores, Inc.</normalized>
+          <tagged>Wal-Mart</tagged>
+          <address>AR
+702 S.W. 8th St
+MS 16
+72716 
+Bentonville
+United States</address>
+          <GCPs>
+            <GCP>0078742</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T182138Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T155528Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T155620Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T215205Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>In November 2002, sweatshop campaigners demanded a Holiday boycott against Gap because of alleged evidence that links the clothing</title>
+      <description>
+    In November 2002, sweatshop campaigners demanded a Holiday boycott against Gap because of alleged evidence that links the clothing retailer to sweatshop labor in six countries. Two groups--Africa Forum and Unite, the union of textile employees, presented evidence of "abusive working conditions" collected from interviews with 200 people in more than 40 Gap-contracted factories in Cambodia, Indonesia, Bangladesh, Lesotho, El Salvador and Mexico. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Business Practices | Workers Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 229</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=229&amp;MajorSub=1&amp;CompanyName=Old%20Navy</url>
+          <date>20111025175217</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Organic Consumers Association</link-text>
+          <url>http://www.organicconsumers.org/clothes/120202_sweatshop.cfm</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.gap.com</link-text>
+          <url>http://www.gap.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>The Gap, Inc.</normalized>
+          <tagged>The Gap</tagged>
+          <address>CA
+2 Folsom St
+94105
+San Francisco
+United States</address>
+          <GCPs>
+            <GCP>0677681</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T182235Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T215216Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>Abercrombie &amp; Fitch received heavy criticism for selling thong underwear for children bearing slogans such as "eye candy" and "win</title>
+      <description>
+    Abercrombie &amp; Fitch received heavy criticism for selling thong underwear for children bearing slogans such as "eye candy" and "wink, wink."  The company has also come under fire for its sexually provacative catalogs aimed at teens. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Politics</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 178</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=178</url>
+          <date>20111025175226</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>CNN Money</link-text>
+          <url>http://money.cnn.com/2002/05/22/news/companies/abercrombie/index.htm</url>
+          <date/>
+        </link>
+        <link>
+          <link-text>www.abercrombie.com</link-text>
+          <url>http://www.abercrombie.com</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>Abercrombie &amp; Fitch</normalized>
+          <tagged>Abercrombie &amp; Fitch</tagged>
+          <address>OH
+P.O. Box 182168
+43218
+Columbus
+United States</address>
+          <GCPs>
+            <GCP>0694752</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T182424Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T155631Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T215222Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>A priest from Daytona Beach is suing Ruby Tuesday for allegedly not serving him because of his race.</title>
+      <description>
+    A priest from Daytona Beach is suing Ruby Tuesday for allegedly not serving him because of his race. The priest says that he and his church members were refused service and called vulgar names. The priest is asking for five million dollars. Ruby Tuesday denies all claims. 
+
+  </description>
+      <categories>
+        <category>
+          <category-name>Human Rights</category-name>
+        </category>
+      </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 448</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=448</url>
+          <date>20111025175510</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>wesh.com </link-text>
+          <url>http://www.wesh.com/money/20295585/detail.html</url>
+          <date/>
+        </link>
+        <link>
+          <link-text/>
+          <url>http://</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized/>
+          <tagged>Ruby Tuesday</tagged>
+          <address/>
+          <GCPs/>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score/>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T182456Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T155649Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T215509Z</date>
+        </review>
+      </reviews>
+    </evidence>
+    <evidence>
+      <title>According to &lt;I&gt;Business Week&lt;/I&gt;, "Based on filings Wal-Mart made to the Equal Employment Opportunity Commission, ...72 percent o</title>
+      <description>
+    According to &lt;I&gt;Business Week&lt;/I&gt;, "Based on filings Wal-Mart made to the Equal Employment Opportunity Commission, ...72 percent of the company's sales staff are women but only one-third of them make it into management, despite Wal-Mart's promote-from-within policy. That means, according to EEOC data, that Wal-Mart doesn't just rank below its current retailing peers, which have an average of 56 percent women managers, but it also ranks below rivals' levels of 25 years ago." 
+
+  </description>
+      <categories>
+    
+  </categories>
+      <source>
+        <link>
+          <link-text>Green America: Company ID 306</link-text>
+          <url>http://www.greenamerica.org/programs/responsibleshopper/company.cfm?id=306</url>
+          <date>20111025175806</date>
+        </link>
+      </source>
+      <links>
+        <link>
+          <link-text>Business Week</link-text>
+          <url>http://www.businessweek.com/magazine/content/01_29/b3741080.htm?chan=search</url>
+          <date/>
+        </link>
+      </links>
+      <companies>
+        <company>
+          <normalized>wal-mart stores, inc.</normalized>
+          <tagged>Wal-Mart</tagged>
+          <address/>
+          <GCPs>
+            <GCP>0078742</GCP>
+            <GCP>0605388</GCP>
+            <GCP>0681131</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+        <company>
+          <normalized>Wal-Mart Stores, Inc.</normalized>
+          <tagged>Wal-Mart</tagged>
+          <address>AR
+702 S.W. 8th St
+MS 16
+72716 
+Bentonville
+United States</address>
+          <GCPs>
+            <GCP>0078742</GCP>
+          </GCPs>
+          <values>
+            <value>
+              <value-name>polarity</value-name>
+              <score>-1</score>
+            </value>
+          </values>
+        </company>
+      </companies>
+      <reviews>
+        <review>
+          <reviewer>insight</reviewer>
+          <date>20111023T182545Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T155717Z</date>
+        </review>
+        <review>
+          <reviewer>beethoven</reviewer>
+          <date>20111025T215804Z</date>
+        </review>
+      </reviews>
+    </evidence>
+  </items>
+</announcement>

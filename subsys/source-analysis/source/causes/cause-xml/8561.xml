@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>Using donations and old equipment to build clusters to further research for the world's problems.
+
+http://www.worldcommunitygrid.org/
+http://boinc.berkeley.edu/
+
+Download and install boinc to donate your idle cpu time to research. Its free and only takes a few minutes
+
+1. Seti research
+
+2. Medical research
+
+3. Misc. Research</description>
+  <mission>Use distributed computing to find Answers for Humanity</mission>
+  <name>Cluster Based Computing Research</name>
+  <canonical-url>http://www.causes.com/causes/8561</canonical-url>
+  <member-count type="integer">4</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/BM/I4/Mz/tK/y7/HV/UmeS.jpg</photo-url>
+</cause>

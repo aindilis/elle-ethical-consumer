@@ -1,0 +1,81 @@
+#!/usr/bin/perl -w
+
+use PerlLib::Cacher;
+use PerlLib::SwissArmyKnife;
+
+my $cacher = PerlLib::Cacher->new
+  (
+   CacheRoot => "/var/lib/myfrdcsa/codebases/minor/elle-ethical-consumer/subsys/source-analysis/source/peta/FileCache",
+  );
+my $urls = {};
+
+foreach my $i (0..67) {
+  my $url = "http://www.peta.org/living/beauty-and-personal-care/companies/search.aspx?Testing=0&PageIndex=$i";
+  $cacher->get($url);
+  print $url."\n";
+
+  if (! $cacher->is_cached()) {
+    sleep 10;
+  }
+  ProcessContent
+    (
+     Type => "Doesn't do animal testing",
+     Content => $cacher->content(),
+    );
+}
+
+foreach my $i (0..11) {
+  my $url = "http://www.peta.org/living/beauty-and-personal-care/companies/search.aspx?Testing=1&PageIndex=$i";
+  $cacher->get($url);
+  print $url."\n";
+  # print $cacher->content()."\n";
+  if (! $cacher->is_cached()) {
+    sleep 10;
+  }
+  ProcessContent
+    (
+     Type => "Does animal testing",
+     Content => $cacher->content(),
+    );
+}
+
+my $num = scalar keys %$urls;
+print "NUM $num\n";
+# print Dumper($urls);
+
+sub ProcessContent {
+  my %args = @_;
+  my $c = $args{Content};
+  # print $c."\n";
+  if ($c =~ /<ul class="company-list">(.+?)<\/ul>/s) {
+    # print $1;
+    my $contents = $1;
+    my @items = $contents =~ /<li>(.+?)<\/li>/sg;
+    foreach my $item (@items) {
+      if ($item =~ /<a title="[^"]+" href="([^"]+)">(.+?)<\/a>/s) {
+	my $url = "http://www.peta.org".$1;
+	my $name = $2;
+	$urls->{$name} =
+	  {
+	   Name => $name,
+	   URL => $url,
+	   Type => $args{Type},
+	  };
+	if (1) {
+	  print "\t$url\n";
+	  $cacher->get($url);
+	  if ( ! $cacher->is_cached()) {
+	    sleep 5;
+	  }
+	}
+      } else {
+	print "ERROR: $item\n";
+      }
+    }
+  }
+}
+
+
+
+
+

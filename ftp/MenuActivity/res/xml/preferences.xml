@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory 
+        android:title="Feed Settings"
+        android:key="feed_settings">
+
+        <Preference
+            android:key="manage_feeds"
+            android:title="Manage Sources" 
+            android:summary="Choose where to receive information." />
+		<ListPreference 
+			android:key="update_interval"
+			android:title="Update Interval"
+			android:summary="How often your feeds are checked for updates."
+			android:defaultValue="0"
+            android:entries="@array/updateInterval"
+            android:entryValues="@array/updateIntervalValues" />
+
+        <Preference
+            android:key="nuke"
+            android:title="Nuke Database" 
+            android:summary="Remove ALL database entries. Cannot be undone!" />
+            
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="Category Settings"
+        android:key="category_settings">
+
+        <Preference
+            android:key="rate_categories"
+            android:title="Set Categories" 
+            android:summary="Assign ratings to each category." />
+
+    </PreferenceCategory>
+    
+</PreferenceScreen>

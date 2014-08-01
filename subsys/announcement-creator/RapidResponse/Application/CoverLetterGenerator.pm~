@@ -1,0 +1,56 @@
+package RapidResponse::Application;
+
+use PerlLib::SwissArmyKnife;
+
+use Class::MethodMaker
+  new_with_init => 'new',
+  get_set       =>
+  [
+
+   qw /  /
+
+  ];
+
+sub init {
+  my ($self,%args) = @_;
+  $self->CoverLetter($args{CoverLetter});
+
+}
+
+
+
+#!/usr/bin/perl -w
+
+use PerlLib::SwissArmyKnife;
+
+my $coverlettertemplate = read_file("CoverLetter.tex.template");
+my $listtemplate = read_file("List.tex.template");
+
+my $data = {
+	    FULLNAME => "Andrew J. Dougherty",
+	    EMPLOYERNAME => "Mr. Boss",
+	    PLACE => "Sample Employer",
+	    ADDRESS => "123 Chicago Ave.\\\\Chicago, IL 60606",
+	    POSITION => "Sample Position",
+	    ADVERTISEMENT => "on Craigslist",
+	    ENCLOSED => "my resume",
+	   };
+
+foreach my $key (keys %$data) {
+  my $sub = $data->{$key};
+  $coverlettertemplate =~ s/<$key>/$sub/g;
+  $listtemplate =~ s/<$key>/$sub/g;
+}
+
+my $fh1 = IO::File->new();
+$fh1->open(">CoverLetter.tex") or die "cannot\n";
+print $fh1 $coverlettertemplate;
+$fh1->close();
+
+my $fh2 = IO::File->new();
+$fh2->open(">List.tex") or die "cannot\n";
+print $fh2 $listtemplate;
+$fh2->close();
+
+system "pdflatex List.tex";
+system "xpdf List.pdf";

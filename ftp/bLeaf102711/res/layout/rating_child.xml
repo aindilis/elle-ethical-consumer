@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="wrap_content"
+	  android:orientation="vertical"
+	  android:layout_height="wrap_content">
+	  <TextView android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:id="@+id/rating_name"
+		  android:textSize="24dip"
+		  android:textStyle="bold"
+		  android:textColor="#ffffff" />
+	  <RatingBar android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  style="?android:attr/ratingBarStyleIndicator"
+		  android:id="@+id/rating_star"
+		  android:numStars="5"
+		  android:stepSize="0.5"
+		  android:isIndicator="true" />
+ </LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>A nonprofit website where you can donate and volunteer to just about any nonprofit and where nonprofits can get donations on their own websites.
+
+1. Online donations are the future of giving.
+
+2. Its the easiest way for people to give.
+
+3. Its the best way for charities to fundraise.</description>
+  <mission>Drive dollars to charities online</mission>
+  <name>Network for Good</name>
+  <canonical-url>http://www.causes.com/causes/643</canonical-url>
+  <member-count type="integer">165</member-count>
+  <total-raised type="decimal">50.1</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/1QM/qhJS.jpg</photo-url>
+</cause>

@@ -1,0 +1,777 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="en-us" />
+    <title>Search by name | GEPIR | Services | GS1 - The global language of business
+    </title>
+    <meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1" />
+    <meta name="CODE_LANGUAGE" content="C#" />
+    <meta name="vs_defaultClientScript" content="JavaScript" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <link href="gepir.css" type="text/css" rel="stylesheet" media="screen" />
+    <link rel="shortcut icon" href="http://www.gs1.org/sites/all/themes/gs1/favicon.ico" type="image/x-icon" />
+    <script language="javascript" type="text/javascript">
+        function showWait(Tabid) {
+            if ($get('errorExplanation') != null)
+                $get('errorExplanation').style.display = 'none';
+            $get(Tabid).style.display = 'inline';
+            $get(Tabid).style.visibility = 'visible';
+            setTimeout('document.images["WaitImage"].src = document.images["WaitImage"].src', 1);
+        }
+
+        function hiddenExplanation() {
+            if ($get('errorExplanation') != null)
+                $get('errorExplanation').style.display = 'none';
+        }
+
+        function hiddenResponse() {
+            if ($get('SummaryResponse') != null)
+                $get('SummaryResponse').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <!-- HEADER -->
+    <form name="Search_by_nameClient" method="post" action="search_by_name.aspx?Lang=en-US" id="Search_by_nameClient">
+<input type="hidden" name="LoginPanel_ScriptManager_HiddenField" id="LoginPanel_ScriptManager_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTU2NjAwOTMyNA9kFgICAQ9kFghmDw8WAh4HVmlzaWJsZWhkZAIBD2QWAgIDD2QWAgIDDzwrAAoBAA8WAh4SRGVzdGluYXRpb25QYWdlVXJsBQ5+L0RlZmF1bHQuYXNweGRkAgMPZBYCZg9kFggCEQ8QZBAV8AERQUZHSEFOSVNUQU4gKDMuMikNQUxCQU5JQSAoMy4yKQ1BTEdFUklBICgzLjIpFEFNRVJJQ0FOIFNBTU9BIChOL0EpDUFORE9SUkEgKE4vQSkMQU5HT0xBICgzLjIpDkFOR1VJTExBIChOL0EpEEFOVEFSQ1RJQ0EgKE4vQSkZQU5USUdVQSBBTkQgQkFSQlVEQSAoTi9BKQ9BUkdFTlRJTkEgKDMuMikNQVJNRU5JQSAoMy4yKQtBUlVCQSAoMy4yKQ9BVVNUUkFMSUEgKDMuMikNQVVTVFJJQSAoMy4xKRBBWkVSQkFJSkFOICgzLjIpDUJBSEFNQVMgKDMuMikNQkFIUkFJTiAoTi9BKRBCQU5HTEFERVNIICgzLjIpDkJBUkJBRE9TICgzLjIpDUJFTEFSVVMgKDMuMCkNQkVMR0lVTSAoMy4xKQxCRUxJWkUgKDMuMikLQkVOSU4gKDMuMikNQkVSTVVEQSAoTi9BKQxCSFVUQU4gKE4vQSkNQk9MSVZJQSAoMy4yKRxCT1NOSUEgQU5EIEhFUlpFR09WSU5BICgzLjIpDkJPVFNXQU5BICgzLjIpE0JPVVZFVCBJU0xBTkQgKE4vQSkMQlJBWklMICgzLjApJEJSSVRJU0ggSU5ESUFOIE9DRUFOIFRFUlJJVE9SWSAoTi9BKQxCUlVORUkgKDMuMikOQlVMR0FSSUEgKDMuMikSQlVSS0lOQSBGQVNPIChOL0EpDUJVUlVOREkgKDMuMikOQ0FNQk9ESUEgKDMuMikOQ0FNRVJPT04gKDMuMikMQ0FOQURBICgzLjApEENBUEUgVkVSREUgKDMuMikUQ0FZTUFOIElTTEFORFMgKDMuMikeQ0VOVFJBTCBBRlJJQ0FOIFJFUFVCTElDIChOL0EpCkNIQUQgKE4vQSkLQ0hJTEUgKDMuMikLQ0hJTkEgKDMuMSkaQ0hJTkEgKE1BQ0FVIFMuQS5SLikgKE4vQSkWQ0hSSVNUTUFTIElTTEFORCAoTi9BKR1DT0NPUyAoS0VFTElORykgSVNMQU5EUyAoTi9BKQ5DT0xPTUJJQSAoMy4xKQ1DT01PUk9TIChOL0EpC0NPTkdPIChOL0EpH0NPTkdPIERFTU9DUkFUSUMgUkVQVUJMSUMgKDMuMikSQ09PSyBJU0xBTkRTIChOL0EpEENPU1RBIFJJQ0EgKDMuMSkNQ1JPQVRJQSAoMy4yKQpDVUJBIChOL0EpDENZUFJVUyAoMi4wKRRDWkVDSCBSRVBVQkxJQyAoMy4xKQ1ERU5NQVJLICgzLjIpDkRKSUJPVVRJICgzLjIpDkRPTUlOSUNBIChOL0EpGERPTUlOSUNBTiBSRVBVQkxJQyAoMy4yKRBFQVNUIFRJTU9SIChOL0EpDUVDVUFET1IgKE4vQSkLRUdZUFQgKDMuMikRRUwgU0FMVkFET1IgKDMuMSkXRVFVQVRPUklBTCBHVUlORUEgKE4vQSkNRVJJVFJFQSAoTi9BKQ1FU1RPTklBICgzLjEpDkVUSElPUElBICgzLjIpFkZBTEtMQU5EIElTTEFORFMgKE4vQSkTRkFST0UgSVNMQU5EUyAoMy4yKRJGSUpJIElTTEFORFMgKE4vQSkNRklOTEFORCAoMy4yKQxGUkFOQ0UgKDMuMSkTRlJFTkNIIEdVSUFOQSAoTi9BKRZGUkVOQ0ggUE9MWU5FU0lBIChOL0EpIUZSRU5DSCBTT1VUSEVSTiBURVJSSVRPUklFUyAoTi9BKQtHQUJPTiAoMy4yKQxHQU1CSUEgKDMuMikNR0VPUkdJQSAoMy4yKQ1HRVJNQU5ZICgzLjEpC0dIQU5BICgzLjIpD0dJQlJBTFRBUiAoMy4yKQxHUkVFQ0UgKDMuMikPR1JFRU5MQU5EICgzLjIpDUdSRU5BREEgKE4vQSkQR1VBREVMT1VQRSAoTi9BKQpHVUFNIChOL0EpD0dVQVRFTUFMQSAoMy4yKQxHVUlORUEgKDMuMikTR1VJTkVBLUJJU1NBVSAoTi9BKQxHVVlBTkEgKDMuMikLSEFJVEkgKDMuMikgSEVBUkQgQU5EIE1DRE9OQUxEIElTTEFORFMgKE4vQSkOSE9ORFVSQVMgKDMuMSkPSE9ORyBLT05HICgyLjApDUhVTkdBUlkgKDMuMSkNSUNFTEFORCAoMy4yKQtJTkRJQSAoMy4xKQ9JTkRPTkVTSUEgKDMuMikKSVJBTiAoMy4yKQ1JUkVMQU5EICgzLjIpDElTUkFFTCAoTi9BKQtJVEFMWSAoMy4wKRFJVk9SWSBDT0FTVCAoMy4yKQ1KQU1BSUNBICgzLjIpC0pBUEFOICgzLjApDEpPUkRBTiAoMy4yKRBLQVpBS0hTVEFOICgzLjIpC0tFTllBICgzLjIpDktJUklCQVRJIChOL0EpC0tPUkVBICgzLjEpEktPUkVBLCBOT1JUSCAoTi9BKQxLVVdBSVQgKE4vQSkQS1lSR1laU1RBTiAoMy4yKQpMQU9TICgzLjIpDExBVFZJQSAoMy4xKQ1MRUJBTk9OICgzLjIpDUxFU09USE8gKE4vQSkNTElCRVJJQSAoTi9BKRpMSUJZQU4gQVJBQiBKQU1BSElSWSAoMy4yKRNMSUVDSFRFTlNURUlOICgzLjEpD0xJVEhVQU5JQSAoMy4yKRBMVVhFTUJPVVJHICgzLjEpD01BQ0VET05JQSAoMy4yKRBNQURBR0FTQ0FSICgzLjIpDE1BTEFXSSAoTi9BKQ5NQUxBWVNJQSAoMy4yKQ5NQUxESVZFUyAoMy4yKQpNQUxJIChOL0EpC01BTFRBICgzLjIpFk1BUlNIQUxMIElTTEFORFMgKE4vQSkQTUFSVElOSVFVRSAoTi9BKRBNQVVSSVRBTklBICgzLjIpD01BVVJJVElVUyAoMy4yKQ1NQVlPVFRFIChOL0EpDE1FWElDTyAoMy4xKRBNSUNST05FU0lBIChOL0EpDU1PTERPVkEgKDIuMCkMTU9OQUNPICgzLjIpDk1PTkdPTElBICgzLjIpEE1PTlRFTkVHUk8gKDMuMikQTU9OVFNFUlJBVCAoTi9BKQ1NT1JPQ0NPICgzLjIpEE1PWkFNQklRVUUgKDMuMikNTVlBTk1BUiAoMy4yKQ1OQU1JQklBIChOL0EpC05BVVJVIChOL0EpC05FUEFMICgzLjIpEU5FVEhFUkxBTkRTICgzLjIpGk5FVEhFUkxBTkRTIEFOVElMTEVTIChOL0EpE05FVyBDQUxFRE9OSUEgKE4vQSkRTkVXIFpFQUxBTkQgKDMuMSkPTklDQVJBR1VBICgzLjEpC05JR0VSIChOL0EpDU5JR0VSSUEgKDMuMikKTklVRSAoTi9BKRtOT04gTUVNQkVSUyBDT1VOVFJJRVMgKDMuMikUTk9SRk9MSyBJU0xBTkQgKE4vQSkeTk9SVEhFUk4gTUFSSUFOQSBJU0xBTkRTIChOL0EpDE5PUldBWSAoMy4xKQpPTUFOICgzLjIpDlBBS0lTVEFOICgzLjIpC1BBTEFVIChOL0EpG1BBTEVTVElOSUFOIFRFUlJJVE9SWSAoTi9BKQxQQU5BTUEgKDMuMikWUEFQVUEgTkVXIEdVSU5FQSAoMy4yKQ5QQVJBR1VBWSAoTi9BKQpQRVJVICgzLjEpEVBISUxJUFBJTkVTICgyLjApFVBJVENBSVJOIElTTEFORCAoTi9BKQxQT0xBTkQgKDMuMSkOUE9SVFVHQUwgKDMuMikRUFVFUlRPIFJJQ08gKE4vQSkLUUFUQVIgKDMuMikNUkVVTklPTiAoTi9BKQ1ST01BTklBICgzLjEpDFJVU1NJQSAoMy4xKQxSV0FOREEgKE4vQSkSU0FJTlQgSEVMRU5BIChOL0EpG1NBSU5UIEtJVFRTIEFORCBORVZJUyAoTi9BKRFTQUlOVCBMVUNJQSAoMy4yKR9TQUlOVCBQSUVSUkUgQU5EIE1JUVVFTE9OIChOL0EpJlNBSU5UIFZJTkNFTlQgQU5EIFRIRSBHUkVOQURJTkVTIChOL0EpC1NBTU9BICgzLjIpEFNBTiBNQVJJTk8gKE4vQSkbU0FPIFRPTUUgQU5EIFBSSU5DSVBFIChOL0EpElNBVURJIEFSQUJJQSAoMy4yKQ1TRU5FR0FMICgzLjIpDFNFUkJJQSAoMy4yKRBTRVlDSEVMTEVTICgzLjIpElNJRVJSQSBMRU9ORSAoTi9BKQ9TSU5HQVBPUkUgKDMuMCkOU0xPVkFLSUEgKDMuMSkOU0xPVkVOSUEgKDMuMikVU09MT01PTiBJU0xBTkRTIChOL0EpDVNPTUFMSUEgKE4vQSkSU09VVEggQUZSSUNBICgzLjApMlNPVVRIIEdFT1JHSUEgQU5EIFRIRSBTT1VUSCBTQU5EV0lDSCBJU0xBTkRTIChOL0EpC1NQQUlOICgzLjEpD1NSSSBMQU5LQSAoTi9BKQtTVURBTiAoMy4yKQ5TVVJJTkFNRSAoMy4yKSRTVkFMQkFSRCBBTkQgSkFOIE1BWUVOIElTTEFORFMgKE4vQSkPU1dBWklMQU5EICgzLjIpDFNXRURFTiAoMy4xKRFTV0lUWkVSTEFO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" />
+
+
+<script src="/V32/XX/ScriptResource.axd?d=DZjk6oGWRK1hRM8YglBIYwE7zn9gUbudlqrgW_hmSVKnWDuaNJ7hPU_M2ojkBqjUMmTwD_yjbzTAnxLe2sdkI4osqXJPdEptFgQ2HhTILnrrPjtjC3AHN04xViY-vaoBot958lI93Pn3Z0j4UI7sj3omUcE1&amp;t=633585012431368990" type="text/javascript"></script>
+    
+    <div id="mainContainer">
+        <div class="header">
+            <div class="clearfix">
+                <h1>
+                    <a href="http://www.gs1.org/">GS1 - The global language of business</a></h1>
+                <div class="topright">
+                    <div class="lwrap">
+                        
+                        <a href="http://www.gs1.org/contact/">Contact your local GS1 office</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="http://online.gs1.org/">Extranet Login</a>
+                    </div>
+                    <div class="swrap">
+                        <input type="hidden" name="Realm" value="All" />
+                        <div class="txtwrap">
+                            <input type="text" class="txt" name="keyword" id="keyword" />
+                        </div>
+                        <div class="searchwrap">
+                            <a href="#" class="button" onclick="window.open('http://search.gs1.org/search?q='+document.getElementById('keyword').value+'+&btnG=Google+Search&site=gs1_org&client=gs1_2_frontend&proxystylesheet=gs1_2_frontend&output=xml_no_dtd');return false;">
+                                <input type="image" src="images/searchbtn.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nbwrapper clearfix">
+                <ul class="nav">
+                    <li><a href="http://www.gs1.org/">Home</a></li>
+                    <li><a href="http://www.gs1.org/about/">About Us</a></li>
+                    <li><a href="http://www.gs1.org/productssolutions/">Products &amp; Solutions</a></li>
+                    <li><a href="http://www.gs1.org/services/" class="link active">Services</a></li>
+                    <li class="last"><a href="http://www.gs1.org/sectors/">Sectors &amp; Collaborations</a></li>
+                </ul>
+                <div class="images">
+                    <img src="images/banners/headerimg.jpg" alt="Header Images" />
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div class="contentContainer clearfix">
+            <div class="col left">
+                <div class="nav clearfix">
+                    <h3 class="active">
+                        GEPIR
+                    </h3>
+                    <ul>
+                        <li><a href='default.aspx?Lang=en-US'>
+                            - all searches
+                        </a></li>
+                        <li><a href='gtin.aspx?Lang=en-US'>
+                            - search by barcode
+                        </a></li>
+                        <li><a href='sscc.aspx?Lang=en-US'>
+                            - search by SSCC
+                        </a></li>
+                        <li><a href='gln.aspx?Lang=en-US'>
+                            - search by location
+                        </a></li>
+                        <li><a href='search_by_name.aspx?Lang=en-US' class="active">
+                            - search by name
+                        </a></li>
+                    </ul>
+                    <h3 class="active">
+                        More info</h3>
+                    <ul>
+                        <li><a href='http://www.gs1.org/contact'>- Contact</a> </li>
+                        <li><a href='about.aspx?Lang=en-US'>- About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col middle noright">
+                <div class="txtcontent">
+                    <div class="topheader">
+                        <div class="headerText" id="header_links" nowrap>
+                            
+<!-- ToolkitScriptManager -->
+
+<div id="LoginPanel_loginPanel" class="loginPanel" style="display: none;">
+	
+    <div class="closeLoginPanel">
+        <a id="LoginPanel_closepopup" title="Close">X</a>
+    </div>
+    <table cellspacing="0" cellpadding="1" border="0" id="LoginPanel_LoginCtrl">
+		<tr>
+			<td><table cellpadding="0" border="0">
+				<tr>
+					<td align="center" colspan="2">Hosted MO Login<br><br></td>
+				</tr><tr>
+					<td align="right"><label for="LoginPanel_LoginCtrl_UserName">Username</label></td><td><input name="LoginPanel:LoginCtrl:UserName" type="text" id="LoginPanel_LoginCtrl_UserName" class="txtlogin" />&nbsp;</td>
+				</tr><tr>
+					<td align="right"><label for="LoginPanel_LoginCtrl_Password">Password</label></td><td><input name="LoginPanel:LoginCtrl:Password" type="password" id="LoginPanel_LoginCtrl_Password" class="txtlogin" />&nbsp;</td>
+				</tr><tr>
+					<td align="right" colspan="2"><input type="submit" name="LoginPanel:LoginCtrl:LoginButton" value="Login" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LoginPanel:LoginCtrl:LoginButton&quot;, &quot;&quot;, true, &quot;LoginPanel:LoginCtrl&quot;, &quot;&quot;, false, false))" language="javascript" id="LoginPanel_LoginCtrl_LoginButton" /></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table>
+    
+
+</div>
+
+                            
+                                    <a id="lvwLogin_loginHyperLink" class="handcursor">Hosted MO Login</a>
+                                
+                        </div>
+                    </div>
+                    <h1>
+                        Search by Company Name</h1>
+                    <p>
+                        Locate enterprise by its name and country. In case you receive too many results
+                        precise "Street Address", "Zip/Postal Code" or "City" information. "Company name"
+                        and "Country" are mandatory fields.</p>
+                    <p>
+                        &nbsp;</p>
+                    <!-- QUERY START -->
+                    <div id="UpdatePanel1">
+	
+                            <div class="rightside">
+                                
+                                
+                                
+                                
+                                <table width="100%" border="0">
+                                    <tr>
+                                        <td align="right">
+                                            Company Name:
+                                        </td>
+                                        <td>
+                                            <input name="txtRequestNAME" type="text" value="Estee Lauder" id="txtRequestNAME" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">
+                                            Street Address:
+                                        </td>
+                                        <td>
+                                            <input name="txtStreetAddress" type="text" id="txtStreetAddress" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">
+                                            Zip/Postal Code:
+                                        </td>
+                                        <td>
+                                            <input name="txtPostCode" type="text" id="txtPostCode" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">
+                                            City:
+                                        </td>
+                                        <td>
+                                            <input name="txtCity" type="text" id="txtCity" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">
+                                            Country:
+                                        </td>
+                                        <td>
+                                            <select name="ddlCountry" id="ddlCountry">
+		<option value="AF">AFGHANISTAN (3.2)</option>
+		<option value="AL">ALBANIA (3.2)</option>
+		<option value="DZ">ALGERIA (3.2)</option>
+		<option value="AS">AMERICAN SAMOA (N/A)</option>
+		<option value="AD">ANDORRA (N/A)</option>
+		<option value="AO">ANGOLA (3.2)</option>
+		<option value="AI">ANGUILLA (N/A)</option>
+		<option value="AQ">ANTARCTICA (N/A)</option>
+		<option value="AG">ANTIGUA AND BARBUDA (N/A)</option>
+		<option value="AR">ARGENTINA (3.2)</option>
+		<option value="AM">ARMENIA (3.2)</option>
+		<option value="AW">ARUBA (3.2)</option>
+		<option value="AU">AUSTRALIA (3.2)</option>
+		<option value="AT">AUSTRIA (3.1)</option>
+		<option value="AZ">AZERBAIJAN (3.2)</option>
+		<option value="BS">BAHAMAS (3.2)</option>
+		<option value="BH">BAHRAIN (N/A)</option>
+		<option value="BD">BANGLADESH (3.2)</option>
+		<option value="BB">BARBADOS (3.2)</option>
+		<option value="BY">BELARUS (3.0)</option>
+		<option value="BE">BELGIUM (3.1)</option>
+		<option value="BZ">BELIZE (3.2)</option>
+		<option value="BJ">BENIN (3.2)</option>
+		<option value="BM">BERMUDA (N/A)</option>
+		<option value="BT">BHUTAN (N/A)</option>
+		<option value="BO">BOLIVIA (3.2)</option>
+		<option value="BA">BOSNIA AND HERZEGOVINA (3.2)</option>
+		<option value="BW">BOTSWANA (3.2)</option>
+		<option value="BV">BOUVET ISLAND (N/A)</option>
+		<option value="BR">BRAZIL (3.0)</option>
+		<option value="IO">BRITISH INDIAN OCEAN TERRITORY (N/A)</option>
+		<option value="BN">BRUNEI (3.2)</option>
+		<option value="BG">BULGARIA (3.2)</option>
+		<option value="BF">BURKINA FASO (N/A)</option>
+		<option value="BI">BURUNDI (3.2)</option>
+		<option value="KH">CAMBODIA (3.2)</option>
+		<option value="CM">CAMEROON (3.2)</option>
+		<option value="CA">CANADA (3.0)</option>
+		<option value="CV">CAPE VERDE (3.2)</option>
+		<option value="KY">CAYMAN ISLANDS (3.2)</option>
+		<option value="CF">CENTRAL AFRICAN REPUBLIC (N/A)</option>
+		<option value="TD">CHAD (N/A)</option>
+		<option value="CL">CHILE (3.2)</option>
+		<option value="CN">CHINA (3.1)</option>
+		<option value="MO">CHINA (MACAU S.A.R.) (N/A)</option>
+		<option value="CX">CHRISTMAS ISLAND (N/A)</option>
+		<option value="CC">COCOS (KEELING) ISLANDS (N/A)</option>
+		<option value="CO">COLOMBIA (3.1)</option>
+		<option value="KM">COMOROS (N/A)</option>
+		<option value="CG">CONGO (N/A)</option>
+		<option value="CD">CONGO DEMOCRATIC REPUBLIC (3.2)</option>
+		<option value="CK">COOK ISLANDS (N/A)</option>
+		<option value="CR">COSTA RICA (3.1)</option>
+		<option value="HR">CROATIA (3.2)</option>
+		<option value="CU">CUBA (N/A)</option>
+		<option value="CY">CYPRUS (2.0)</option>
+		<option value="CZ">CZECH REPUBLIC (3.1)</option>
+		<option value="DK">DENMARK (3.2)</option>
+		<option value="DJ">DJIBOUTI (3.2)</option>
+		<option value="DM">DOMINICA (N/A)</option>
+		<option value="DO">DOMINICAN REPUBLIC (3.2)</option>
+		<option value="TP">EAST TIMOR (N/A)</option>
+		<option value="EC">ECUADOR (N/A)</option>
+		<option value="EG">EGYPT (3.2)</option>
+		<option value="SV">EL SALVADOR (3.1)</option>
+		<option value="GQ">EQUATORIAL GUINEA (N/A)</option>
+		<option value="ER">ERITREA (N/A)</option>
+		<option value="EE">ESTONIA (3.1)</option>
+		<option value="ET">ETHIOPIA (3.2)</option>
+		<option value="FK">FALKLAND ISLANDS (N/A)</option>
+		<option value="FO">FAROE ISLANDS (3.2)</option>
+		<option value="FJ">FIJI ISLANDS (N/A)</option>
+		<option value="FI">FINLAND (3.2)</option>
+		<option value="FR">FRANCE (3.1)</option>
+		<option value="GF">FRENCH GUIANA (N/A)</option>
+		<option value="PF">FRENCH POLYNESIA (N/A)</option>
+		<option value="TF">FRENCH SOUTHERN TERRITORIES (N/A)</option>
+		<option value="GA">GABON (3.2)</option>
+		<option value="GM">GAMBIA (3.2)</option>
+		<option value="GE">GEORGIA (3.2)</option>
+		<option value="DE">GERMANY (3.1)</option>
+		<option value="GH">GHANA (3.2)</option>
+		<option value="GI">GIBRALTAR (3.2)</option>
+		<option value="GR">GREECE (3.2)</option>
+		<option value="GL">GREENLAND (3.2)</option>
+		<option value="GD">GRENADA (N/A)</option>
+		<option value="GP">GUADELOUPE (N/A)</option>
+		<option value="GU">GUAM (N/A)</option>
+		<option value="GT">GUATEMALA (3.2)</option>
+		<option value="GN">GUINEA (3.2)</option>
+		<option value="GW">GUINEA-BISSAU (N/A)</option>
+		<option value="GY">GUYANA (3.2)</option>
+		<option value="HT">HAITI (3.2)</option>
+		<option value="HM">HEARD AND MCDONALD ISLANDS (N/A)</option>
+		<option value="HN">HONDURAS (3.1)</option>
+		<option value="HK">HONG KONG (2.0)</option>
+		<option value="HU">HUNGARY (3.1)</option>
+		<option value="IS">ICELAND (3.2)</option>
+		<option value="IN">INDIA (3.1)</option>
+		<option value="ID">INDONESIA (3.2)</option>
+		<option value="IR">IRAN (3.2)</option>
+		<option value="IE">IRELAND (3.2)</option>
+		<option value="IL">ISRAEL (N/A)</option>
+		<option value="IT">ITALY (3.0)</option>
+		<option value="CI">IVORY COAST (3.2)</option>
+		<option value="JM">JAMAICA (3.2)</option>
+		<option value="JP">JAPAN (3.0)</option>
+		<option value="JO">JORDAN (3.2)</option>
+		<option value="KZ">KAZAKHSTAN (3.2)</option>
+		<option value="KE">KENYA (3.2)</option>
+		<option value="KI">KIRIBATI (N/A)</option>
+		<option value="KR">KOREA (3.1)</option>
+		<option value="KP">KOREA, NORTH (N/A)</option>
+		<option value="KW">KUWAIT (N/A)</option>
+		<option value="KG">KYRGYZSTAN (3.2)</option>
+		<option value="LA">LAOS (3.2)</option>
+		<option value="LV">LATVIA (3.1)</option>
+		<option value="LB">LEBANON (3.2)</option>
+		<option value="LS">LESOTHO (N/A)</option>
+		<option value="LR">LIBERIA (N/A)</option>
+		<option value="LY">LIBYAN ARAB JAMAHIRY (3.2)</option>
+		<option value="LI">LIECHTENSTEIN (3.1)</option>
+		<option value="LT">LITHUANIA (3.2)</option>
+		<option value="LU">LUXEMBOURG (3.1)</option>
+		<option value="MK">MACEDONIA (3.2)</option>
+		<option value="MG">MADAGASCAR (3.2)</option>
+		<option value="MW">MALAWI (N/A)</option>
+		<option value="MY">MALAYSIA (3.2)</option>
+		<option value="MV">MALDIVES (3.2)</option>
+		<option value="ML">MALI (N/A)</option>
+		<option value="MT">MALTA (3.2)</option>
+		<option value="MH">MARSHALL ISLANDS (N/A)</option>
+		<option value="MQ">MARTINIQUE (N/A)</option>
+		<option value="MR">MAURITANIA (3.2)</option>
+		<option value="MU">MAURITIUS (3.2)</option>
+		<option value="YT">MAYOTTE (N/A)</option>
+		<option value="MX">MEXICO (3.1)</option>
+		<option value="FM">MICRONESIA (N/A)</option>
+		<option value="MD">MOLDOVA (2.0)</option>
+		<option value="MC">MONACO (3.2)</option>
+		<option value="MN">MONGOLIA (3.2)</option>
+		<option value="ME">MONTENEGRO (3.2)</option>
+		<option value="MS">MONTSERRAT (N/A)</option>
+		<option value="MA">MOROCCO (3.2)</option>
+		<option value="MZ">MOZAMBIQUE (3.2)</option>
+		<option value="MM">MYANMAR (3.2)</option>
+		<option value="NA">NAMIBIA (N/A)</option>
+		<option value="NR">NAURU (N/A)</option>
+		<option value="NP">NEPAL (3.2)</option>
+		<option value="NL">NETHERLANDS (3.2)</option>
+		<option value="AN">NETHERLANDS ANTILLES (N/A)</option>
+		<option value="NC">NEW CALEDONIA (N/A)</option>
+		<option value="NZ">NEW ZEALAND (3.1)</option>
+		<option value="NI">NICARAGUA (3.1)</option>
+		<option value="NE">NIGER (N/A)</option>
+		<option value="NG">NIGERIA (3.2)</option>
+		<option value="NU">NIUE (N/A)</option>
+		<option value="XX">NON MEMBERS COUNTRIES (3.2)</option>
+		<option value="NF">NORFOLK ISLAND (N/A)</option>
+		<option value="MP">NORTHERN MARIANA ISLANDS (N/A)</option>
+		<option value="NO">NORWAY (3.1)</option>
+		<option value="OM">OMAN (3.2)</option>
+		<option value="PK">PAKISTAN (3.2)</option>
+		<option value="PW">PALAU (N/A)</option>
+		<option value="PS">PALESTINIAN TERRITORY (N/A)</option>
+		<option value="PA">PANAMA (3.2)</option>
+		<option value="PG">PAPUA NEW GUINEA (3.2)</option>
+		<option value="PY">PARAGUAY (N/A)</option>
+		<option value="PE">PERU (3.1)</option>
+		<option value="PH">PHILIPPINES (2.0)</option>
+		<option value="PN">PITCAIRN ISLAND (N/A)</option>
+		<option value="PL">POLAND (3.1)</option>
+		<option value="PT">PORTUGAL (3.2)</option>
+		<option value="PR">PUERTO RICO (N/A)</option>
+		<option value="QA">QATAR (3.2)</option>
+		<option value="RE">REUNION (N/A)</option>
+		<option value="RO">ROMANIA (3.1)</option>
+		<option value="RU">RUSSIA (3.1)</option>
+		<option value="RW">RWANDA (N/A)</option>
+		<option value="SH">SAINT HELENA (N/A)</option>
+		<option value="KN">SAINT KITTS AND NEVIS (N/A)</option>
+		<option value="LC">SAINT LUCIA (3.2)</option>
+		<option value="PM">SAINT PIERRE AND MIQUELON (N/A)</option>
+		<option value="VC">SAINT VINCENT AND THE GRENADINES (N/A)</option>
+		<option value="WS">SAMOA (3.2)</option>
+		<option value="SM">SAN MARINO (N/A)</option>
+		<option value="ST">SAO TOME AND PRINCIPE (N/A)</option>
+		<option value="SA">SAUDI ARABIA (3.2)</option>
+		<option value="SN">SENEGAL (3.2)</option>
+		<option value="RS">SERBIA (3.2)</option>
+		<option value="SC">SEYCHELLES (3.2)</option>
+		<option value="SL">SIERRA LEONE (N/A)</option>
+		<option value="SG">SINGAPORE (3.0)</option>
+		<option value="SK">SLOVAKIA (3.1)</option>
+		<option value="SI">SLOVENIA (3.2)</option>
+		<option value="SB">SOLOMON ISLANDS (N/A)</option>
+		<option value="SO">SOMALIA (N/A)</option>
+		<option value="ZA">SOUTH AFRICA (3.0)</option>
+		<option value="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS (N/A)</option>
+		<option value="ES">SPAIN (3.1)</option>
+		<option value="LK">SRI LANKA (N/A)</option>
+		<option value="SD">SUDAN (3.2)</option>
+		<option value="SR">SURINAME (3.2)</option>
+		<option value="SJ">SVALBARD AND JAN MAYEN ISLANDS (N/A)</option>
+		<option value="SZ">SWAZILAND (3.2)</option>
+		<option value="SE">SWEDEN (3.1)</option>
+		<option value="CH">SWITZERLAND (3.1)</option>
+		<option value="SY">SYRIA (3.2)</option>
+		<option value="TW">TAIWAN (3.1)</option>
+		<option value="TJ">TAJIKISTAN (3.2)</option>
+		<option value="TZ">TANZANIA (3.2)</option>
+		<option value="TH">THAILAND (3.2)</option>
+		<option value="TG">TOGO (3.2)</option>
+		<option value="TK">TOKELAU (N/A)</option>
+		<option value="TO">TONGA (N/A)</option>
+		<option value="TT">TRINIDAD AND TOBAGO (3.2)</option>
+		<option value="TN">TUNISIA (3.2)</option>
+		<option value="TR">TURKEY (2.0)</option>
+		<option value="TM">TURKMENISTAN (3.2)</option>
+		<option value="TC">TURKS AND CAICOS ISLANDS (3.2)</option>
+		<option value="TV">TUVALU (N/A)</option>
+		<option value="UG">UGANDA (3.2)</option>
+		<option value="UA">UKRAINE (2.0)</option>
+		<option value="AE">UNITED ARAB EMIRATES (3.2)</option>
+		<option value="GB">UNITED KINGDOM (2.0)</option>
+		<option selected="selected" value="US">UNITED STATES (3.0)</option>
+		<option value="UM">UNITED STATES MINOR OUTLYING ISLANDS (N/A)</option>
+		<option value="UY">URUGUAY (2.0)</option>
+		<option value="UZ">UZBEKISTAN (3.0)</option>
+		<option value="VU">VANUATU (3.2)</option>
+		<option value="VA">VATICAN CITY STATE (N/A)</option>
+		<option value="VE">VENEZUELA (3.2)</option>
+		<option value="VN">VIETNAM (3.1)</option>
+		<option value="VG">VIRGIN ISLANDS (BRITISH) (3.2)</option>
+		<option value="VI">VIRGIN ISLANDS (US) (N/A)</option>
+		<option value="WF">WALLIS AND FUTUNA ISLANDS (N/A)</option>
+		<option value="EH">WESTERN SAHARA (N/A)</option>
+		<option value="YE">YEMEN (3.2)</option>
+		<option value="ZM">ZAMBIA (3.2)</option>
+		<option value="ZW">ZIMBABWE (3.2)</option>
+
+	</select>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="btnSearchName">
+                                                <input type="submit" name="btnSubmitSearch_by_name" value="Search" onclick="showWait('UpdateProgress1');" language="javascript" id="btnSubmitSearch_by_name" />
+                                                <div id="UpdateProgress1" style="display:none;">
+		
+                                                        <img id="WaitImage" src="images/Wait.gif" alt="" />
+                                                    
+	</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!-- QUERY END -->
+                            <div class="rightside">
+                                <br />
+                                
+                            </div>
+                            <div id="Resultcontent">
+                                <!-- RESULT START -->
+                                <table cellspacing="0" cellpadding="0" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                
+<table id="SummaryResponse" align="left">
+    <tr>
+        <td nowrap>
+                
+                
+        </td>
+    </tr>
+    <tr>
+        <td nowrap>
+            This information is provided on behalf of
+            <a id="SRSearch_by_name_MoreInfo" onClick="window.open (this.href, 'popupwindow','width=600,height=450,scrollbars=0,resizable=0,toolbar=0,location=0,directories=0,status=0,menubar=0');return false;" href="http://www.gs1.org/about/our_offices.html" target="_blank">GS1 US, INC.</a>.</td>
+    </tr>
+    <tr>
+        <td>
+            
+                    <table id="resultTable" cellspacing="0" cellpadding="0" rules="cols">
+                        <tr>
+                            <th>
+                                GLN</th>
+                            <th>
+                                Company</th>
+                            <th>
+                                Contact</th>
+                            <th>
+                                Last Change</th>
+                            <th>
+                                GCP</th>
+                            <th>
+                                Status</th>
+                            <th>
+                                Provider GLN</th>
+                        </tr>
+                
+                    <tr>
+                        <td align="left">
+                            0801993000004<br />
+                        </td>
+                        <td align="left" id="Address">
+                            <div id="addressscroll">
+                                Estee Lauder International<br />
+                                NY<br />
+                                145 Pinelawn Road<br />
+                                North Suite<br />
+                                
+                                
+                                
+                                
+                                11747-3115&nbsp;
+                                Melville<br />
+                                United States
+                            </div>
+                        </td>
+                        <td align="left" id="Contact">
+                            
+                            Tel:(631) 454-7000<br />
+                            
+                            
+                            
+                        </td>
+                        <td align="center">
+                            
+                        </td>
+                        <td align="left">
+                            0801993<br />
+                        </td>
+                        <td align="center">
+                            0
+                        </td>
+                        <td align="center">
+                            
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td align="left" style="background-color: #edf5ff;">
+                            0027131000006<br />
+                        </td>
+                        <td align="left" id="Address" style="background-color: #edf5ff;">
+                            Estee Lauder Inc.<br />
+                            NY<br />
+                            7 Corporate Center Drive<br />
+                            <br />
+                            
+                            
+                            
+                            
+                            11747-3115&nbsp;
+                            Melville<br />
+                            United States
+                        </td>
+                        <td align="left" id="Contact" style="background-color: #edf5ff;">
+                            
+                            Tel:(631) 454-7000<br />
+                            
+                            
+                            
+                        </td>
+                        <td align="center" style="background-color: #edf5ff;">
+                            
+                        </td>
+                        <td align="left" style="background-color: #edf5ff;">
+                            0027131<br />
+                        </td>
+                        <td align="center" style="background-color: #edf5ff;">
+                            0
+                        </td>
+                        <td align="center" style="background-color: #edf5ff;">
+                            
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td align="left">
+                            0027131000006<br />
+                        </td>
+                        <td align="left" id="Address">
+                            <div id="addressscroll">
+                                Estee Lauder Inc.<br />
+                                NY<br />
+                                7 Corporate Center Drive<br />
+                                <br />
+                                
+                                
+                                
+                                
+                                11747-3115&nbsp;
+                                Melville<br />
+                                United States
+                            </div>
+                        </td>
+                        <td align="left" id="Contact">
+                            
+                            Tel:(631) 454-7000<br />
+                            
+                            
+                            
+                        </td>
+                        <td align="center">
+                            
+                        </td>
+                        <td align="left">
+                            
+                        </td>
+                        <td align="center">
+                            0
+                        </td>
+                        <td align="center">
+                            
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td align="left" style="background-color: #edf5ff;">
+                            0663563000001<br />
+                        </td>
+                        <td align="left" id="Address" style="background-color: #edf5ff;">
+                            Estee Lauder Cosmeticos, S.A. De C.V.<br />
+                            
+                            Felix Guzman No. 9-A<br />
+                            Col. El Parque<br />
+                            
+                            
+                            
+                            
+                            53390&nbsp;
+                            Naucalpan, Edo. De M<br />
+                            Mexico
+                        </td>
+                        <td align="left" id="Contact" style="background-color: #edf5ff;">
+                            
+                            Tel:00730763<br />
+                            Fax:5805251<br />
+                            
+                            
+                        </td>
+                        <td align="center" style="background-color: #edf5ff;">
+                            
+                        </td>
+                        <td align="left" style="background-color: #edf5ff;">
+                            0663563<br />
+                        </td>
+                        <td align="center" style="background-color: #edf5ff;">
+                            0
+                        </td>
+                        <td align="center" style="background-color: #edf5ff;">
+                            
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td align="left">
+                            0027131000006<br />
+                        </td>
+                        <td align="left" id="Address">
+                            <div id="addressscroll">
+                                Estee Lauder Inc.<br />
+                                NY<br />
+                                7 Corporate Center Drive<br />
+                                <br />
+                                
+                                
+                                
+                                
+                                11747-3115&nbsp;
+                                Melville<br />
+                                United States
+                            </div>
+                        </td>
+                        <td align="left" id="Contact">
+                            
+                            Tel:(631) 454-7000<br />
+                            
+                            
+                            
+                        </td>
+                        <td align="center">
+                            
+                        </td>
+                        <td align="left">
+                            0763511<br />
+                        </td>
+                        <td align="center">
+                            0
+                        </td>
+                        <td align="center">
+                            
+                        </td>
+                    </tr>
+                
+                    </table>
+                
+        </td>
+    </tr>
+    <tr>
+        <td class="footerText">
+            Responder:
+            <span id="SRSearch_by_name_lblNumberGLN">0614141800001</span>,
+            Responses:
+            <span id="SRSearch_by_name_lblnumberofHits">5</span>, RC:
+            <span id="SRSearch_by_name_lblNumberErrorGLN">0</span>
+            (<span id="SRSearch_by_name_lblErrorGLN">No error</span>)</td>
+    </tr>  
+</table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- RESULT END -->
+                            </div>
+                            <!-- NAVIGATION END -->
+                        
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <a href="http://www.gs1.org/disclaimer_copyright">Disclaimer</a> | <a href="http://www.gs1.org/privacy/">
+            Privacy</a> | <a href="http://www.gs1.org/sitemap/">Sitemap</a> | <a href="mailto:webmaster@gs1.org">
+                Contact webmaster</a>
+        <span id="HitsCount" title="Hits" class="footerTOP">00</span>
+        | <a href="#TOP" title="Top">[Δ]</a>
+    </div>
+    <!-- FOOTER -->
+    
+
+<script src="/V32/XX/ScriptResource.axd?d=DGFi4Ztdq-oUF_DXYED5xwCFn4zG0cL-gSYY-C_LH-omwu7pz1CEz5UO5mlL9QwlydZdl7ITLYmOES1kRPsN2xBYqF9q4pMbvBdCW1_LPkurCf3dhj0YXEfGgtR7pD9IZop8AZvOI4u7CAQgU94sC2Xa1A41&amp;t=633398564440000000" type="text/javascript"></script>
+<script src="/V32/XX/ScriptResource.axd?d=kIuiq20OQ2DLWTLegzlwt-LYm-X54eNrT-dmnJEAawXzG0NLOEcrvBL6IGIEQuWHzrd_HLH1EyBESdeQ3UQBVcvHgp80KMZNAPXyyZyNKXMxV25YCMW-rpIPk60W_BsdyIhfqqanB3SMhPlhO71MxQIW1Fk1&amp;t=633398564440000000" type="text/javascript"></script>
+<script src="/V32/XX/ScriptResource.axd?d=aZZLORaKv3_IHE0cLrWWoNzD7d8_lLiY5UCGKE3Ax0Sp_hJ83YtFQC_xXkRQEyYoM5fyuOfDXRO5_1xLinGDqQzsKMD4dxfVfHZu-JpNdRnG8ZLWqCXK0BNeFXvenvZNZu3IgV67j9iwWb81CLhHhq4KcLw1&amp;t=633398564440000000" type="text/javascript"></script>
+<script src="/V32/XX/ScriptResource.axd?d=SwM89hxBUdBHEcA9nlwHOhj0t-QDU0_5KsAtLaNWHfkeUsghFSFiL5mgik0-NebsSgwoR0FNZuhzN3SV3xTLfFSBCav0DOU6xcRbAFbYJl-P02gc1WidWX1X7hA93oBGnDIF88XCdCRvZbQgcXxP8TDIJbM1&amp;t=633398564440000000" type="text/javascript"></script>
+<script src="/V32/XX/ScriptResource.axd?d=4V1-tjtdcqAkSvOKUB2FEIpxNVATzoy6csRF5OTsoPFJqj02W0eAEaU-GUJhl4CGtz3gJ_ArD1HUMlzFMF1uOtmKfbKVnKFZkQIPJoUCCriUc94d5C34Ww7cjiypVPS1hvHHwtZfpNIIj4YZjjaWd4lqQXmZosN3YD34yQlGrMxg3sMt0&amp;t=633398564440000000" type="text/javascript"></script>
+<script src="/V32/XX/ScriptResource.axd?d=281DTlmwxCkk_tnOAlE7M3aAE3RMmibSL0rnkV88F2UIsZ74Q17eDBIlOUEs6bPny_tCg6Zj7OikyOyUXO9s2C467xjP1lAsXYy04UH57WNr8ukuyKKc2KYOidsdVKi14wwKPaafleM0wKZSYntsO8InBdYZk53oNpewzjl2sQAdNk280&amp;t=633398564440000000" type="text/javascript"></script>
+<script src="/V32/XX/ScriptResource.axd?d=HPcCv4HdEnGaZbQidGnNEzE09adawajjcUv8LcLFw7qNadopUXdiSlDHeCs6BpbWKFTAUBOIY561zRCV6vwzjJG4UCFOUU4vkayJDoWHl8lNFKF0TwKGhX2lVWyyXs0rlQGwwsfZO6Kwh_hxrAMwO9z9tmNPEpuWLwZl1GgDVbDLbwXt0&amp;t=633398564440000000" type="text/javascript"></script>
+<script src="/V32/XX/ScriptResource.axd?d=d35MJLbxm08seASwlvMhrID8OcaV31gzuWsfUhOAbfqRAxvC0cpsJBNbuT89uZ77ypGJ_6-Ae3PhLVuzYxEfxA28gk0sfOGTYoJHyeN45XzIySpOiRCYlQFAtBbOjUwn_v-tBNY8lc07UgYMwwVXTzdJ8DFio804AaFxQvbNaxGiGeJZ0&amp;t=633398564440000000" type="text/javascript"></script>
+<script src="/V32/XX/ScriptResource.axd?d=2Q_47f0hthDG6STqf9BGJUtLZX-dw_G-P-QsjGkHCF_Qt18JGeHkjO-5oJbR503kQjEnX-lVAHYRXcN9vVnLXeX0KzNIwbCzx3LdLzUf7BSTXkh0NV-tEoA4R2GCZba1aSS4bPBL4ytvFh3y13_jSrUDOwQ1&amp;t=633398564440000000" type="text/javascript"></script>
+<script src="/V32/XX/ScriptResource.axd?d=nV0PDxDKTHLayYx7qrYqeEHFivosiNB6wUzz6AuXIxHErqKVFrAKTUqZmo3pE8lJYLfRly4HJbUbnmxWlwb98G4tUz12Kz334e3ttKHnTlAnrP_lMat2_Y9GULzwV2tTqdZKfmXkh83hPkfsac5zJLfKxUDt_d71HWfLV3qOjFj7tRrE0&amp;t=633398564440000000" type="text/javascript"></script>
+<script src="/V32/XX/ScriptResource.axd?d=CJo0pEmF1Z_U00Gep9xnXhcFX8dXExclrA1O96GuIVQ97VWMSzPzMUOgJ90x4jy7p7eUDJHFDFhbSlQYhFpq5nOpfvTFjfhE8oZd27dLeFjTp-fFf3Qs-dVau7AsL0WuDNkmftbS_v0yePCq_pWtsERBdgJq1HGo9sRVuyuTX60gkUXr0&amp;t=633398564440000000" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"LoginPanel_closepopup","DropShadow":true,"PopupControlID":"LoginPanel_loginPanel","dynamicServicePath":"/v32/xx/search_by_name.aspx","id":"programmaticModalPopupBehavior"}, null, null, $get("lvwLogin_loginHyperLink"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"FilterMode":2,"InvalidChars":"\u003c\u003e%*$","id":"FilteredTextBoxExtender1"}, null, null, $get("txtRequestNAME"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"FilterMode":2,"InvalidChars":"\u003c\u003e%*$","id":"FilteredTextBoxExtender2"}, null, null, $get("txtStreetAddress"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"FilterMode":2,"InvalidChars":"\u003c\u003e%*$","id":"FilteredTextBoxExtender3"}, null, null, $get("txtPostCode"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"FilterMode":2,"InvalidChars":"\u003c\u003e%*$","id":"FilteredTextBoxExtender4"}, null, null, $get("txtCity"));
+});
+// -->
+</script>
+</form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>description
+
+1. 1</description>
+  <mission>mission 10</mission>
+  <name>test</name>
+  <canonical-url>http://www.causes.com/causes/319</canonical-url>
+  <member-count type="integer">4</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/7s/zn/KC/5C/Sg/gy/Nb/rOS.jpg</photo-url>
+</cause>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cause>
+  <description>I need a new car will you help.
+
+1. I have an old car now.</description>
+  <mission>get $15,000 so i can get a new car.</mission>
+  <name>Help Cody get a new car</name>
+  <canonical-url>http://www.causes.com/causes/5034</canonical-url>
+  <member-count type="integer">2</member-count>
+  <total-raised type="decimal">0.0</total-raised>
+  <photo-url>https://causes-prod.s3.amazonaws.com/photos/ZI/H1/VF/5P/P4/08/OhIS.jpg</photo-url>
+</cause>

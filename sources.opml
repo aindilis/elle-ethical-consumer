@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<opml version="1.0">
+  <head>
+    <dateCreated>Tue, 21 Jun 2005 23:50:36 GMT</dateCreated>
+  </head>
+  <body>
+    <outline text="FRDCSA Blog" xmlUrl="http://frdcsa.org/~andrewdo/blog/?feed=rss2" />
+    <outline text="Imendio News" xmlUrl="http://www.imendio.com/archive/index.rss" />
+    <outline text="Planet GNOME" xmlUrl="http://planet.gnome.org/rss20.xml" />
+    <outline text="Monologue" xmlUrl="http://www.go-mono.com/monologue/index.rss" />
+    <outline text="Freedesktop.org" xmlUrl="http://planet.freedesktop.org/rss20.xml" />
+    <outline text="Footnotes" xmlUrl="http://gnomedesktop.org/backend2.php" />
+    <outline text="NewsForge" xmlUrl="http://www.newsforge.com/index.rss" />
+    <outline text="Plannet Jabber" xmlUrl="http://planet.jabber.org/rss20.xml" />
+    <outline text="Mikael Hallendal" xmlUrl="http://micke.hallendal.net/index.xml" />
+    <outline text="GnomeFiles" xmlUrl="http://www.gnomefiles.org/files/gnomefiles.rdf" />
+    <outline text="Planet Debian" xmlUrl="http://planet.debian.org/rss20.xml" />
+  </body>
+</opml>

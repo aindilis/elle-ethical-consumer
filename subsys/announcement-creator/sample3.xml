@@ -1,0 +1,31 @@
+<?xml version='1.0' ?>
+<!DOCTYPE announcements SYSTEM "dtds/BLeaf.dtd">
+<announcements>
+  <announcement>
+    <source>FRDCSA</source>
+    <public-key></public-key>
+    <items>
+      <item>
+	<title>Do not buy XYZ products</title>
+	<logic>
+	  <assert>
+	    (implies (and (has-website (Company-fn XYZ) ?website) (Likes ?agent1 ?website)) (Obligatory (sendEmailTo ?agent1 (Company-fn XYZ))))
+	  </assert>
+	  <assert>
+	    
+	  </assert>
+	</logic>
+	<reason-given>
+	  <reason>
+	    This cause says that X should be the case and action Y would
+	    be a good way to achieve X, but this company is against
+	    action Y.
+	  </reason>
+	  <source>
+	    http://www.frdcsa.org
+	  </source>
+	</reason-given>
+      </item>
+    </items>
+  </announcement>
+</announcements>
